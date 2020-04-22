@@ -1,0 +1,53 @@
+button {
+    height: 100px;
+    width: 100px;
+    background-size: 100px 100px;
+    background-color: #ff5757;
+    border: #8c52ff solid 1px;
+}
+
+.stepper-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #ff5757;
+}
+
+.home-btn {
+    background-image: url("/home.png");
+}
+
+.one-btn {
+    background-image: url("/oko.png");
+}
+
+.two-btn {
+    background-image: url("/leptir.png");
+}
+
+.three-btn {
+    background-image: url("/mjesec.png");
+}
+.four-btn {
+    background-image: url("/casa.png");
+}
+.five-btn {
+    background-image: url("/crv.png");
+}
+.six-btn {
+    background-image: url("/grob.png");
+}
+.seven-btn {
+    background-image: url("/maslacak.png");
+}
+
+.eight-btn {
+    background-image: url("/naranca.png");
+}
+
+.nine-btn {
+    background-image: url("/tree.png");
+}
+.ten-btn {
+    background-image: url("/zora.png");
+}
