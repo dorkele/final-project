@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "./steppers.css";
 import Home from "./home";
-import First from "./first";
+//import First from "./first";
+import LazyAnimation from "./first";
 import Second from "./second";
 import Third from "./third";
 import Fourth from "./fourth";
@@ -19,7 +20,7 @@ export default function Steppers() {
     if (step === 0) {
         page = <Home />;
     } else if (step === 1) {
-        page = <First />;
+        page = <LazyAnimation />;
     } else if (step === 2) {
         page = <Second />;
     } else if (step === 3) {
