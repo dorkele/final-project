@@ -3,7 +3,7 @@ button {
     width: 100px;
     background-size: 100px 100px;
     background-color: #ff5757;
-    border: #8c52ff solid 1px;
+    border: none;
 }
 
 .stepper-container {
@@ -11,6 +11,7 @@ button {
     flex-direction: row;
     justify-content: center;
     background-color: #ff5757;
+    border: #8c52ff solid 1px;
 }
 
 .home-btn {
