@@ -1,23 +1,61 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { Frame, BackgroundImage } from "framer";
+import "./sixth.css";
 
-export default function Sixth() {
+export default function Sixth({ variantsVisibility, scrollX }) {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <React.Fragment>
-            <div>Sixth</div>
-            <div>
-                <p>
+            <div className="wrapping-container">
+                <Frame
+                    style={{ backgroundColor: "none" }}
+                    top={0}
+                    width={500}
+                    height={200}
+                    left={50}
+                >
                     I onda nakon toliko puno vremena (već sam pomislila na
                     umiranje), pojavila se.  Morala je obaviti neke stvari. Sva
                     u bijelom, u bijelom autu. Upitala sam je: „Zašto nismo
                     umrle i mi?“
-                </p>
-                <p>„Muze ne puze.“, odgovorila je.</p>
-                <p>Jasno.</p>
-                <p>
+                </Frame>
+                <Frame
+                    style={{ backgroundColor: "none" }}
+                    top={100}
+                    left={500}
+                    width={500}
+                    height={200}
+                >
+                    „Muze ne puze.“, odgovorila je.
+                </Frame>
+                <Frame
+                    style={{ backgroundColor: "none" }}
+                    top={200}
+                    left={700}
+                    width={500}
+                    height={200}
+                >
+                    Jasno.
+                </Frame>
+                <Frame
+                    style={{ backgroundColor: "none" }}
+                    top={300}
+                    left={1000}
+                    width={500}
+                    height={200}
+                >
                     „Vodim te na zobene maćuhice.“, rekla je. Nasmiješila sam se
                     nakon dugo.
-                </p>
-                <p>
+                </Frame>
+                <Frame
+                    style={{ backgroundColor: "none" }}
+                    top={300}
+                    left={1600}
+                    width={500}
+                    height={200}
+                >
                     Ona stane kod nekog groba i malo kleči. Inače vozi brzo.
                     Više se ne zaustavljamo. Ja povraćam i gledam ljude kroz
                     prozor. Ja gledam ljude kroz prozor i povraćam. Ne
@@ -26,20 +64,40 @@ export default function Sixth() {
                     onaj dan ni ikad više nije javila. Ne volim ju više kao
                     onda. Ni faljenje ne popušta. Tu je, ali mi nedostaje kao i
                     kada je nije bilo. Možda sam samo spora.
-                </p>
-                <p>
+                </Frame>
+                <Frame
+                    style={{ backgroundColor: "none" }}
+                    top={100}
+                    left={2200}
+                    width={500}
+                    height={200}
+                >
                     Stižemo u kolibu njenog oca. On ne podiže glavu da me
                     pozdravi. Nekad sam imala osjećaj da me voli više od nje.
                     Uživala sam u tome čime se ne ponosim. 
-                </p>
-                <p>
+                </Frame>
+                <Frame
+                    style={{ backgroundColor: "none" }}
+                    top={400}
+                    left={2800}
+                    width={500}
+                    height={200}
+                >
                     „Idemo leć na pod.“, to je bila naša stvar. Na drvenom
                     platou iza kolibe. Sada na masnoj zemljici. Htjela sam ju
                     pitati na čijem smo ono grobu bile. Ona je zaustila prva:
                     „Tvoje posljednje seksualno iskustvo?“. Nije razumjela da
                     nisam vidjela živo biće, koliko dugo? Samo se nasmijala.
-                </p>
-                <p>
+                </Frame>
+                <Frame
+                    style={{ backgroundColor: "none" }}
+                    top={0}
+                    left={3500}
+                    width={500}
+                    height={"100%"}
+                    initial={{ rotate: 90 }}
+                    animate={{ rotate: scrollX >= 2700 ? 0 : 90 }}
+                >
                     A ja sam sanjala te noći njenog brata i onog tebe u
                     zagrljaju u kojem ste plakali, dugo, sočno i bezumno.
                     Sanjala sam i svog brata koji se smijao, ali nijemo. Nije
@@ -49,7 +107,7 @@ export default function Sixth() {
                     zaboravila. Vene su mi nabrekle i sjetila sam se bezdanog
                     ponora u kojem se nalazimo. Ako uspijem zaboraviti na tako
                     nešto, znači da je noć prošla uspješno.
-                </p>
+                </Frame>
             </div>
         </React.Fragment>
     );

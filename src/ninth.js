@@ -1,11 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { Frame } from "framer";
 
-export default function Ninth() {
+export default function Ninth({ variantsVisibility, scrollY }) {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <React.Fragment>
-            <div>Ninth</div>
-            <div>
-                <p>
+            <div className="wrapping-container">
+                <Frame
+                    style={{
+                        backgroundColor: "none",
+                        position: "fixed",
+                        fontSize: 30,
+                        width: "100%",
+                        height: "100%",
+                    }}
+                    center
+                    variants={variantsVisibility}
+                    animate={scrollY >= 60 ? "hidden" : "visible"}
+                >
                     Ali monolog pijane žene koja mi je sve u rodu (koji slijedi,
                     ali mi prethodi) bio je spreman: „Ići ćemo zajedno kroz
                     polja. Bespolno. Nemoj se uopće bojati. Nećeš se bojati.
@@ -20,9 +34,35 @@ export default function Ninth() {
                     koja ti govori da nikada nećeš vidjeti ljubav svog života
                     jer si oduvijek bila kukavica. Od svih ljudi sam to ja. Dali
                     su ti kamenčiće, sve što su ti dali bili su kamenčići.“
-                </p>
-                <p>Kako ona to zna, molim te?</p>
-                <p>
+                </Frame>
+                <Frame
+                    style={{
+                        backgroundColor: "none",
+                        position: "fixed",
+                        fontSize: 100,
+                        width: "100%",
+                        height: "100%",
+                    }}
+                    center
+                    variants={variantsVisibility}
+                    animate={scrollY >= 60 ? "visible" : "hidden"}
+                    className={scrollY >= 100 ? "hidden" : "black"}
+                >
+                    Kako ona to zna, molim te?
+                </Frame>
+                <Frame
+                    style={{
+                        backgroundColor: "none",
+                        position: "fixed",
+                        fontSize: 30,
+                        width: "100%",
+                        height: "100%",
+                    }}
+                    center
+                    variants={variantsVisibility}
+                    animate={scrollY >= 100 ? "visible" : "hidden"}
+                    className={scrollY >= 140 ? "hidden" : "black"}
+                >
                     Mogu je čuti da priča, ali riječi nam ne znače ništa slično.
                     Kaže vidjeti, a misli: voljeti. Kaže sjećaš li se, a misli:
                     sve smo izmislile. Sve smo izmislile u onom trenutku kada su
@@ -31,8 +71,22 @@ export default function Ninth() {
                     su drugi mrtvi, a mi smo još uvijek prekrasne. Ali svi koje
                     volimo su mrtvi, to je prvo pravilo, svi koje volimo su
                     mrtvi.
-                </p>
-                <p>I onda: „zamisli“.</p>
+                </Frame>
+                <Frame
+                    style={{
+                        backgroundColor: "none",
+                        position: "fixed",
+                        fontSize: 100,
+                        width: "100%",
+                        height: "100%",
+                    }}
+                    center
+                    variants={variantsVisibility}
+                    animate={scrollY >= 140 ? "visible" : "hidden"}
+                    className={scrollY >= 200 ? "hidden" : "black"}
+                >
+                    I onda: „zamisli“.
+                </Frame>
             </div>
         </React.Fragment>
     );

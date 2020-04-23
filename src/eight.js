@@ -1,11 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { Frame } from "framer";
+import "./eight.css";
 
-export default function Eight() {
+export default function Eight({ variantsVisibility, scrollY }) {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <React.Fragment>
-            <div>Eight</div>
-            <div>
-                <p>
+            <div className="wrapping-container">
+                <Frame
+                    style={{ backgroundColor: "none", position: "fixed" }}
+                    center
+                    variants={variantsVisibility}
+                    animate={scrollY >= 60 ? "hidden" : "visible"}
+                    width={500}
+                >
                     Godinama, godinama poslije, ne sjećate se više nikoga. Ni
                     glupe kolibe, ni glupog djeteta i njegova oca. Godinama
                     poslije razvili ste bolest koja ne pamti pijane muze koje od
@@ -26,13 +36,36 @@ export default function Eight() {
                     njegove vilice, škripanje njegovog kapka, škrgutanje
                     njegovog očnjaka. Melodija. Melodija. Božanstvena melodija
                     visokog plemstva. (Izmišljotina.)
-                </p>
-                <p>
+                </Frame>
+                <Frame
+                    style={{ backgroundColor: "none", position: "fixed" }}
+                    top={300}
+                    left={687}
+                    variants={variantsVisibility}
+                    animate={scrollY >= 50 ? "visible" : "hidden"}
+                    className={scrollY >= 100 ? "hidden" : "black"}
+                >
                     Što ćete učiniti kada ga pronađete? Do toga još niste
                     izračunali. Znate brojati samo na prste, a nemate ih toliko.
-                </p>
-                <p>Bit će spektakularno, spekulirate.</p>
-                <p>
+                </Frame>
+                <Frame
+                    style={{ backgroundColor: "none", position: "fixed" }}
+                    top={500}
+                    left={100}
+                    variants={variantsVisibility}
+                    animate={scrollY >= 100 ? "visible" : "hidden"}
+                    className={scrollY >= 150 ? "hidden" : "black"}
+                >
+                    Bit će spektakularno, spekulirate.
+                </Frame>
+                <Frame
+                    style={{ backgroundColor: "none", position: "fixed" }}
+                    top={340}
+                    left={800}
+                    variants={variantsVisibility}
+                    animate={scrollY >= 150 ? "visible" : "hidden"}
+                    className={scrollY >= 200 ? "hidden" : "black"}
+                >
                     Jednom mi je rekao da je umoran od svega što posjeduje. Da
                     mu se često bljuje pa mu je neugodno pred dečkima. „Jako si
                     vizualan“, rekla sam mu, što je značilo, što je moglo
@@ -42,28 +75,55 @@ export default function Eight() {
                     zaboravila sam, pa ovo je sve godinama poslije kada nitko
                     više ne sliči na svoju dušu. Više smo anomalije, preživjele
                     animalije. 
-                </p>
-                <p>
+                </Frame>
+                <Frame
+                    style={{ backgroundColor: "none", position: "fixed" }}
+                    top={11}
+                    left={720}
+                    variants={variantsVisibility}
+                    animate={scrollY >= 200 ? "visible" : "hidden"}
+                    className={scrollY >= 250 ? "hidden" : "black"}
+                >
                     „Ma daj, molim te. On je mrtav.“, rekla mi je kada je
                     skužila da sam opet ovdje. „Ne budi glupa, on je mrtav, kao
                     i tvoji roditelji, kao i tvoja sestra, kao i tvoj brat. Oni
                     su umrli jer te više ne trebaju.“
-                </p>
-                <p>
+                </Frame>
+                <Frame
+                    style={{ backgroundColor: "none", position: "fixed" }}
+                    top={270}
+                    left={590}
+                    variants={variantsVisibility}
+                    animate={scrollY >= 300 ? "visible" : "hidden"}
+                    className={scrollY >= 350 ? "hidden" : "black"}
+                >
                     „Ali zašto onda ne plešu?“, znala je o čemu govorim, ali
                     pogledala je u pod, u strop, u pod, u strop, u pod, u strop
                     od zvijezda.
-                </p>
-                <p>
+                </Frame>
+                <Frame
+                    style={{ backgroundColor: "none", position: "fixed" }}
+                    top={267}
+                    left={540}
+                    variants={variantsVisibility}
+                    animate={scrollY >= 400 ? "visible" : "hidden"}
+                    className={scrollY >= 450 ? "hidden" : "black"}
+                >
                     „Zato što muze nisu pijane.“, i izvadila je rakiju da me
                     ušutka.
-                </p>
-                <p>
+                </Frame>
+                <Frame
+                    style={{ backgroundColor: "none", position: "fixed" }}
+                    center
+                    variants={variantsVisibility}
+                    animate={scrollY >= 500 ? "visible" : "hidden"}
+                    className={scrollY >= 550 ? "hidden" : "black"}
+                >
                     Kada bi ga bilo, pouzdani sveznajući pripovjedač u trećem
                     licu rekao bi: „On nije mrtav, on negdje voli nekog drugog.
                     Preskaće vilicom, škripi kapkom, škrguće očnjakom. On
                     negdje.“
-                </p>
+                </Frame>
             </div>
         </React.Fragment>
     );

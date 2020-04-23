@@ -16,15 +16,19 @@ export default function Steppers() {
     let [step, setStep] = useState(0);
     let page;
     const [scrollY, setScrollY] = useState(window.scrollY);
+    const [scrollX, setScrollX] = useState(window.scrollX);
     useEffect(() => {
         const handleScroll = () => {
             console.log(scrollY);
+            console.log(scrollX);
+
             setScrollY(window.scrollY);
+            setScrollX(window.scrollX);
         };
 
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
-    }, [scrollY]);
+    }, [scrollY, scrollX]);
     const variantsVisibility = {
         hidden: {
             opacity: 0,
@@ -58,7 +62,7 @@ export default function Steppers() {
         );
     } else if (step === 6) {
         page = (
-            <Sixth variantsVisibility={variantsVisibility} scrollY={scrollY} />
+            <Sixth variantsVisibility={variantsVisibility} scrollX={scrollX} />
         );
     } else if (step === 7) {
         page = (
