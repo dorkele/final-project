@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./steppers.css";
 import Home from "./home";
 import First from "./first";
@@ -15,29 +15,70 @@ import Tenth from "./tenth";
 export default function Steppers() {
     let [step, setStep] = useState(0);
     let page;
+    const [scrollY, setScrollY] = useState(window.scrollY);
+    useEffect(() => {
+        const handleScroll = () => {
+            console.log(scrollY);
+            setScrollY(window.scrollY);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, [scrollY]);
+    const variantsVisibility = {
+        hidden: {
+            opacity: 0,
+        },
+        visible: {
+            opacity: 1,
+        },
+    };
 
     if (step === 0) {
         page = <Home />;
     } else if (step === 1) {
-        page = <First />;
+        page = (
+            <First variantsVisibility={variantsVisibility} scrollY={scrollY} />
+        );
     } else if (step === 2) {
-        page = <Second />;
+        page = (
+            <Second variantsVisibility={variantsVisibility} scrollY={scrollY} />
+        );
     } else if (step === 3) {
-        page = <Third />;
+        page = (
+            <Third variantsVisibility={variantsVisibility} scrollY={scrollY} />
+        );
     } else if (step === 4) {
-        page = <Fourth />;
+        page = (
+            <Fourth variantsVisibility={variantsVisibility} scrollY={scrollY} />
+        );
     } else if (step === 5) {
-        page = <Fifth />;
+        page = (
+            <Fifth variantsVisibility={variantsVisibility} scrollY={scrollY} />
+        );
     } else if (step === 6) {
-        page = <Sixth />;
+        page = (
+            <Sixth variantsVisibility={variantsVisibility} scrollY={scrollY} />
+        );
     } else if (step === 7) {
-        page = <Seventh />;
+        page = (
+            <Seventh
+                variantsVisibility={variantsVisibility}
+                scrollY={scrollY}
+            />
+        );
     } else if (step === 8) {
-        page = <Eight />;
+        page = (
+            <Eight variantsVisibility={variantsVisibility} scrollY={scrollY} />
+        );
     } else if (step === 9) {
-        page = <Ninth />;
+        page = (
+            <Ninth variantsVisibility={variantsVisibility} scrollY={scrollY} />
+        );
     } else if (step === 10) {
-        page = <Tenth />;
+        page = (
+            <Tenth variantsVisibility={variantsVisibility} scrollY={scrollY} />
+        );
     }
 
     return (

@@ -1,11 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { Frame } from "framer";
 
-export default function Second() {
+export default function Second({ variantsVisibility, scrollY }) {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <React.Fragment>
-            <div>Second</div>
-            <div>
-                <p>
+            <div className="wrapping-container">
+                <Frame
+                    top={200}
+                    width={500}
+                    variants={variantsVisibility}
+                    animate={scrollY >= 40 ? "visible" : "hidden"}
+                    backgroundColor={"none"}
+                    style={{ fontSize: "18px", opacity: 0 }}
+                >
                     Prva osoba koju sam nazvala bila je ta jedna osoba bez koje
                     nisam ni htjela postojati. Naravno da nije doma, ili je
                     zaspala, ali to joj nije slično, strah ju je, vidi kako ju
@@ -14,19 +24,43 @@ export default function Second() {
                     doma kod mene, a možda i znaš, a zašto onda ne dolaziš doma?
                     Osobo. Ali onda se javila sekretarica: „Muze su pijane,
                     nakon tona ostavite poruku.“
-                </p>
-                <p>
+                </Frame>
+                <Frame
+                    top={400}
+                    width={500}
+                    variants={variantsVisibility}
+                    animate={scrollY >= 80 ? "visible" : "hidden"}
+                    backgroundColor={"none"}
+                    style={{ fontSize: "18px", opacity: 0 }}
+                >
                     Nisam stigla ništa reći, policija je došla po mene i moje
                     ofucane fraze. Donijeli su mi i za presvuć se. Omanji šator.
                     Sjećam se kako sam pomislila – naravno. Glupa pomisao. Ali,
                     apokalipsa je u modi. Ovo je zasigurno ravno s modnih pista.
                     Izgestikulirala sam im da me ne slijede. Znala sam da ću
                     preživjeti. Oni neće.
-                </p>
-                <p>
+                </Frame>
+                <Frame
+                    top={800}
+                    width={500}
+                    variants={variantsVisibility}
+                    animate={scrollY >= 275 ? "visible" : "hidden"}
+                    backgroundColor={"none"}
+                    style={{ fontSize: "18px", opacity: 0 }}
+                >
                     Mučili su me prastari leptirići u trbuhu. Idem leć na pod.
-                    Jebe mi se za ožiljke i za dan, želim biti što i ti. 
-                </p>
+                    Jebe mi se za ožiljke i za dan,  
+                </Frame>
+                <Frame
+                    top={1100}
+                    width={500}
+                    variants={variantsVisibility}
+                    animate={scrollY >= 515 ? "visible" : "hidden"}
+                    backgroundColor={"none"}
+                    style={{ fontSize: "45px", opacity: 0 }}
+                >
+                    želim biti što i ti.
+                </Frame>
             </div>
         </React.Fragment>
     );
