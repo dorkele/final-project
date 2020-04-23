@@ -16,3 +16,8 @@ p {
 .paragraf {
     background-color: white;
 }
+
+.wrapping-container {
+    height: 2000px;
+    width: 100%;
+}

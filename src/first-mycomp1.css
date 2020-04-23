@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.first-words {
+    padding-top: 30px;
+    font-family: "Stint Ultra Condensed", cursive;
+    font-size: 40px;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: type 7s steps(55, end);
+    letter-spacing: 2px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+@keyframes type {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}

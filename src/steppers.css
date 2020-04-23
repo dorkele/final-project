@@ -17,8 +17,8 @@ button {
     justify-content: center;
     background-color: #ff5757;
     border: #8c52ff solid 1px;
-    /* position: fixed;
-    bottom: 0; */
+    position: fixed;
+    bottom: 0;
     width: 100%;
 }
 
