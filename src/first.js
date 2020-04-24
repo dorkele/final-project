@@ -273,15 +273,14 @@ export default function First({ variantsVisibility, scrollY }) {
 
                 <Frame
                     top={4100}
-                    background="url('/skin.jpg')"
+                    background="url('/images/skin.jpg')"
                     variants={variantsVisibility}
                     animate={scrollY >= 3550 ? "visible" : "hidden"}
                     className="first-words"
                     width={"100%"}
+                    height={"100%"}
                 >
-                    <strong>
-                        Bila sam tamo, zamotana u slojeve i slojeve svoje kože.
-                    </strong>
+                    Bila sam tamo, zamotana u slojeve i slojeve svoje kože.
                 </Frame>
             </div>
         </React.Fragment>

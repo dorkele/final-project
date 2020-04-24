@@ -23,44 +23,44 @@ button {
     position: fixed;
     bottom: 0;
     width: 100%;
-    opacity: 0.3;
+    opacity: 1;
 }
 
 .home-btn {
-    background-image: url("/home.png");
+    background-image: url("/images/home.png");
 }
 
 .one-btn {
-    background-image: url("/oko.png");
+    background-image: url("/images/oko.png");
 }
 
 .two-btn {
-    background-image: url("/leptir.png");
+    background-image: url("/images/leptir.png");
 }
 
 .three-btn {
-    background-image: url("/mjesec.png");
+    background-image: url("/images/mjesec.png");
 }
 .four-btn {
-    background-image: url("/casa.png");
+    background-image: url("/images/casa.png");
 }
 .five-btn {
-    background-image: url("/crv.png");
+    background-image: url("/images/crv.png");
 }
 .six-btn {
-    background-image: url("/grob.png");
+    background-image: url("/images/grob.png");
 }
 .seven-btn {
-    background-image: url("/maslacak.png");
+    background-image: url("/images/maslacak.png");
 }
 
 .eight-btn {
-    background-image: url("/naranca.png");
+    background-image: url("/images/naranca.png");
 }
 
 .nine-btn {
-    background-image: url("/tree.png");
+    background-image: url("/images/tree.png");
 }
 .ten-btn {
-    background-image: url("/zora.png");
+    background-image: url("/images/zora.png");
 }

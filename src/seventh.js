@@ -70,10 +70,8 @@ export default function Seventh({ variantsVisibility, scrollY }) {
                     variants={variantsVisibility}
                     animate={scrollY >= 2200 ? "visible" : "hidden"}
                 >
-                    Kako da vam (kome?) opišem ovu realnost u njezinom nerealnom
-                    sjaju, blještavilu? Sizifove muke. Evo, ovo dijete što mi
-                    raste ispod srca, u nedostatku kreativnosti, nazvat ću
-                    Sizif.
+                    Evo, ovo dijete što mi raste ispod srca, u nedostatku
+                    kreativnosti, nazvat ću Sizif.
                 </Frame>
             </div>
         </React.Fragment>

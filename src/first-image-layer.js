@@ -19,7 +19,7 @@ export default function FirstImageLayer({ variantsVisibility, scrollY }) {
                     variants={variantsVisibility}
                     animate={scrollY >= 100 ? "hidden" : "visible"}
                 >
-                    <img src="/ocnjak1.png" alt="dogtooth" />
+                    <img src="/images/ocnjak1.png" alt="dogtooth" />
                 </Frame>
                 <Frame
                     left={400}
@@ -27,7 +27,7 @@ export default function FirstImageLayer({ variantsVisibility, scrollY }) {
                     variants={variantsVisibility}
                     animate={scrollY >= 70 ? "hidden" : "visible"}
                 >
-                    <img src="/ocnjak2.png" alt="dogtooth" />
+                    <img src="/images/ocnjak2.png" alt="dogtooth" />
                 </Frame>
 
                 <Frame
@@ -36,7 +36,7 @@ export default function FirstImageLayer({ variantsVisibility, scrollY }) {
                     variants={variantsVisibility}
                     animate={scrollY >= 40 ? "hidden" : "visible"}
                 >
-                    <img src="/ocnjak4.png" alt="dogtooth" />
+                    <img src="/images/ocnjak4.png" alt="dogtooth" />
                 </Frame>
                 <Frame
                     left={1100}
@@ -44,7 +44,7 @@ export default function FirstImageLayer({ variantsVisibility, scrollY }) {
                     variants={variantsVisibility}
                     animate={scrollY >= 140 ? "hidden" : "visible"}
                 >
-                    <img src="/ocnjak5.png" alt="dogtooth" />
+                    <img src="/images/ocnjak5.png" alt="dogtooth" />
                 </Frame>
             </Frame>
             <Frame
@@ -56,7 +56,7 @@ export default function FirstImageLayer({ variantsVisibility, scrollY }) {
             >
                 <img
                     className="cat-fang"
-                    src="/ocnjak-cat.png"
+                    src="/images/ocnjak-cat.png"
                     alt="cat-fang"
                 />
             </Frame>
@@ -69,7 +69,7 @@ export default function FirstImageLayer({ variantsVisibility, scrollY }) {
             >
                 <img
                     className="dark-circles"
-                    src="/oko3.png"
+                    src="/images/oko3.png"
                     alt="eye-with-dark-circles"
                 />
             </Frame>
@@ -81,7 +81,7 @@ export default function FirstImageLayer({ variantsVisibility, scrollY }) {
             >
                 <img
                     classname="techno"
-                    src="/hate-techno.png"
+                    src="/images/hate-techno.png"
                     alt="hate-techno-banner"
                 />
             </Frame>
@@ -93,7 +93,7 @@ export default function FirstImageLayer({ variantsVisibility, scrollY }) {
             >
                 <img
                     //classname="techno"
-                    src="/avril-anakin.png"
+                    src="/images/avril-anakin.png"
                     alt="avril-anakin-sad"
                 />
             </Frame>
@@ -106,7 +106,7 @@ export default function FirstImageLayer({ variantsVisibility, scrollY }) {
             >
                 <img
                     //classname="techno"
-                    src="/stones.png"
+                    src="/images/stones.png"
                     alt="stones"
                 />
             </Frame>

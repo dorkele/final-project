@@ -1,0 +1,9 @@
+a {
+    background: radial-gradient(#ff5757 0%, rgb(255, 255, 255) 87%);
+    color: #8c52ff;
+    text-decoration: none;
+}
+
+a:hover {
+    background: radial-gradient(#ff5757 0%, rgb(255, 255, 255) 87%);
+}
