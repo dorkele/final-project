@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Frame, BackgroundImage } from "framer";
+import { Frame } from "framer";
 import "./sixth.css";
 
 export default function Sixth({ variantsVisibility, scrollX }) {
@@ -96,7 +96,7 @@ export default function Sixth({ variantsVisibility, scrollX }) {
                     width={500}
                     height={"100%"}
                     initial={{ rotate: 90 }}
-                    animate={{ rotate: scrollX >= 2700 ? 0 : 90 }}
+                    animate={{ rotate: scrollX >= 2500 ? 0 : 90 }}
                 >
                     A ja sam sanjala te noći njenog brata i onog tebe u
                     zagrljaju u kojem ste plakali, dugo, sočno i bezumno.

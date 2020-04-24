@@ -3,18 +3,15 @@ body {
     height: 100%;
 }
 
+* {
+    font-family: "Amatic SC", cursive;
+    color: 401f3e;
+
+    background-color: none;
+}
+
 .frame {
-    display: flex;
-    flex-direction: column;
-    width: 500px;
-}
-
-p {
-    font-size: 45px;
-}
-
-.paragraf {
-    background-color: white;
+    font-size: 50;
 }
 
 .wrapping-container {
@@ -26,24 +23,7 @@ p {
 }
 
 .first-words {
-    padding-top: 30px;
-    font-family: "Stint Ultra Condensed", cursive;
     font-size: 40px;
-    overflow: hidden;
-    white-space: nowrap;
-    animation: type 7s steps(55, end);
-    letter-spacing: 2px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-@keyframes type {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
 }
 
 .text {
@@ -58,4 +38,9 @@ p {
 
 .text-align-center {
     text-align: center;
+}
+
+.background-gradient {
+    background: radial-gradient(B59194 0%, rgb(255, 255, 255) 87%);
+    /* color: 401f3e; */
 }

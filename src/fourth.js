@@ -244,7 +244,7 @@ export default function Fourth({ variantsVisibility, scrollY }) {
                     top={300}
                     variants={variantsVisibility}
                     initial={{ opacity: 0 }}
-                    animate={scrollY >= 780 ? "visible" : "hidden"}
+                    animate={scrollY >= 770 ? "visible" : "hidden"}
                     className={scrollY >= 820 ? "hidden" : "black"}
                 >
                     Kad bi mi sad netko rekao trepćem li brzo ili sporo i kolike

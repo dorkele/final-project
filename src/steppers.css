@@ -1,12 +1,15 @@
+* {
+    background-color: none;
+}
 body {
     height: 100%;
     width: 100%;
 }
 
 button {
-    height: 50px;
+    height: 100px;
     width: 100px;
-    background-size: 50px 100px;
+    background-size: 100px 100px;
     background-color: #ff5757;
     border: none;
 }
@@ -20,6 +23,7 @@ button {
     position: fixed;
     bottom: 0;
     width: 100%;
+    opacity: 0.3;
 }
 
 .home-btn {

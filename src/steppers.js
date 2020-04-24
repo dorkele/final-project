@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./steppers.css";
 import Home from "./home";
 import First from "./first";
+import FirstImageLayer from "./first-image-layer";
 import Second from "./second";
 import Third from "./third";
 import Fourth from "./fourth";
@@ -36,13 +37,26 @@ export default function Steppers() {
         visible: {
             opacity: 1,
         },
+        // background: {
+        //     backgroundColor: "#960200",
+        //     color: "#FFD046",
+        // },
     };
 
     if (step === 0) {
         page = <Home />;
     } else if (step === 1) {
         page = (
-            <First variantsVisibility={variantsVisibility} scrollY={scrollY} />
+            <React.Fragment>
+                <First
+                    variantsVisibility={variantsVisibility}
+                    scrollY={scrollY}
+                />
+                <FirstImageLayer
+                    variantsVisibility={variantsVisibility}
+                    scrollY={scrollY}
+                />
+            </React.Fragment>
         );
     } else if (step === 2) {
         page = (
