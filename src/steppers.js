@@ -37,10 +37,6 @@ export default function Steppers() {
         visible: {
             opacity: 1,
         },
-        // background: {
-        //     backgroundColor: "#960200",
-        //     color: "#FFD046",
-        // },
     };
 
     if (step === 0) {
