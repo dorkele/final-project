@@ -26,7 +26,7 @@ export default function HoverContainer({ visible }) {
         src = "/images/dragon-balls.jpg";
         alt = "dragon-balls";
     } else if (visible === 8) {
-        src = "7images/nothing.jpg";
+        src = "/images/nothing.jpg";
         alt = "nothing";
     } else if (visible === 9) {
         src = "/images/dog-duck.jpg";

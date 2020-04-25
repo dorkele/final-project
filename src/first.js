@@ -7,11 +7,11 @@ export default function First({ variantsVisibility, scrollY }) {
         window.scrollTo(0, 0);
     }, []);
 
-    // variantsVisibility.fakZoom = {
-    //     scale: 5,
-    //     color: "red",
-    //     duration: 3,
-    // };
+    variantsVisibility.fakZoom = {
+        scale: 5,
+        color: "red",
+        duration: 3,
+    };
 
     return (
         <React.Fragment>
@@ -281,6 +281,14 @@ export default function First({ variantsVisibility, scrollY }) {
                     height={"100%"}
                 >
                     Bila sam tamo, zamotana u slojeve i slojeve svoje kože.
+                </Frame>
+                <Frame
+                    top={4700}
+                    center
+                    background={"none"}
+                    style={{ fontSize: 100 }}
+                >
+                    ->
                 </Frame>
             </div>
         </React.Fragment>

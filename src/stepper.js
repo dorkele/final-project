@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./stepper.css";
+import { Frame } from "framer";
 
 export default function Stepper(props) {
     function sendStep(step) {
@@ -9,8 +10,35 @@ export default function Stepper(props) {
         props.getStep(step);
     }
 
+    const variants = {
+        slideIn: {
+            y: -100,
+            //visibility: "visible",
+        },
+        slideOut: {
+            y: 100,
+            visibility: "hidden",
+        },
+    };
+    console.log("props.steppers u stepper: ", props.steppers);
+
     return (
-        <div>
+        //{`red green blue ${this.state.active === "first"? 'active': ''}`}
+        <Frame
+            variants={variants}
+            animate={props.steppers ? "slideIn" : "slideOUt"}
+            transition={{ duration: 1 }}
+            className="stepper-container"
+            width={"100%"}
+            height={100}
+            backgroundColor={"#ff5757"}
+            style={{
+                bottom: -100,
+                position: "fixed",
+                display: "flex",
+                justifyContent: "center",
+            }}
+        >
             <button
                 className="home-btn buttons"
                 onClick={() => sendStep(0)}
@@ -64,6 +92,6 @@ export default function Stepper(props) {
                 {step < 10 && (
                     <button onClick={() => sendStep(step + 1)}>Next</button>
                 )}*/}
-        </div>
+        </Frame>
     );
 }

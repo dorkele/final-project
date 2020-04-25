@@ -1,8 +1,10 @@
 import React, { useEffect } from "react";
-import { Frame } from "framer";
+import { Frame, useViewportScroll } from "framer";
 import "./sixth.css";
 
 export default function Sixth({ variantsVisibility, scrollX }) {
+    //const { scrollX } = useViewportScroll();
+
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
@@ -11,8 +13,8 @@ export default function Sixth({ variantsVisibility, scrollX }) {
             <div className="wrapping-container">
                 <Frame
                     style={{ backgroundColor: "none" }}
-                    top={0}
-                    width={500}
+                    top={400}
+                    width={600}
                     height={200}
                     left={50}
                 >
@@ -24,20 +26,11 @@ export default function Sixth({ variantsVisibility, scrollX }) {
                 <Frame
                     style={{ backgroundColor: "none" }}
                     top={100}
-                    left={500}
+                    left={520}
                     width={500}
                     height={200}
                 >
-                    „Muze ne puze.“, odgovorila je.
-                </Frame>
-                <Frame
-                    style={{ backgroundColor: "none" }}
-                    top={200}
-                    left={700}
-                    width={500}
-                    height={200}
-                >
-                    Jasno.
+                    „Muze ne puze.“, odgovorila je. Jasno.
                 </Frame>
                 <Frame
                     style={{ backgroundColor: "none" }}
@@ -90,13 +83,19 @@ export default function Sixth({ variantsVisibility, scrollX }) {
                     nisam vidjela živo biće, koliko dugo? Samo se nasmijala.
                 </Frame>
                 <Frame
-                    style={{ backgroundColor: "none" }}
-                    top={0}
-                    left={3500}
-                    width={500}
-                    height={"100%"}
-                    initial={{ rotate: 90 }}
-                    animate={{ rotate: scrollX >= 2500 ? 0 : 90 }}
+                    style={{
+                        backgroundColor: "none",
+                        //overflow: "hidden",
+                        whiteSpace: "nowrap",
+
+                        position: "fixed",
+                    }}
+                    bottom={50}
+                    //left={0}
+                    width={"250%"}
+                    height={25}
+                    initial={{ left: 0 }}
+                    animate={{ left: -scrollX }}
                 >
                     A ja sam sanjala te noći njenog brata i onog tebe u
                     zagrljaju u kojem ste plakali, dugo, sočno i bezumno.

@@ -8,7 +8,9 @@ import Second from "./second";
 import Third from "./third";
 import Fourth from "./fourth";
 import Fifth from "./fifth";
+import FifthImageLayer from "./fifth-image-layer";
 import Sixth from "./sixth";
+import SixthImageLayer from "./sixth-image-layer";
 import Seventh from "./seventh";
 import Eight from "./eight";
 import Ninth from "./ninth";
@@ -16,11 +18,14 @@ import Tenth from "./tenth";
 
 export default function App() {
     const [steppers, setSteppers] = useState(false);
+    // const [visible, setVisible] = useState(false);
     function change() {
         if (steppers === true) {
             setSteppers(false);
+            // setVisible(false);
         } else if (steppers === false) {
             setSteppers(true);
+            // setVisible(true);
         }
     }
 
@@ -83,11 +88,29 @@ export default function App() {
         );
     } else if (step === 5) {
         page = (
-            <Fifth variantsVisibility={variantsVisibility} scrollY={scrollY} />
+            <React.Fragment>
+                <Fifth
+                    variantsVisibility={variantsVisibility}
+                    scrollY={scrollY}
+                />
+                <FifthImageLayer
+                    variantsVisibility={variantsVisibility}
+                    scrollY={scrollY}
+                />
+            </React.Fragment>
         );
     } else if (step === 6) {
         page = (
-            <Sixth variantsVisibility={variantsVisibility} scrollX={scrollX} />
+            <React.Fragment>
+                <Sixth
+                    variantsVisibility={variantsVisibility}
+                    scrollX={scrollX}
+                />
+                <SixthImageLayer
+                    variantsVisibility={variantsVisibility}
+                    scrollY={scrollX}
+                />
+            </React.Fragment>
         );
     } else if (step === 7) {
         page = (
@@ -111,12 +134,17 @@ export default function App() {
     }
     return (
         <React.Fragment>
-            {/* <Home />
-            <First /> */}
             <button className="menu-toggle-btn" onClick={change}>
                 Click
             </button>
-            {steppers && <Stepper getStep={(step) => getStep(step)} />}
+
+            {steppers && (
+                <Stepper
+                    getStep={(step) => getStep(step)}
+                    steppers={steppers}
+                />
+            )}
+
             {page}
         </React.Fragment>
     );

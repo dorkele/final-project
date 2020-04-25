@@ -3,4 +3,5 @@
     width: 10000px;
     display: flex;
     flex-direction: column;
+    font-size: 25px;
 }
