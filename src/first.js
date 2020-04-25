@@ -7,11 +7,11 @@ export default function First({ variantsVisibility, scrollY }) {
         window.scrollTo(0, 0);
     }, []);
 
-    variantsVisibility.fakZoom = {
-        scale: 5,
-        color: "red",
-        duration: 3,
-    };
+    // variantsVisibility.fakZoom = {
+    //     scale: 5,
+    //     color: "red",
+    //     duration: 3,
+    // };
 
     return (
         <React.Fragment>

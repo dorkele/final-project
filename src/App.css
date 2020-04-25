@@ -3,6 +3,7 @@ body {
     width: 100%;
 }
 
-button {
+.menu-toggle-btn {
     position: fixed;
+    z-index: 200;
 }
