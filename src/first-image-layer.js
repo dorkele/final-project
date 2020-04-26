@@ -80,7 +80,7 @@ export default function FirstImageLayer({ variantsVisibility, scrollY }) {
                 animate={{ x: scrollY >= 1400 ? 450 : -600 }}
             >
                 <img
-                    classname="techno"
+                    className="techno"
                     src="/images/hate-techno.png"
                     alt="hate-techno-banner"
                 />

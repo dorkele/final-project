@@ -10,9 +10,17 @@ body {
     height: 100px;
     width: 100px;
     background-size: 100px 100px;
-    background-color: #ff5757;
+    /* background-color: #ff5757; */
     border: none;
     /* position: fixed; */
+}
+
+.buttons:hover {
+    border: 2px solid yellow;
+}
+
+.buttons:focus {
+    border: 2px solid #8c52ff;
 }
 
 .stepper-container {
@@ -20,7 +28,7 @@ body {
     flex-direction: row;
     justify-content: center;
     background-color: #ff5757;
-    border: #8c52ff solid 1px;
+    /* border: #8c52ff solid 1px; */
     position: fixed;
     bottom: 0;
 

@@ -1,10 +1,14 @@
 import React, { useEffect } from "react";
 import { Frame } from "framer";
 
-export default function Second({ variantsVisibility, scrollY }) {
+export default function Second({ variantsVisibility, scrollY, getSteppers }) {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
+    if (scrollY > 770) {
+        console.log("getSteppers: ", getSteppers);
+        getSteppers(true);
+    }
     return (
         <React.Fragment>
             <div className="wrapping-container">

@@ -17,7 +17,7 @@ export default function Stepper(props) {
         },
         slideOut: {
             y: 100,
-            visibility: "hidden",
+            //visibility: "hidden",
         },
     };
     console.log("props.steppers u stepper: ", props.steppers);
@@ -26,7 +26,7 @@ export default function Stepper(props) {
         //{`red green blue ${this.state.active === "first"? 'active': ''}`}
         <Frame
             variants={variants}
-            animate={props.steppers ? "slideIn" : "slideOUt"}
+            animate={props.steppers ? "slideIn" : "slideOut"}
             transition={{ duration: 1 }}
             className="stepper-container"
             width={"100%"}

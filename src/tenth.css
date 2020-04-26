@@ -1,0 +1,5 @@
+.wrapping-box {
+    height: 900px;
+    display: flex;
+    justify-content: center;
+}

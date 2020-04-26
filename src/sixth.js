@@ -1,16 +1,20 @@
 import React, { useEffect } from "react";
-import { Frame, useViewportScroll } from "framer";
+import { Frame } from "framer";
 import "./sixth.css";
 
-export default function Sixth({ variantsVisibility, scrollX }) {
+export default function Sixth({ variantsVisibility, scrollX, getSteppers }) {
     //const { scrollX } = useViewportScroll();
 
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
+    if (scrollX > 2170) {
+        console.log("getSteppers: ", getSteppers);
+        getSteppers(true);
+    }
     return (
         <React.Fragment>
-            <div className="wrapping-container">
+            <div className="wrap-container">
                 <Frame
                     style={{ backgroundColor: "none" }}
                     top={400}

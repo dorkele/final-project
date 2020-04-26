@@ -6,4 +6,25 @@ body {
 .menu-toggle-btn {
     position: fixed;
     z-index: 200;
+    height: 50px;
+    width: 50px;
+    background-size: 100%;
+    border: none;
+
+    /* background-image: url("/images/logo_purple.png"); */
+    background: none;
 }
+
+.logo-purple {
+    height: 50px;
+    width: 50px;
+}
+
+.full-screen-btn {
+    right: 0;
+    position: fixed;
+}
+
+/* .button-text {
+    font-size: 20px;
+} */

@@ -2,13 +2,17 @@ import React, { useEffect } from "react";
 import { Frame } from "framer";
 import "./eight.css";
 
-export default function Eight({ variantsVisibility, scrollY }) {
+export default function Eight({ variantsVisibility, scrollY, getSteppers }) {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
+    if (scrollY > 570) {
+        console.log("getSteppers: ", getSteppers);
+        getSteppers(true);
+    }
     return (
         <React.Fragment>
-            <div className="wrapping-container">
+            <div className="text-wrapping-container">
                 <Frame
                     style={{ backgroundColor: "none", position: "fixed" }}
                     center
@@ -117,7 +121,6 @@ export default function Eight({ variantsVisibility, scrollY }) {
                     center
                     variants={variantsVisibility}
                     animate={scrollY >= 500 ? "visible" : "hidden"}
-                    className={scrollY >= 550 ? "hidden" : "black"}
                 >
                     Kada bi ga bilo, pouzdani sveznajući pripovjedač u trećem
                     licu rekao bi: „On nije mrtav, on negdje voli nekog drugog.

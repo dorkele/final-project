@@ -2,7 +2,7 @@ import React from "react";
 import FoldedPaper from "./home-image-layer";
 import "./home.css";
 
-export default function Home() {
+export default function Home(props) {
     //let randomX = Math.random(500);
     //let randomY = Math.random(800);
     let randomXArray = [];
@@ -13,6 +13,12 @@ export default function Home() {
     let randomYArray = [];
     for (let i = 0; i < 30; i++) {
         randomYArray.push(Math.round(Math.random() * 1250));
+    }
+    function sendStep(step) {
+        console.log("props: ", props);
+        console.log("step: ", step);
+        //e.preventDeafult();
+        props.getStep(step);
     }
     return (
         <div className="wrapping-container">
@@ -25,7 +31,10 @@ export default function Home() {
                 sections, scrolling, hovering, clicking on the links...and see
                 where the story takes you.
             </div>
-            <div className="start">START</div>
+            <button className="start" onClick={() => sendStep(0)}>
+                START
+            </button>
+
             <FoldedPaper randomX={randomXArray[1]} randomY={randomYArray[1]} />
             <FoldedPaper randomX={randomXArray[2]} randomY={randomYArray[2]} />
             <FoldedPaper randomX={randomXArray[3]} randomY={randomYArray[3]} />

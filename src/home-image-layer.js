@@ -5,8 +5,6 @@ export default function FoldedPaper({ randomX, randomY }) {
     const [hover, setHover] = useState(false);
 
     function onHoverStart() {
-        console.log("i hoveeer");
-
         setHover(true);
     }
 
@@ -16,7 +14,7 @@ export default function FoldedPaper({ randomX, randomY }) {
                 background={"none"}
                 top={randomX}
                 left={randomY}
-                animate={{ opacity: hover ? 0 : 1 }}
+                animate={{ visibility: hover ? "hidden" : "visible" }}
                 onHoverStart={onHoverStart}
             >
                 <img

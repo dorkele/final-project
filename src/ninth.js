@@ -1,13 +1,18 @@
 import React, { useEffect } from "react";
 import { Frame } from "framer";
+import "./ninth.css";
 
-export default function Ninth({ variantsVisibility, scrollY }) {
+export default function Ninth({ variantsVisibility, scrollY, getSteppers }) {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
+    if (scrollY > 170) {
+        console.log("getSteppers: ", getSteppers);
+        getSteppers(true);
+    }
     return (
         <React.Fragment>
-            <div className="wrapping-container">
+            <div className="text-container">
                 <Frame
                     style={{
                         backgroundColor: "none",

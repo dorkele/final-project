@@ -2,12 +2,16 @@ import React, { useEffect } from "react";
 import { Frame } from "framer";
 import "./fifth.css";
 
-export default function Fifth({ variantsVisibility, scrollY }) {
+export default function Fifth({ variantsVisibility, scrollY, getSteppers }) {
     console.log(scrollY, variantsVisibility);
 
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
+    if (scrollY > 770) {
+        console.log("getSteppers: ", getSteppers);
+        getSteppers(true);
+    }
     return (
         <React.Fragment>
             <div className="wrapping-container">

@@ -1,13 +1,18 @@
 import React, { useEffect } from "react";
 import { Frame } from "framer";
+import "./tenth.css";
 
-export default function Tenth({ variantsVisibility, scrollY }) {
+export default function Tenth({ variantsVisibility, scrollY, getSteppers }) {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
+    if (scrollY > 152) {
+        console.log("getSteppers: ", getSteppers);
+        getSteppers(true);
+    }
     return (
         <React.Fragment>
-            <div className="wrapping-container">
+            <div className="wrapping-box">
                 <Frame
                     style={{
                         backgroundColor: "none",

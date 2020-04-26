@@ -2,10 +2,14 @@ import React, { useEffect } from "react";
 import { Frame } from "framer";
 import "./seventh.css";
 
-export default function Seventh({ variantsVisibility, scrollY }) {
+export default function Seventh({ variantsVisibility, scrollY, getSteppers }) {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
+    if (scrollY > 2670) {
+        console.log("getSteppers: ", getSteppers);
+        getSteppers(true);
+    }
     return (
         <React.Fragment>
             <div className="wrapping-container">

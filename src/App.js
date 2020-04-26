@@ -18,16 +18,18 @@ import Tenth from "./tenth";
 
 export default function App() {
     const [steppers, setSteppers] = useState(false);
-    // const [visible, setVisible] = useState(false);
-    function change() {
+    // const [buttonText, setButtonText] = useState("Show");
+
+    const change = (e) => {
+        e.preventDefault();
         if (steppers === true) {
             setSteppers(false);
-            // setVisible(false);
+            // setButtonText("Show");
         } else if (steppers === false) {
             setSteppers(true);
-            // setVisible(true);
+            // setButtonText("Hide");
         }
-    }
+    };
 
     let page;
     const [scrollY, setScrollY] = useState(window.scrollY);
@@ -56,17 +58,29 @@ export default function App() {
 
     function getStep(step) {
         setStep(step);
+        setSteppers(false);
+    }
+    function getSteppers(boolean) {
+        if (boolean === true) {
+            setSteppers(true);
+        } else {
+            setSteppers(false);
+        }
     }
     console.log("step: ", step);
+    function fullScreen() {
+        document.documentElement.webkitRequestFullscreen();
+    }
 
     if (step === 0) {
-        page = <Home />;
+        page = <Home getStep={(step) => getStep(step)} />;
     } else if (step === 1) {
         page = (
             <React.Fragment>
                 <First
                     variantsVisibility={variantsVisibility}
                     scrollY={scrollY}
+                    getSteppers={(boolean) => getSteppers(boolean)}
                 />
                 <FirstImageLayer
                     variantsVisibility={variantsVisibility}
@@ -76,7 +90,11 @@ export default function App() {
         );
     } else if (step === 2) {
         page = (
-            <Second variantsVisibility={variantsVisibility} scrollY={scrollY} />
+            <Second
+                variantsVisibility={variantsVisibility}
+                scrollY={scrollY}
+                getSteppers={(boolean) => getSteppers(boolean)}
+            />
         );
     } else if (step === 3) {
         page = (
@@ -84,7 +102,11 @@ export default function App() {
         );
     } else if (step === 4) {
         page = (
-            <Fourth variantsVisibility={variantsVisibility} scrollY={scrollY} />
+            <Fourth
+                variantsVisibility={variantsVisibility}
+                scrollY={scrollY}
+                getSteppers={(boolean) => getSteppers(boolean)}
+            />
         );
     } else if (step === 5) {
         page = (
@@ -92,6 +114,7 @@ export default function App() {
                 <Fifth
                     variantsVisibility={variantsVisibility}
                     scrollY={scrollY}
+                    getSteppers={(boolean) => getSteppers(boolean)}
                 />
                 <FifthImageLayer
                     variantsVisibility={variantsVisibility}
@@ -105,6 +128,7 @@ export default function App() {
                 <Sixth
                     variantsVisibility={variantsVisibility}
                     scrollX={scrollX}
+                    getSteppers={(boolean) => getSteppers(boolean)}
                 />
                 <SixthImageLayer
                     variantsVisibility={variantsVisibility}
@@ -117,33 +141,49 @@ export default function App() {
             <Seventh
                 variantsVisibility={variantsVisibility}
                 scrollY={scrollY}
+                getSteppers={(boolean) => getSteppers(boolean)}
             />
         );
     } else if (step === 8) {
         page = (
-            <Eight variantsVisibility={variantsVisibility} scrollY={scrollY} />
+            <Eight
+                variantsVisibility={variantsVisibility}
+                scrollY={scrollY}
+                getSteppers={(boolean) => getSteppers(boolean)}
+            />
         );
     } else if (step === 9) {
         page = (
-            <Ninth variantsVisibility={variantsVisibility} scrollY={scrollY} />
+            <Ninth
+                variantsVisibility={variantsVisibility}
+                scrollY={scrollY}
+                getSteppers={(boolean) => getSteppers(boolean)}
+            />
         );
     } else if (step === 10) {
         page = (
-            <Tenth variantsVisibility={variantsVisibility} scrollY={scrollY} />
+            <Tenth
+                variantsVisibility={variantsVisibility}
+                scrollY={scrollY}
+                getSteppers={(boolean) => getSteppers(boolean)}
+            />
         );
     }
     return (
         <React.Fragment>
             <button className="menu-toggle-btn" onClick={change}>
-                Click
+                {/* <div className="button-text">{buttonText}</div> */}
+                <img
+                    className="logo-purple"
+                    src="/images/logo_purple.png"
+                    alt="logo-purple"
+                />
+            </button>
+            <button className="full-screen-btn" onClick={fullScreen}>
+                full screen/exit full screen
             </button>
 
-            {steppers && (
-                <Stepper
-                    getStep={(step) => getStep(step)}
-                    steppers={steppers}
-                />
-            )}
+            <Stepper getStep={(step) => getStep(step)} steppers={steppers} />
 
             {page}
         </React.Fragment>

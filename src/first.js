@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Frame } from "framer";
 import "./first.css";
 
-export default function First({ variantsVisibility, scrollY }) {
+export default function First({ variantsVisibility, scrollY, getSteppers }) {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
@@ -13,6 +13,10 @@ export default function First({ variantsVisibility, scrollY }) {
         duration: 3,
     };
 
+    if (scrollY > 4040) {
+        console.log("getSteppers: ", getSteppers);
+        getSteppers(true);
+    }
     return (
         <React.Fragment>
             <div
@@ -26,7 +30,7 @@ export default function First({ variantsVisibility, scrollY }) {
                     center
                     variants={variantsVisibility}
                     animate={scrollY >= 300 ? "hidden" : "visible"}
-                    style={{ "z-index": 1 }}
+                    style={{ zIndex: 1 }}
                 >
                     Očnjaci, podočnjaci, kapci.
                 </Frame>

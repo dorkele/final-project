@@ -2,15 +2,19 @@ import React, { useEffect } from "react";
 import { Frame } from "framer";
 import "./fourth.css";
 
-export default function Fourth({ variantsVisibility, scrollY }) {
+export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
     //console.log(variantsVisibility, scrollY);
 
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
+    if (scrollY > 970) {
+        console.log("getSteppers: ", getSteppers);
+        getSteppers(true);
+    }
     return (
         <React.Fragment>
-            <div className="wrapping-container">
+            <div className="wrapper-container">
                 <Frame
                     center
                     position={"fixed"}
