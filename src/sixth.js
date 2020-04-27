@@ -2,14 +2,14 @@ import React, { useEffect } from "react";
 import { Frame } from "framer";
 import "./sixth.css";
 
-export default function Sixth({ variantsVisibility, scrollX, getSteppers }) {
+export default function Sixth({ scrollX, getSteppers, scrollY }) {
     //const { scrollX } = useViewportScroll();
 
     useEffect(() => {
         window.scrollTo(0, 0);
         getSteppers(false);
     }, []);
-    if (scrollX > 2170) {
+    if (scrollX > 2130) {
         console.log("getSteppers: ", getSteppers);
         getSteppers(true);
     }
@@ -18,7 +18,7 @@ export default function Sixth({ variantsVisibility, scrollX, getSteppers }) {
             <div className="wrap-container">
                 <Frame
                     style={{ backgroundColor: "none" }}
-                    top={400}
+                    top={380}
                     width={600}
                     height={200}
                     left={50}
@@ -76,7 +76,7 @@ export default function Sixth({ variantsVisibility, scrollX, getSteppers }) {
                 </Frame>
                 <Frame
                     style={{ backgroundColor: "none" }}
-                    top={400}
+                    top={300}
                     left={2800}
                     width={500}
                     height={200}
@@ -95,7 +95,7 @@ export default function Sixth({ variantsVisibility, scrollX, getSteppers }) {
 
                         position: "fixed",
                     }}
-                    bottom={50}
+                    bottom={100}
                     //left={0}
                     width={"250%"}
                     height={25}

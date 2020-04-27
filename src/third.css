@@ -7,3 +7,7 @@ a {
 a:hover {
     background: radial-gradient(#ff5757 0%, rgb(255, 255, 255) 87%);
 }
+
+.scroll-container {
+    height: 550px;
+}

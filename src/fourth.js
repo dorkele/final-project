@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Frame } from "framer";
+import { Frame, motion } from "framer";
 import "./fourth.css";
 
 export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
@@ -18,10 +18,30 @@ export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
             <div className="wrapper-container">
                 <Frame
                     center
+                    size={"100%"}
+                    position={"fixed"}
+                    background={"none"}
+                    style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        justifyContent: "center",
+                    }}
+                >
+                    <video autoplay="true" muted="true" loop="true">
+                        <source
+                            src="/images/video.mp4"
+                            type="video/mp4"
+                        ></source>
+                    </video>
+                </Frame>
+                <Frame
+                    center
                     position={"fixed"}
                     backgroundColor={"none"}
                     variants={variantsVisibility}
                     animate={scrollY >= 80 ? "hidden" : "visible"}
+                    width={500}
+                    style={{ fontSize: 30, fontWeight: "bold" }}
                 >
                     Sjećate li se trenutka kada se Zemlja sručila u bezdan?
                     Smrad kaosa poput smrada leševa lelujao je ulicama ne
@@ -35,13 +55,13 @@ export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
                 </Frame>
                 <Frame
                     center
-                    top={300}
                     position={"fixed"}
                     backgroundColor={"none"}
                     variants={variantsVisibility}
                     initial={{ opacity: 0 }}
                     animate={scrollY >= 80 ? "visible" : "hidden"}
                     className={scrollY >= 120 ? "hidden" : "black"}
+                    style={{ fontWeight: "bold" }}
                 >
                     I kad dođem doma sjest ću za stol s bratom, sestrom i djecom
                     iz susjedstva jer nam se roditelji nisu vratili.
@@ -51,7 +71,7 @@ export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
                     center
                     position={"fixed"}
                     backgroundColor={"none"}
-                    top={300}
+                    style={{ fontWeight: "bold" }}
                     initial={{ opacity: 0 }}
                     variants={variantsVisibility}
                     animate={scrollY >= 120 ? "visible" : "hidden"}
@@ -63,7 +83,7 @@ export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
                     backgroundColor={"none"}
                     center
                     position={"fixed"}
-                    top={300}
+                    style={{ fontWeight: "bold" }}
                     variants={variantsVisibility}
                     initial={{ opacity: 0 }}
                     animate={scrollY >= 160 ? "visible" : "hidden"}
@@ -75,7 +95,7 @@ export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
                     backgroundColor={"none"}
                     center
                     position={"fixed"}
-                    top={300}
+                    style={{ fontWeight: "bold" }}
                     variants={variantsVisibility}
                     initial={{ opacity: 0 }}
                     animate={scrollY >= 200 ? "visible" : "hidden"}
@@ -87,7 +107,7 @@ export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
                     backgroundColor={"none"}
                     center
                     position={"fixed"}
-                    top={300}
+                    style={{ fontWeight: "bold" }}
                     variants={variantsVisibility}
                     initial={{ opacity: 0 }}
                     animate={scrollY >= 240 ? "visible" : "hidden"}
@@ -99,7 +119,7 @@ export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
                     backgroundColor={"none"}
                     center
                     position={"fixed"}
-                    top={300}
+                    style={{ fontWeight: "bold" }}
                     variants={variantsVisibility}
                     initial={{ opacity: 0 }}
                     animate={scrollY >= 280 ? "visible" : "hidden"}
@@ -111,7 +131,7 @@ export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
                     backgroundColor={"none"}
                     center
                     position={"fixed"}
-                    top={300}
+                    style={{ fontWeight: "bold" }}
                     variants={variantsVisibility}
                     initial={{ opacity: 0 }}
                     animate={scrollY >= 320 ? "visible" : "hidden"}
@@ -123,7 +143,7 @@ export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
                     backgroundColor={"none"}
                     center
                     position={"fixed"}
-                    top={300}
+                    style={{ fontWeight: "bold" }}
                     variants={variantsVisibility}
                     initial={{ opacity: 0 }}
                     animate={scrollY >= 400 ? "visible" : "hidden"}
@@ -135,7 +155,7 @@ export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
                     backgroundColor={"none"}
                     center
                     position={"fixed"}
-                    top={300}
+                    style={{ fontWeight: "bold" }}
                     variants={variantsVisibility}
                     initial={{ opacity: 0 }}
                     animate={scrollY >= 440 ? "visible" : "hidden"}
@@ -147,7 +167,7 @@ export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
                     backgroundColor={"none"}
                     center
                     position={"fixed"}
-                    top={300}
+                    style={{ fontWeight: "bold" }}
                     variants={variantsVisibility}
                     initial={{ opacity: 0 }}
                     animate={scrollY >= 520 ? "visible" : "hidden"}
@@ -161,6 +181,7 @@ export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
                     center
                     position={"fixed"}
                     top={300}
+                    style={{ fontWeight: "bold" }}
                     variants={variantsVisibility}
                     initial={{ opacity: 0 }}
                     animate={scrollY >= 560 ? "visible" : "hidden"}
@@ -172,7 +193,7 @@ export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
                     backgroundColor={"none"}
                     center
                     position={"fixed"}
-                    top={300}
+                    style={{ fontWeight: "bold" }}
                     variants={variantsVisibility}
                     initial={{ opacity: 0 }}
                     animate={scrollY >= 600 ? "visible" : "hidden"}
@@ -184,7 +205,7 @@ export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
                     backgroundColor={"none"}
                     center
                     position={"fixed"}
-                    top={300}
+                    style={{ fontWeight: "bold" }}
                     variants={variantsVisibility}
                     initial={{ opacity: 0 }}
                     animate={scrollY >= 640 ? "visible" : "hidden"}
@@ -198,7 +219,7 @@ export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
                     backgroundColor={"none"}
                     center
                     position={"fixed"}
-                    top={300}
+                    style={{ fontWeight: "bold" }}
                     variants={variantsVisibility}
                     initial={{ opacity: 0 }}
                     animate={scrollY >= 680 ? "visible" : "hidden"}
@@ -211,7 +232,7 @@ export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
                     backgroundColor={"none"}
                     center
                     position={"fixed"}
-                    top={300}
+                    style={{ fontWeight: "bold" }}
                     variants={variantsVisibility}
                     initial={{ opacity: 0 }}
                     animate={scrollY >= 720 ? "visible" : "hidden"}
@@ -225,11 +246,12 @@ export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
                     backgroundColor={"none"}
                     center
                     position={"fixed"}
-                    top={300}
+                    style={{ fontWeight: "bold" }}
                     variants={variantsVisibility}
                     initial={{ opacity: 0 }}
                     animate={scrollY >= 740 ? "visible" : "hidden"}
                     className={scrollY >= 780 ? "hidden" : "black"}
+                    width={500}
                 >
                     Iščekivanje:  
                     <ul>
@@ -246,11 +268,12 @@ export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
                     backgroundColor={"none"}
                     center
                     position={"fixed"}
-                    top={300}
+                    style={{ fontWeight: "bold" }}
                     variants={variantsVisibility}
                     initial={{ opacity: 0 }}
                     animate={scrollY >= 770 ? "visible" : "hidden"}
                     className={scrollY >= 820 ? "hidden" : "black"}
+                    width={500}
                 >
                     Kad bi mi sad netko rekao trepćem li brzo ili sporo i kolike
                     su mi zjenice, kad bi mi bar sad netko rekao sve što vidim.
@@ -261,11 +284,12 @@ export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
                     backgroundColor={"none"}
                     center
                     position={"fixed"}
-                    top={300}
+                    style={{ fontWeight: "bold" }}
                     variants={variantsVisibility}
                     initial={{ opacity: 0 }}
                     animate={scrollY >= 820 ? "visible" : "hidden"}
                     className={scrollY >= 860 ? "hidden" : "black"}
+                    width={500}
                 >
                     Stara susjeda nam je donijela juhe. Puno je pričala, ali
                     zapamtila sam samo ovo: „Možda se pri kraju baš tako
@@ -281,10 +305,11 @@ export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
                     backgroundColor={"none"}
                     center
                     position={"fixed"}
-                    top={300}
+                    style={{ fontWeight: "bold", fontSize: 30 }}
                     variants={variantsVisibility}
                     initial={{ opacity: 0 }}
                     animate={scrollY >= 900 ? "visible" : "hidden"}
+                    width={500}
                 >
                     Djeca su krenula relativno rano. Mislim, ranije nego što to
                     obično biva. Evo, to sam zapamtila. Onda, što još...? Bilo

@@ -40,8 +40,7 @@ export default function HoverContainer({ visible }) {
             style={{
                 background: "none",
             }}
-
-            //center
+            top={0}
         >
             <img src={src} alt={alt} height="100%"></img>
         </Frame>

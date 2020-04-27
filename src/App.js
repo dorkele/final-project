@@ -101,7 +101,11 @@ export default function App() {
         );
     } else if (step === 3) {
         page = (
-            <Third variantsVisibility={variantsVisibility} scrollY={scrollY} />
+            <Third
+                variantsVisibility={variantsVisibility}
+                scrollY={scrollY}
+                getSteppers={(boolean) => getSteppers(boolean)}
+            />
         );
     } else if (step === 4) {
         page = (

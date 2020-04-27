@@ -7,7 +7,7 @@ export default function Second({ variantsVisibility, scrollY, getSteppers }) {
         window.scrollTo(0, 0);
         getSteppers(false);
     }, []);
-    if (scrollY > 570) {
+    if (scrollY > 320) {
         console.log("getSteppers: ", getSteppers);
         getSteppers(true);
     }
@@ -15,12 +15,17 @@ export default function Second({ variantsVisibility, scrollY, getSteppers }) {
         <React.Fragment>
             <div className="textbox">
                 <Frame
-                    top={200}
-                    width={500}
+                    top={400}
                     variants={variantsVisibility}
                     initial={"visible"}
+                    animate={scrollY >= 40 ? "visible" : "hidden"}
                     backgroundColor={"none"}
-                    style={{ fontSize: "18px", opacity: 0 }}
+                    style={{
+                        fontSize: "25px",
+                        opacity: 0,
+                        color: "#ff5757",
+                    }}
+                    width={500}
                 >
                     Prva osoba koju sam nazvala bila je ta jedna osoba bez koje
                     nisam ni htjela postojati. Naravno da nije doma, ili je
@@ -32,12 +37,16 @@ export default function Second({ variantsVisibility, scrollY, getSteppers }) {
                     nakon tona ostavite poruku.“
                 </Frame>
                 <Frame
-                    top={400}
+                    top={600}
                     width={500}
                     variants={variantsVisibility}
                     animate={scrollY >= 80 ? "visible" : "hidden"}
                     backgroundColor={"none"}
-                    style={{ fontSize: "18px", opacity: 0 }}
+                    style={{
+                        fontSize: "25px",
+                        opacity: 0,
+                        color: "#ff5757",
+                    }}
                 >
                     Nisam stigla ništa reći, policija je došla po mene i moje
                     ofucane fraze. Donijeli su mi i za presvuć se. Omanji šator.
@@ -52,18 +61,29 @@ export default function Second({ variantsVisibility, scrollY, getSteppers }) {
                     variants={variantsVisibility}
                     animate={scrollY >= 275 ? "visible" : "hidden"}
                     backgroundColor={"none"}
-                    style={{ fontSize: "18px", opacity: 0 }}
+                    style={{
+                        fontSize: "25px",
+                        opacity: 0,
+                        color: "#ff5757",
+                    }}
                 >
                     Mučili su me prastari leptirići u trbuhu. Idem leć na pod.
                     Jebe mi se za ožiljke i za dan,  
                 </Frame>
                 <Frame
-                    top={1100}
-                    width={500}
+                    center
+                    width={700}
                     variants={variantsVisibility}
-                    animate={scrollY >= 515 ? "visible" : "hidden"}
+                    initial={"hidden"}
+                    animate={"visible"}
                     backgroundColor={"none"}
-                    style={{ fontSize: "45px", opacity: 0 }}
+                    style={{
+                        fontSize: "200px",
+                        opacity: 0,
+                        position: "fixed",
+                        zIndex: -1,
+                    }}
+                    transition={{ duration: 2, yoyo: "Infinity" }}
                 >
                     želim biti što i ti.
                 </Frame>
