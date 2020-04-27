@@ -5,6 +5,7 @@ import "./first.css";
 export default function First({ variantsVisibility, scrollY, getSteppers }) {
     useEffect(() => {
         window.scrollTo(0, 0);
+        getSteppers(false);
     }, []);
 
     variantsVisibility.fakZoom = {
@@ -285,14 +286,6 @@ export default function First({ variantsVisibility, scrollY, getSteppers }) {
                     height={"100%"}
                 >
                     Bila sam tamo, zamotana u slojeve i slojeve svoje kože.
-                </Frame>
-                <Frame
-                    top={4700}
-                    center
-                    background={"none"}
-                    style={{ fontSize: 100 }}
-                >
-                    ->
                 </Frame>
             </div>
         </React.Fragment>

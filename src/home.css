@@ -12,9 +12,13 @@
     color: #ff5757;
 }
 
-.wrapping-container {
+.container-div {
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     /* background-color: #8c52ff; */
 }
 
@@ -26,4 +30,15 @@
     background-color: none;
     background: none;
     border: none;
+    width: 30%;
+}
+
+.start:focus {
+    border: 1px solid #8c52ff;
+}
+
+.sub-subtitle {
+    font-size: 30px;
+    text-align: center;
+    /* color: #ff5757; */
 }

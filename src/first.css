@@ -15,7 +15,7 @@ body {
 }
 
 .wrapping-container {
-    height: 4500px;
+    height: 4200px;
     width: 100%;
     display: flex;
     flex-direction: column;

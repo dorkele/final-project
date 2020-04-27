@@ -5,11 +5,13 @@ import "./tenth.css";
 export default function Tenth({ variantsVisibility, scrollY, getSteppers }) {
     useEffect(() => {
         window.scrollTo(0, 0);
+        getSteppers(false);
     }, []);
     if (scrollY > 152) {
         console.log("getSteppers: ", getSteppers);
         getSteppers(true);
     }
+
     return (
         <React.Fragment>
             <div className="wrapping-box">
@@ -21,6 +23,7 @@ export default function Tenth({ variantsVisibility, scrollY, getSteppers }) {
                     }}
                     top={100}
                     variants={variantsVisibility}
+                    initial={"hidden"}
                     animate={scrollY >= 60 ? "visible" : "hidden"}
                 >
                     Jedna od čudnijih večeri, jedna od onih kada si toliko
@@ -35,6 +38,7 @@ export default function Tenth({ variantsVisibility, scrollY, getSteppers }) {
                     }}
                     top={200}
                     variants={variantsVisibility}
+                    initial={"hidden"}
                     animate={scrollY >= 100 ? "visible" : "hidden"}
                 >
                     „To što u glavi znaš kako ide neka pjesma ne znači da ćeš je
@@ -48,6 +52,7 @@ export default function Tenth({ variantsVisibility, scrollY, getSteppers }) {
                     }}
                     top={300}
                     variants={variantsVisibility}
+                    initial={"hidden"}
                     animate={scrollY >= 150 ? "visible" : "hidden"}
                 >
                     „Jesu li muze oduvijek bile ovako mudra stvorenja?“, smijale

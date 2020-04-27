@@ -5,6 +5,7 @@ import "./eight.css";
 export default function Eight({ variantsVisibility, scrollY, getSteppers }) {
     useEffect(() => {
         window.scrollTo(0, 0);
+        getSteppers(false);
     }, []);
     if (scrollY > 570) {
         console.log("getSteppers: ", getSteppers);
@@ -14,11 +15,17 @@ export default function Eight({ variantsVisibility, scrollY, getSteppers }) {
         <React.Fragment>
             <div className="text-wrapping-container">
                 <Frame
-                    style={{ backgroundColor: "none", position: "fixed" }}
+                    style={{
+                        backgroundColor: "none",
+                        position: "fixed",
+                        fontSize: 30,
+                        fontWeight: "bold",
+                    }}
                     center
                     variants={variantsVisibility}
+                    initial={"hidden"}
                     animate={scrollY >= 60 ? "hidden" : "visible"}
-                    width={500}
+                    width={700}
                 >
                     Godinama, godinama poslije, ne sjećate se više nikoga. Ni
                     glupe kolibe, ni glupog djeteta i njegova oca. Godinama
@@ -42,33 +49,49 @@ export default function Eight({ variantsVisibility, scrollY, getSteppers }) {
                     visokog plemstva. (Izmišljotina.)
                 </Frame>
                 <Frame
-                    style={{ backgroundColor: "none", position: "fixed" }}
+                    style={{
+                        backgroundColor: "none",
+                        position: "fixed",
+                        fontWeight: "bold",
+                    }}
                     top={300}
                     left={687}
                     variants={variantsVisibility}
-                    animate={scrollY >= 50 ? "visible" : "hidden"}
+                    initial={"hidden"}
+                    animate={scrollY >= 60 ? "visible" : "hidden"}
                     className={scrollY >= 100 ? "hidden" : "black"}
                 >
                     Što ćete učiniti kada ga pronađete? Do toga još niste
                     izračunali. Znate brojati samo na prste, a nemate ih toliko.
                 </Frame>
                 <Frame
-                    style={{ backgroundColor: "none", position: "fixed" }}
+                    style={{
+                        backgroundColor: "none",
+                        position: "fixed",
+                        fontWeight: "bold",
+                    }}
                     top={500}
                     left={100}
                     variants={variantsVisibility}
+                    initial={"hidden"}
                     animate={scrollY >= 100 ? "visible" : "hidden"}
                     className={scrollY >= 150 ? "hidden" : "black"}
                 >
                     Bit će spektakularno, spekulirate.
                 </Frame>
                 <Frame
-                    style={{ backgroundColor: "none", position: "fixed" }}
+                    style={{
+                        backgroundColor: "none",
+                        position: "fixed",
+                        fontWeight: "bold",
+                    }}
                     top={340}
                     left={800}
                     variants={variantsVisibility}
+                    initial={"hidden"}
                     animate={scrollY >= 150 ? "visible" : "hidden"}
                     className={scrollY >= 200 ? "hidden" : "black"}
+                    width={500}
                 >
                     Jednom mi je rekao da je umoran od svega što posjeduje. Da
                     mu se često bljuje pa mu je neugodno pred dečkima. „Jako si
@@ -81,10 +104,15 @@ export default function Eight({ variantsVisibility, scrollY, getSteppers }) {
                     animalije. 
                 </Frame>
                 <Frame
-                    style={{ backgroundColor: "none", position: "fixed" }}
-                    top={11}
+                    style={{
+                        backgroundColor: "none",
+                        position: "fixed",
+                        fontWeight: "bold",
+                    }}
+                    top={91}
                     left={720}
                     variants={variantsVisibility}
+                    initial={"hidden"}
                     animate={scrollY >= 200 ? "visible" : "hidden"}
                     className={scrollY >= 250 ? "hidden" : "black"}
                 >
@@ -94,10 +122,15 @@ export default function Eight({ variantsVisibility, scrollY, getSteppers }) {
                     su umrli jer te više ne trebaju.“
                 </Frame>
                 <Frame
-                    style={{ backgroundColor: "none", position: "fixed" }}
+                    style={{
+                        backgroundColor: "none",
+                        position: "fixed",
+                        fontWeight: "bold",
+                    }}
                     top={270}
                     left={590}
                     variants={variantsVisibility}
+                    initial={"hidden"}
                     animate={scrollY >= 300 ? "visible" : "hidden"}
                     className={scrollY >= 350 ? "hidden" : "black"}
                 >
@@ -106,10 +139,15 @@ export default function Eight({ variantsVisibility, scrollY, getSteppers }) {
                     od zvijezda.
                 </Frame>
                 <Frame
-                    style={{ backgroundColor: "none", position: "fixed" }}
+                    style={{
+                        backgroundColor: "none",
+                        position: "fixed",
+                        fontWeight: "bold",
+                    }}
                     top={267}
                     left={540}
                     variants={variantsVisibility}
+                    initial={"hidden"}
                     animate={scrollY >= 400 ? "visible" : "hidden"}
                     className={scrollY >= 450 ? "hidden" : "black"}
                 >
@@ -117,9 +155,15 @@ export default function Eight({ variantsVisibility, scrollY, getSteppers }) {
                     ušutka.
                 </Frame>
                 <Frame
-                    style={{ backgroundColor: "none", position: "fixed" }}
+                    style={{
+                        backgroundColor: "none",
+                        position: "fixed",
+                        fontSize: 30,
+                        fontWeight: "bold",
+                    }}
                     center
                     variants={variantsVisibility}
+                    initial={"hidden"}
                     animate={scrollY >= 500 ? "visible" : "hidden"}
                 >
                     Kada bi ga bilo, pouzdani sveznajući pripovjedač u trećem

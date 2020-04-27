@@ -7,6 +7,7 @@ export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
 
     useEffect(() => {
         window.scrollTo(0, 0);
+        getSteppers(false);
     }, []);
     if (scrollY > 970) {
         console.log("getSteppers: ", getSteppers);

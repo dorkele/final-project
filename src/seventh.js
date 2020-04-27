@@ -5,16 +5,17 @@ import "./seventh.css";
 export default function Seventh({ variantsVisibility, scrollY, getSteppers }) {
     useEffect(() => {
         window.scrollTo(0, 0);
+        getSteppers(false);
     }, []);
-    if (scrollY > 2670) {
+    if (scrollY > 2470) {
         console.log("getSteppers: ", getSteppers);
         getSteppers(true);
     }
     return (
         <React.Fragment>
-            <div className="wrapping-container">
+            <div className="container">
                 <Frame
-                    style={{ backgroundColor: "none" }}
+                    style={{ backgroundColor: "none", fontSize: 30 }}
                     center
                     variants={variantsVisibility}
                     initial={{ opacity: 0 }}
@@ -25,38 +26,39 @@ export default function Seventh({ variantsVisibility, scrollY, getSteppers }) {
                     se pretvore u paučinu. Pjesma je išla ovako nekako:
                 </Frame>
                 <Frame
-                    style={{ backgroundColor: "none" }}
+                    style={{ backgroundColor: "none", fontSize: 60 }}
                     top={700}
                     center
                     variants={variantsVisibility}
-                    animate={scrollY >= 400 ? "visible" : "hidden"}
+                    animate={scrollY >= 100 ? "visible" : "hidden"}
                 >
                     Prostrano
                 </Frame>
                 <Frame
-                    style={{ backgroundColor: "none" }}
+                    style={{ backgroundColor: "none", fontSize: 60 }}
                     top={1400}
                     center
                     variants={variantsVisibility}
-                    animate={scrollY >= 1000 ? "visible" : "hidden"}
+                    animate={scrollY >= 300 ? "visible" : "hidden"}
                 >
                     Prostiranje
                 </Frame>
                 <Frame
-                    style={{ backgroundColor: "none" }}
+                    style={{ backgroundColor: "none", fontSize: 60 }}
                     top={2100}
                     center
                     variants={variantsVisibility}
-                    animate={scrollY >= 1700 ? "visible" : "hidden"}
+                    animate={scrollY >= 500 ? "visible" : "hidden"}
                 >
                     Prostranstvima
                 </Frame>
                 <Frame
-                    style={{ backgroundColor: "none" }}
+                    style={{ backgroundColor: "none", fontSize: 30 }}
                     top={2800}
                     center
                     variants={variantsVisibility}
-                    animate={scrollY >= 2000 ? "visible" : "hidden"}
+                    animate={scrollY >= 800 ? "visible" : "hidden"}
+                    width={500}
                 >
                     Mogla sam otpjevati samo posljednja tri slova, ali to nije
                     bilo samo. A kada bi me njezin brat upitao što mi to znači,
@@ -66,16 +68,6 @@ export default function Seventh({ variantsVisibility, scrollY, getSteppers }) {
                     koga?“, svaki ga dan pitam očarano. „Jesam, ali idemo po
                     redu.“, lukavo odgovara jer bezbroj ubojstava je teško
                     ispričati.
-                </Frame>
-                <Frame
-                    style={{ backgroundColor: "none" }}
-                    top={3300}
-                    center
-                    variants={variantsVisibility}
-                    animate={scrollY >= 2200 ? "visible" : "hidden"}
-                >
-                    Evo, ovo dijete što mi raste ispod srca, u nedostatku
-                    kreativnosti, nazvat ću Sizif.
                 </Frame>
             </div>
         </React.Fragment>

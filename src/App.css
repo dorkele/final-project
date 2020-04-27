@@ -10,12 +10,10 @@ body {
     width: 50px;
     background-size: 100%;
     border: none;
-
-    /* background-image: url("/images/logo_purple.png"); */
     background: none;
 }
 
-.logo-purple {
+.logo-red {
     height: 50px;
     width: 50px;
 }
@@ -23,6 +21,20 @@ body {
 .full-screen-btn {
     right: 0;
     position: fixed;
+    background: none;
+    height: 80px;
+    width: 80px;
+    border: none;
+    z-index: 100;
+}
+
+.full-screen-btn:focus {
+    border: 1px white solid;
+}
+
+.logo-fullscreen {
+    height: 80px;
+    width: 80px;
 }
 
 /* .button-text {

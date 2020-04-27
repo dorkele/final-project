@@ -7,6 +7,7 @@ export default function Sixth({ variantsVisibility, scrollX, getSteppers }) {
 
     useEffect(() => {
         window.scrollTo(0, 0);
+        getSteppers(false);
     }, []);
     if (scrollX > 2170) {
         console.log("getSteppers: ", getSteppers);

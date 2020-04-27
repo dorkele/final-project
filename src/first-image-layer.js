@@ -74,10 +74,14 @@ export default function FirstImageLayer({ variantsVisibility, scrollY }) {
                 />
             </Frame>
             <Frame
-                top={1870}
+                top={1920}
                 backgroundColor={"none"}
-                initial={{ x: "-100%" }}
-                animate={{ x: scrollY >= 1400 ? 450 : -600 }}
+                animate={{ scale: scrollY >= 1400 ? 1 : 0 }}
+                center
+                transition={{ yoyo: "Infinity" }}
+                style={{
+                    display: "flex",
+                }}
             >
                 <img
                     className="techno"

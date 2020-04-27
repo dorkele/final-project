@@ -21,17 +21,17 @@ export default function Home(props) {
         props.getStep(step);
     }
     return (
-        <div className="wrapping-container">
+        <div className="container-div">
             <div className="title">Žudnja Za Smakom</div>
             <div className="subtitle">
                 A story about two drunk girls romaniticizing apocalypse.
             </div>
-            <div className="subtitle">
-                Navigate through their chaotic thoughts by clickig through
-                sections, scrolling, hovering, clicking on the links...and see
-                where the story takes you.
+            <div className="sub-subtitle">
+                Navigate through the hypertext of their chaotic minds by
+                clicking, scrolling and hovering...and see where the story takes
+                you...Bear in mind: there is no one or rigt way to read.
             </div>
-            <button className="start" onClick={() => sendStep(0)}>
+            <button className="start" onClick={() => sendStep(1)}>
                 START
             </button>
 

@@ -1,22 +1,24 @@
 import React, { useEffect } from "react";
 import { Frame } from "framer";
+import "./second.css";
 
 export default function Second({ variantsVisibility, scrollY, getSteppers }) {
     useEffect(() => {
         window.scrollTo(0, 0);
+        getSteppers(false);
     }, []);
-    if (scrollY > 770) {
+    if (scrollY > 570) {
         console.log("getSteppers: ", getSteppers);
         getSteppers(true);
     }
     return (
         <React.Fragment>
-            <div className="wrapping-container">
+            <div className="textbox">
                 <Frame
                     top={200}
                     width={500}
                     variants={variantsVisibility}
-                    animate={scrollY >= 40 ? "visible" : "hidden"}
+                    initial={"visible"}
                     backgroundColor={"none"}
                     style={{ fontSize: "18px", opacity: 0 }}
                 >

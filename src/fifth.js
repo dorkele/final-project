@@ -7,6 +7,7 @@ export default function Fifth({ variantsVisibility, scrollY, getSteppers }) {
 
     useEffect(() => {
         window.scrollTo(0, 0);
+        getSteppers(false);
     }, []);
     if (scrollY > 770) {
         console.log("getSteppers: ", getSteppers);
@@ -14,7 +15,7 @@ export default function Fifth({ variantsVisibility, scrollY, getSteppers }) {
     }
     return (
         <React.Fragment>
-            <div className="wrapping-container">
+            <div className="container-wrap">
                 <Frame
                     center
                     top={250}

@@ -12,28 +12,31 @@ import FifthImageLayer from "./fifth-image-layer";
 import Sixth from "./sixth";
 import SixthImageLayer from "./sixth-image-layer";
 import Seventh from "./seventh";
+import SeventhImageLayer from "./seventh-image-layer";
 import Eight from "./eight";
+import EightImageLayer from "./eight-image-layer";
 import Ninth from "./ninth";
 import Tenth from "./tenth";
 
 export default function App() {
     const [steppers, setSteppers] = useState(false);
-    // const [buttonText, setButtonText] = useState("Show");
 
     const change = (e) => {
+        console.log("E: ", e);
+
         e.preventDefault();
         if (steppers === true) {
             setSteppers(false);
-            // setButtonText("Show");
         } else if (steppers === false) {
             setSteppers(true);
-            // setButtonText("Hide");
         }
     };
 
     let page;
     const [scrollY, setScrollY] = useState(window.scrollY);
     const [scrollX, setScrollX] = useState(window.scrollX);
+    let [step, setStep] = useState(0);
+
     useEffect(() => {
         const handleScroll = () => {
             console.log(scrollY);
@@ -45,7 +48,7 @@ export default function App() {
 
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
-    }, [scrollY, scrollX]);
+    }, [scrollY, scrollX, step]);
     const variantsVisibility = {
         hidden: {
             opacity: 0,
@@ -54,11 +57,11 @@ export default function App() {
             opacity: 1,
         },
     };
-    let [step, setStep] = useState(0);
 
     function getStep(step) {
         setStep(step);
         setSteppers(false);
+        console.log("step in app: ", step);
     }
     function getSteppers(boolean) {
         if (boolean === true) {
@@ -67,7 +70,7 @@ export default function App() {
             setSteppers(false);
         }
     }
-    console.log("step: ", step);
+
     function fullScreen() {
         document.documentElement.webkitRequestFullscreen();
     }
@@ -138,19 +141,28 @@ export default function App() {
         );
     } else if (step === 7) {
         page = (
-            <Seventh
-                variantsVisibility={variantsVisibility}
-                scrollY={scrollY}
-                getSteppers={(boolean) => getSteppers(boolean)}
-            />
+            <React.Fragment>
+                <Seventh
+                    variantsVisibility={variantsVisibility}
+                    scrollY={scrollY}
+                    getSteppers={(boolean) => getSteppers(boolean)}
+                />
+                <SeventhImageLayer scrollY={scrollY} />
+            </React.Fragment>
         );
     } else if (step === 8) {
         page = (
-            <Eight
-                variantsVisibility={variantsVisibility}
-                scrollY={scrollY}
-                getSteppers={(boolean) => getSteppers(boolean)}
-            />
+            <React.Fragment>
+                <Eight
+                    variantsVisibility={variantsVisibility}
+                    scrollY={scrollY}
+                    getSteppers={(boolean) => getSteppers(boolean)}
+                />
+                <EightImageLayer
+                    variantsVisibility={variantsVisibility}
+                    scrollY={scrollY}
+                />
+            </React.Fragment>
         );
     } else if (step === 9) {
         page = (
@@ -174,13 +186,17 @@ export default function App() {
             <button className="menu-toggle-btn" onClick={change}>
                 {/* <div className="button-text">{buttonText}</div> */}
                 <img
-                    className="logo-purple"
-                    src="/images/logo_purple.png"
-                    alt="logo-purple"
+                    className="logo-red"
+                    src="/images/logo_red.png"
+                    alt="logo-red"
                 />
             </button>
             <button className="full-screen-btn" onClick={fullScreen}>
-                full screen/exit full screen
+                <img
+                    className="logo-fullscreen"
+                    src="/images/open-eye.png"
+                    alt="open-eye-logo"
+                />
             </button>
 
             <Stepper getStep={(step) => getStep(step)} steppers={steppers} />
