@@ -22,7 +22,7 @@ export default function Ninth({ getSteppers }) {
             >
                 <Frame
                     style={{
-                        backgroundColor: "none",
+                        backgroundColor: "yellow",
 
                         fontSize: 30,
                         width: "100%",

@@ -185,10 +185,10 @@ export default function App() {
                     scrollY={scrollY}
                     getSteppers={(boolean) => getSteppers(boolean)}
                 />
-                {/* <TenthHahahaLayer
+                <TenthHahahaLayer
                     variantsVisibility={variantsVisibility}
                     scrollY={scrollY}
-                /> */}
+                />
             </React.Fragment>
         );
     }

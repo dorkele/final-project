@@ -41,7 +41,7 @@ export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
                     variants={variantsVisibility}
                     animate={scrollY >= 80 ? "hidden" : "visible"}
                     width={500}
-                    style={{ fontSize: 30, fontWeight: "bold" }}
+                    style={{ fontSize: 30, fontWeight: "bold", color: "white" }}
                 >
                     Sjećate li se trenutka kada se Zemlja sručila u bezdan?
                     Smrad kaosa poput smrada leševa lelujao je ulicama ne
@@ -61,7 +61,7 @@ export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
                     initial={{ opacity: 0 }}
                     animate={scrollY >= 80 ? "visible" : "hidden"}
                     className={scrollY >= 120 ? "hidden" : "black"}
-                    style={{ fontWeight: "bold" }}
+                    style={{ fontWeight: "bold", color: "white" }}
                 >
                     I kad dođem doma sjest ću za stol s bratom, sestrom i djecom
                     iz susjedstva jer nam se roditelji nisu vratili.
@@ -71,7 +71,7 @@ export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
                     center
                     position={"fixed"}
                     backgroundColor={"none"}
-                    style={{ fontWeight: "bold" }}
+                    style={{ fontWeight: "bold", color: "white" }}
                     initial={{ opacity: 0 }}
                     variants={variantsVisibility}
                     animate={scrollY >= 120 ? "visible" : "hidden"}
@@ -83,7 +83,7 @@ export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
                     backgroundColor={"none"}
                     center
                     position={"fixed"}
-                    style={{ fontWeight: "bold" }}
+                    style={{ fontWeight: "bold", color: "white" }}
                     variants={variantsVisibility}
                     initial={{ opacity: 0 }}
                     animate={scrollY >= 160 ? "visible" : "hidden"}
@@ -95,7 +95,7 @@ export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
                     backgroundColor={"none"}
                     center
                     position={"fixed"}
-                    style={{ fontWeight: "bold" }}
+                    style={{ fontWeight: "bold", color: "white" }}
                     variants={variantsVisibility}
                     initial={{ opacity: 0 }}
                     animate={scrollY >= 200 ? "visible" : "hidden"}
@@ -107,7 +107,7 @@ export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
                     backgroundColor={"none"}
                     center
                     position={"fixed"}
-                    style={{ fontWeight: "bold" }}
+                    style={{ fontWeight: "bold", color: "white" }}
                     variants={variantsVisibility}
                     initial={{ opacity: 0 }}
                     animate={scrollY >= 240 ? "visible" : "hidden"}
@@ -119,7 +119,7 @@ export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
                     backgroundColor={"none"}
                     center
                     position={"fixed"}
-                    style={{ fontWeight: "bold" }}
+                    style={{ fontWeight: "bold", color: "white" }}
                     variants={variantsVisibility}
                     initial={{ opacity: 0 }}
                     animate={scrollY >= 280 ? "visible" : "hidden"}
@@ -131,7 +131,7 @@ export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
                     backgroundColor={"none"}
                     center
                     position={"fixed"}
-                    style={{ fontWeight: "bold" }}
+                    style={{ fontWeight: "bold", color: "white" }}
                     variants={variantsVisibility}
                     initial={{ opacity: 0 }}
                     animate={scrollY >= 320 ? "visible" : "hidden"}
@@ -143,7 +143,7 @@ export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
                     backgroundColor={"none"}
                     center
                     position={"fixed"}
-                    style={{ fontWeight: "bold" }}
+                    style={{ fontWeight: "bold", color: "white" }}
                     variants={variantsVisibility}
                     initial={{ opacity: 0 }}
                     animate={scrollY >= 400 ? "visible" : "hidden"}
@@ -155,7 +155,7 @@ export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
                     backgroundColor={"none"}
                     center
                     position={"fixed"}
-                    style={{ fontWeight: "bold" }}
+                    style={{ fontWeight: "bold", color: "white" }}
                     variants={variantsVisibility}
                     initial={{ opacity: 0 }}
                     animate={scrollY >= 440 ? "visible" : "hidden"}
@@ -167,7 +167,7 @@ export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
                     backgroundColor={"none"}
                     center
                     position={"fixed"}
-                    style={{ fontWeight: "bold" }}
+                    style={{ fontWeight: "bold", color: "white" }}
                     variants={variantsVisibility}
                     initial={{ opacity: 0 }}
                     animate={scrollY >= 520 ? "visible" : "hidden"}
@@ -181,7 +181,7 @@ export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
                     center
                     position={"fixed"}
                     top={300}
-                    style={{ fontWeight: "bold" }}
+                    style={{ fontWeight: "bold", color: "white" }}
                     variants={variantsVisibility}
                     initial={{ opacity: 0 }}
                     animate={scrollY >= 560 ? "visible" : "hidden"}
@@ -193,7 +193,7 @@ export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
                     backgroundColor={"none"}
                     center
                     position={"fixed"}
-                    style={{ fontWeight: "bold" }}
+                    style={{ fontWeight: "bold", color: "white" }}
                     variants={variantsVisibility}
                     initial={{ opacity: 0 }}
                     animate={scrollY >= 600 ? "visible" : "hidden"}
@@ -205,7 +205,7 @@ export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
                     backgroundColor={"none"}
                     center
                     position={"fixed"}
-                    style={{ fontWeight: "bold" }}
+                    style={{ fontWeight: "bold", color: "white" }}
                     variants={variantsVisibility}
                     initial={{ opacity: 0 }}
                     animate={scrollY >= 640 ? "visible" : "hidden"}
@@ -219,7 +219,7 @@ export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
                     backgroundColor={"none"}
                     center
                     position={"fixed"}
-                    style={{ fontWeight: "bold" }}
+                    style={{ fontWeight: "bold", color: "white" }}
                     variants={variantsVisibility}
                     initial={{ opacity: 0 }}
                     animate={scrollY >= 680 ? "visible" : "hidden"}
@@ -232,7 +232,7 @@ export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
                     backgroundColor={"none"}
                     center
                     position={"fixed"}
-                    style={{ fontWeight: "bold" }}
+                    style={{ fontWeight: "bold", color: "white" }}
                     variants={variantsVisibility}
                     initial={{ opacity: 0 }}
                     animate={scrollY >= 720 ? "visible" : "hidden"}
@@ -246,7 +246,7 @@ export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
                     backgroundColor={"none"}
                     center
                     position={"fixed"}
-                    style={{ fontWeight: "bold" }}
+                    style={{ fontWeight: "bold", color: "white" }}
                     variants={variantsVisibility}
                     initial={{ opacity: 0 }}
                     animate={scrollY >= 740 ? "visible" : "hidden"}
@@ -268,7 +268,7 @@ export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
                     backgroundColor={"none"}
                     center
                     position={"fixed"}
-                    style={{ fontWeight: "bold" }}
+                    style={{ fontWeight: "bold", color: "white" }}
                     variants={variantsVisibility}
                     initial={{ opacity: 0 }}
                     animate={scrollY >= 770 ? "visible" : "hidden"}
@@ -284,7 +284,7 @@ export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
                     backgroundColor={"none"}
                     center
                     position={"fixed"}
-                    style={{ fontWeight: "bold" }}
+                    style={{ fontWeight: "bold", color: "white" }}
                     variants={variantsVisibility}
                     initial={{ opacity: 0 }}
                     animate={scrollY >= 820 ? "visible" : "hidden"}
@@ -305,7 +305,7 @@ export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
                     backgroundColor={"none"}
                     center
                     position={"fixed"}
-                    style={{ fontWeight: "bold", fontSize: 30 }}
+                    style={{ fontWeight: "bold", fontSize: 30, color: "white" }}
                     variants={variantsVisibility}
                     initial={{ opacity: 0 }}
                     animate={scrollY >= 900 ? "visible" : "hidden"}

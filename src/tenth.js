@@ -20,35 +20,51 @@ export default function Tenth({ variantsVisibility, scrollY, getSteppers }) {
                         backgroundColor: "none",
                         position: "fixed",
                         width: "50%",
+                        height: 30,
+                        whiteSpace: "nowrap",
+                        fontSize: 30,
+                        color: "white",
+                        fontWeight: "bold",
                     }}
-                    top={100}
-                    variants={variantsVisibility}
-                    initial={"hidden"}
-                    animate={scrollY >= 60 ? "visible" : "hidden"}
+                    top={225}
+                    initial={{ left: 1900 }}
+                    animate={{ x: -3000 }}
+                    transition={{ duration: 30 }}
                 >
                     Jedna od čudnijih večeri, jedna od onih kada si toliko
                     zaokupljen sobom da ni ne primijetiš da je sunce izišlo na
-                    zapadu.
+                    zapadu. „To što u glavi znaš kako ide neka pjesma ne znači
+                    da ćeš je na glas znati otpjevati.“, zaključila je
+                    naposljetku. „Jesu li muze oduvijek bile ovako mudra
+                    stvorenja?“, smijale smo se do zauvijek.
                 </Frame>
-                <Frame
+
+                {/* <Frame
                     style={{
                         backgroundColor: "none",
                         position: "fixed",
                         width: "50%",
+                        fontSize: 30,
+                        color: "white",
+                        fontWeight: "bold",
                     }}
                     top={200}
                     variants={variantsVisibility}
                     initial={"hidden"}
                     animate={scrollY >= 100 ? "visible" : "hidden"}
                 >
-                    „To što u glavi znaš kako ide neka pjesma ne znači da ćeš je
-                    na glas znati otpjevati.“, zaključila je naposljetku.
+                    „To što u glavi znaš kako ide neka pjesma ne znači
+                    da ćeš je na glas znati otpjevati.“, zaključila je
+                    naposljetku. 
                 </Frame>
                 <Frame
                     style={{
                         backgroundColor: "none",
                         position: "fixed",
                         width: "50%",
+                        fontSize: 30,
+                        color: "white",
+                        fontWeight: "bold",
                     }}
                     top={300}
                     variants={variantsVisibility}
@@ -57,7 +73,7 @@ export default function Tenth({ variantsVisibility, scrollY, getSteppers }) {
                 >
                     „Jesu li muze oduvijek bile ovako mudra stvorenja?“, smijale
                     smo se do zauvijek.
-                </Frame>
+                </Frame> */}
             </div>
         </React.Fragment>
     );
