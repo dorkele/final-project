@@ -1,32 +1,36 @@
 import React, { useEffect } from "react";
 import { Frame, Page } from "framer";
-import "./ninth.css";
 
-export default function Ninth({ variantsVisibility, scrollY, getSteppers }) {
+export default function Ninth({ getSteppers }) {
     useEffect(() => {
         window.scrollTo(0, 0);
         getSteppers(false);
     }, []);
-    if (scrollY > 170) {
-        console.log("getSteppers: ", getSteppers);
-        getSteppers(true);
-    }
+
     return (
         <React.Fragment>
-            <div className="text-container">
-                <Page alignment="center" contentHeight="1000">
-                    <Frame
-                        style={{
-                            backgroundColor: "none",
-                            position: "fixed",
-                            fontSize: 30,
-                            width: "100%",
-                            height: "100%",
-                        }}
-                        center
-                        variants={variantsVisibility}
-                        animate={scrollY >= 60 ? "hidden" : "visible"}
-                    >
+            <Page
+                alignment="center"
+                size="100%"
+                defaultEffect={"coverflow"}
+                onChangePage={(current, previous) => {
+                    console.log(current, previous);
+                    if (current === 3) {
+                        getSteppers(true);
+                    }
+                }}
+            >
+                <Frame
+                    style={{
+                        backgroundColor: "none",
+
+                        fontSize: 30,
+                        width: "100%",
+                        height: "100%",
+                    }}
+                    top={100}
+                >
+                    <Frame center width={"50%"} background={"none"}>
                         Ali monolog pijane žene koja mi je sve u rodu (koji
                         slijedi, ali mi prethodi) bio je spreman: „Ići ćemo
                         zajedno kroz polja. Bespolno. Nemoj se uopće bojati.
@@ -44,34 +48,30 @@ export default function Ninth({ variantsVisibility, scrollY, getSteppers }) {
                         to ja. Dali su ti kamenčiće, sve što su ti dali bili su
                         kamenčići.“
                     </Frame>
-                    <Frame
-                        style={{
-                            backgroundColor: "none",
-                            position: "fixed",
-                            fontSize: 100,
-                            width: "100%",
-                            height: "100%",
-                        }}
-                        center
-                        variants={variantsVisibility}
-                        animate={scrollY >= 60 ? "visible" : "hidden"}
-                        className={scrollY >= 100 ? "hidden" : "black"}
-                    >
-                        Kako ona to zna, molim te?
-                    </Frame>
-                    <Frame
-                        style={{
-                            backgroundColor: "none",
-                            position: "fixed",
-                            fontSize: 30,
-                            width: "100%",
-                            height: "100%",
-                        }}
-                        center
-                        variants={variantsVisibility}
-                        animate={scrollY >= 100 ? "visible" : "hidden"}
-                        className={scrollY >= 140 ? "hidden" : "black"}
-                    >
+                </Frame>
+                <Frame
+                    style={{
+                        backgroundColor: "none",
+
+                        fontSize: 100,
+                        width: "100%",
+                        height: "100%",
+                    }}
+                    center
+                >
+                    Kako ona to zna, molim te?
+                </Frame>
+                <Frame
+                    style={{
+                        backgroundColor: "none",
+
+                        fontSize: 30,
+                        width: "100%",
+                        height: "100%",
+                    }}
+                    center
+                >
+                    <Frame center width={"50%"} background={"none"}>
                         Mogu je čuti da priča, ali riječi nam ne znače ništa
                         slično. Kaže vidjeti, a misli: voljeti. Kaže sjećaš li
                         se, a misli: sve smo izmislile. Sve smo izmislile u onom
@@ -81,23 +81,20 @@ export default function Ninth({ variantsVisibility, scrollY, getSteppers }) {
                         uvijek prekrasne. Ali svi koje volimo su mrtvi, to je
                         prvo pravilo, svi koje volimo su mrtvi.
                     </Frame>
-                    <Frame
-                        style={{
-                            backgroundColor: "none",
-                            position: "fixed",
-                            fontSize: 100,
-                            width: "100%",
-                            height: "100%",
-                        }}
-                        center
-                        variants={variantsVisibility}
-                        animate={scrollY >= 140 ? "visible" : "hidden"}
-                        className={scrollY >= 200 ? "hidden" : "black"}
-                    >
-                        I onda: „zamisli“.
-                    </Frame>
-                </Page>
-            </div>
+                </Frame>
+                <Frame
+                    style={{
+                        backgroundColor: "none",
+
+                        fontSize: 100,
+                        width: "100%",
+                        height: "100%",
+                    }}
+                    center
+                >
+                    I onda: „zamisli“.
+                </Frame>
+            </Page>
         </React.Fragment>
     );
 }

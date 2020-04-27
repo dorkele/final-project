@@ -79,7 +79,7 @@ export default function First({ variantsVisibility, scrollY, getSteppers }) {
                     style={{ fontSize: 80 }}
                     initial={{ opacity: 0 }}
                     variants={variantsVisibility}
-                    animate={scrollY >= 500 ? ["visible", "fakZoom"] : "hidden"}
+                    animate={scrollY >= 400 ? ["visible", "fakZoom"] : "hidden"}
                     center
                 >
                     fak.
@@ -89,7 +89,7 @@ export default function First({ variantsVisibility, scrollY, getSteppers }) {
                     top={670}
                     left={1000}
                     variants={variantsVisibility}
-                    animate={scrollY >= 500 ? ["visible", "fakZoom"] : "hidden"}
+                    animate={scrollY >= 400 ? ["visible", "fakZoom"] : "hidden"}
                     delay={0.3}
                 >
                     fak
@@ -99,8 +99,7 @@ export default function First({ variantsVisibility, scrollY, getSteppers }) {
                     top={680}
                     left={250}
                     variants={variantsVisibility}
-                    animate={scrollY >= 500 ? ["visible", "fakZoom"] : "hidden"}
-                    delay={0.4}
+                    animate={scrollY >= 400 ? ["visible", "fakZoom"] : "hidden"}
                 >
                     fak
                 </Frame>
@@ -109,8 +108,7 @@ export default function First({ variantsVisibility, scrollY, getSteppers }) {
                     top={690}
                     left={100}
                     variants={variantsVisibility}
-                    animate={scrollY >= 500 ? ["visible", "fakZoom"] : "hidden"}
-                    delay={0.5}
+                    animate={scrollY >= 400 ? ["visible", "fakZoom"] : "hidden"}
                 >
                     fak
                 </Frame>
@@ -119,8 +117,7 @@ export default function First({ variantsVisibility, scrollY, getSteppers }) {
                     top={640}
                     left={711}
                     variants={variantsVisibility}
-                    animate={scrollY >= 500 ? ["visible", "fakZoom"] : "hidden"}
-                    delay={0.2}
+                    animate={scrollY >= 400 ? ["visible", "fakZoom"] : "hidden"}
                 >
                     fak
                 </Frame>
@@ -129,8 +126,7 @@ export default function First({ variantsVisibility, scrollY, getSteppers }) {
                     top={310}
                     left={340}
                     variants={variantsVisibility}
-                    animate={scrollY >= 500 ? ["visible", "fakZoom"] : "hidden"}
-                    delay={0.3}
+                    animate={scrollY >= 400 ? ["visible", "fakZoom"] : "hidden"}
                 >
                     fak
                 </Frame>
@@ -139,8 +135,7 @@ export default function First({ variantsVisibility, scrollY, getSteppers }) {
                     top={680}
                     left={632}
                     variants={variantsVisibility}
-                    animate={scrollY >= 500 ? ["visible", "fakZoom"] : "hidden"}
-                    delay={1}
+                    animate={scrollY >= 400 ? ["visible", "fakZoom"] : "hidden"}
                 >
                     fak
                 </Frame>

@@ -17,6 +17,7 @@ import Eight from "./eight";
 import EightImageLayer from "./eight-image-layer";
 import Ninth from "./ninth";
 import Tenth from "./tenth";
+import TenthHahahaLayer from "./tenth-hahaha-layer";
 
 export default function App() {
     const [steppers, setSteppers] = useState(false);
@@ -178,11 +179,17 @@ export default function App() {
         );
     } else if (step === 10) {
         page = (
-            <Tenth
-                variantsVisibility={variantsVisibility}
-                scrollY={scrollY}
-                getSteppers={(boolean) => getSteppers(boolean)}
-            />
+            <React.Fragment>
+                <Tenth
+                    variantsVisibility={variantsVisibility}
+                    scrollY={scrollY}
+                    getSteppers={(boolean) => getSteppers(boolean)}
+                />
+                {/* <TenthHahahaLayer
+                    variantsVisibility={variantsVisibility}
+                    scrollY={scrollY}
+                /> */}
+            </React.Fragment>
         );
     }
     return (
