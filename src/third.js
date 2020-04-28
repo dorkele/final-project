@@ -20,7 +20,9 @@ export default function Third({ variantsVisibility, scrollY, getSteppers }) {
                 >
                     Bili su na starom mjestu, u pješčaniku,{" "}
                     <a
-                        href="/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://www.youtube.com/watch?v=8whTAkkBv6U"
                         onMouseEnter={() => setVisible(1)}
                         onMouseLeave={() => setVisible(0)}
                     >
@@ -28,7 +30,9 @@ export default function Third({ variantsVisibility, scrollY, getSteppers }) {
                     </a>
                     . Znala sam da će me oraspoložiti svojim: „
                     <a
-                        href="/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://collection.eliterature.org/1/works/jackson__my_body_a_wunderkammer/index.html"
                         onMouseEnter={() => setVisible(2)}
                         onMouseLeave={() => setVisible(0)}
                     >
@@ -38,7 +42,9 @@ export default function Third({ variantsVisibility, scrollY, getSteppers }) {
                     svidjele.“ Potkralo se tu još nekoliko uobičajenih tema:
                     srebrna strelica za pikado,{" "}
                     <a
-                        href="/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://en.wikipedia.org/wiki/Crying"
                         onMouseEnter={() => setVisible(3)}
                         onMouseLeave={() => setVisible(0)}
                     >
@@ -46,7 +52,9 @@ export default function Third({ variantsVisibility, scrollY, getSteppers }) {
                     </a>
                     ,{" "}
                     <a
-                        href="/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://www.interviewmagazine.com/music/grimes-lana-del-rey-brit-marling-miss-anthropocene-interview"
                         onMouseEnter={() => setVisible(4)}
                         onMouseLeave={() => setVisible(0)}
                     >
@@ -54,7 +62,9 @@ export default function Third({ variantsVisibility, scrollY, getSteppers }) {
                     </a>{" "}
                     iliti{" "}
                     <a
-                        href="/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://www.youtube.com/watch?v=NTr9f4ZGcwE"
                         onMouseEnter={() => setVisible(5)}
                         onMouseLeave={() => setVisible(0)}
                     >
@@ -63,7 +73,9 @@ export default function Third({ variantsVisibility, scrollY, getSteppers }) {
                     iliti osposobljavanje super-heroja za susret s apokalipsom,
                     apsorpcija zagasito plavih hormona,{" "}
                     <a
-                        href="/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://www.miamiletic.com/after"
                         onMouseEnter={() => setVisible(6)}
                         onMouseLeave={() => setVisible(0)}
                     >
@@ -71,7 +83,9 @@ export default function Third({ variantsVisibility, scrollY, getSteppers }) {
                     </a>
                     , zatim: možebitni nedostatak samopouzdanja, uhvaćenih svih
                     <a
-                        href="/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://www.nytimes.com/2019/01/03/magazine/driving-living-reality.html"
                         onMouseEnter={() => setVisible(7)}
                         onMouseLeave={() => setVisible(0)}
                     >
@@ -79,7 +93,9 @@ export default function Third({ variantsVisibility, scrollY, getSteppers }) {
                     </a>
                     , politički nekorektna priznanja, a tu je, također, i taj
                     <a
-                        href="/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="http://zagrebfilm.hr/odrasti-u-malo-drvo/"
                         onMouseEnter={() => setVisible(8)}
                         onMouseLeave={() => setVisible(0)}
                     >
@@ -87,7 +103,9 @@ export default function Third({ variantsVisibility, scrollY, getSteppers }) {
                     </a>
                     . Ništa daleko od uobičajenog{" "}
                     <a
-                        href="/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://www.solitr.com/spider-solitaire-four-suits"
                         onMouseEnter={() => setVisible(9)}
                         onMouseLeave={() => setVisible(0)}
                     >
@@ -96,7 +114,9 @@ export default function Third({ variantsVisibility, scrollY, getSteppers }) {
                     . Nisam mnogo govorila. Pogledali su me puni nade beznadnim
                     svojim očima na odlasku. „I meni su
                     <a
-                        href="/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://www.youtube.com/watch?v=v7rf-MWSqc0"
                         onMouseEnter={() => setVisible(10)}
                         onMouseLeave={() => setVisible(0)}
                     >

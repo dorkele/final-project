@@ -8,7 +8,6 @@ import Second from "./second";
 import Third from "./third";
 import Fourth from "./fourth";
 import Fifth from "./fifth";
-import FifthImageLayer from "./fifth-image-layer";
 import Sixth from "./sixth";
 import SixthImageLayer from "./sixth-image-layer";
 import Seventh from "./seventh";
@@ -123,10 +122,6 @@ export default function App() {
                     variantsVisibility={variantsVisibility}
                     scrollY={scrollY}
                     getSteppers={(boolean) => getSteppers(boolean)}
-                />
-                <FifthImageLayer
-                    variantsVisibility={variantsVisibility}
-                    scrollY={scrollY}
                 />
             </React.Fragment>
         );

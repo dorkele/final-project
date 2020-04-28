@@ -7,7 +7,7 @@ export default function Seventh({ variantsVisibility, scrollY, getSteppers }) {
         window.scrollTo(0, 0);
         getSteppers(false);
     }, []);
-    if (scrollY > 2470) {
+    if (scrollY > 1270) {
         console.log("getSteppers: ", getSteppers);
         getSteppers(true);
     }
@@ -36,28 +36,28 @@ export default function Seventh({ variantsVisibility, scrollY, getSteppers }) {
                 </Frame>
                 <Frame
                     style={{ backgroundColor: "none", fontSize: 60 }}
-                    top={1400}
+                    top={1000}
                     center
                     variants={variantsVisibility}
-                    animate={scrollY >= 300 ? "visible" : "hidden"}
+                    animate={scrollY >= 400 ? "visible" : "hidden"}
                 >
                     Prostiranje
                 </Frame>
                 <Frame
                     style={{ backgroundColor: "none", fontSize: 60 }}
-                    top={2100}
+                    top={1300}
                     center
                     variants={variantsVisibility}
-                    animate={scrollY >= 500 ? "visible" : "hidden"}
+                    animate={scrollY >= 700 ? "visible" : "hidden"}
                 >
                     Prostranstvima
                 </Frame>
                 <Frame
                     style={{ backgroundColor: "none", fontSize: 30 }}
-                    top={2800}
+                    top={1700}
                     center
                     variants={variantsVisibility}
-                    animate={scrollY >= 800 ? "visible" : "hidden"}
+                    animate={scrollY >= 950 ? "visible" : "hidden"}
                     width={500}
                 >
                     Mogla sam otpjevati samo posljednja tri slova, ali to nije

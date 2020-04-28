@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { Frame } from "framer";
 import "./fifth.css";
+import FifthImageLayer from "./fifth-image-layer";
 
 export default function Fifth({ variantsVisibility, scrollY, getSteppers }) {
     console.log(scrollY, variantsVisibility);
@@ -10,12 +11,15 @@ export default function Fifth({ variantsVisibility, scrollY, getSteppers }) {
         getSteppers(false);
     }, []);
     if (scrollY > 770) {
-        console.log("getSteppers: ", getSteppers);
         getSteppers(true);
     }
     return (
         <React.Fragment>
             <div className="container-wrap">
+                <FifthImageLayer
+                    variantsVisibility={variantsVisibility}
+                    scrollY={scrollY}
+                />
                 <Frame
                     center
                     top={250}
@@ -23,9 +27,10 @@ export default function Fifth({ variantsVisibility, scrollY, getSteppers }) {
                     initial={{ opacity: 0 }}
                     animate={scrollY >= 50 ? "visible" : "hidden"}
                     style={{
-                        fontSize: "18px",
-
+                        fontSize: "25px",
                         backgroundColor: "none",
+                        color: "red",
+                        fontWeight: "bold",
                     }}
                 >
                     Ali sve je tiho.
@@ -37,9 +42,10 @@ export default function Fifth({ variantsVisibility, scrollY, getSteppers }) {
                     variants={variantsVisibility}
                     animate={scrollY >= 100 ? "visible" : "hidden"}
                     style={{
-                        fontSize: "18px",
-
+                        fontSize: "25px",
                         backgroundColor: "none",
+                        color: "red",
+                        fontWeight: "bold",
                     }}
                     initial={{ opacity: 0 }}
                 >
@@ -54,9 +60,10 @@ export default function Fifth({ variantsVisibility, scrollY, getSteppers }) {
                     variants={variantsVisibility}
                     animate={scrollY >= 150 ? "visible" : "hidden"}
                     style={{
-                        fontSize: "18px",
-
+                        fontSize: "25px",
                         backgroundColor: "none",
+                        color: "red",
+                        fontWeight: "bold",
                     }}
                     initial={{ opacity: 0 }}
                 >
@@ -71,9 +78,10 @@ export default function Fifth({ variantsVisibility, scrollY, getSteppers }) {
                     variants={variantsVisibility}
                     animate={scrollY >= 200 ? "visible" : "hidden"}
                     style={{
-                        fontSize: "18px",
-
+                        fontSize: "25px",
                         backgroundColor: "none",
+                        color: "red",
+                        fontWeight: "bold",
                     }}
                     initial={{ opacity: 0 }}
                 >
@@ -88,9 +96,10 @@ export default function Fifth({ variantsVisibility, scrollY, getSteppers }) {
                     variants={variantsVisibility}
                     animate={scrollY >= 250 ? "visible" : "hidden"}
                     style={{
-                        fontSize: "18px",
-
+                        fontSize: "25px",
                         backgroundColor: "none",
+                        color: "red",
+                        fontWeight: "bold",
                     }}
                     initial={{ opacity: 0 }}
                 >
@@ -105,9 +114,10 @@ export default function Fifth({ variantsVisibility, scrollY, getSteppers }) {
                     variants={variantsVisibility}
                     animate={scrollY >= 300 ? "visible" : "hidden"}
                     style={{
-                        fontSize: "18px",
-
+                        fontSize: "25px",
                         backgroundColor: "none",
+                        color: "red",
+                        fontWeight: "bold",
                     }}
                     initial={{ opacity: 0 }}
                 >
@@ -121,8 +131,10 @@ export default function Fifth({ variantsVisibility, scrollY, getSteppers }) {
                     variants={variantsVisibility}
                     animate={scrollY >= 350 ? "visible" : "hidden"}
                     style={{
-                        fontSize: "18px",
+                        fontSize: "25px",
                         backgroundColor: "none",
+                        color: "red",
+                        fontWeight: "bold",
                     }}
                     initial={{ opacity: 0 }}
                 >
@@ -138,8 +150,10 @@ export default function Fifth({ variantsVisibility, scrollY, getSteppers }) {
                     variants={variantsVisibility}
                     animate={scrollY >= 400 ? "visible" : "hidden"}
                     style={{
-                        fontSize: "18px",
+                        fontSize: "25px",
                         backgroundColor: "none",
+                        color: "red",
+                        fontWeight: "bold",
                     }}
                     initial={{ opacity: 0 }}
                 >
@@ -152,9 +166,10 @@ export default function Fifth({ variantsVisibility, scrollY, getSteppers }) {
                     variants={variantsVisibility}
                     animate={scrollY >= 450 ? "visible" : "hidden"}
                     style={{
-                        fontSize: "18px",
-
+                        fontSize: "25px",
                         backgroundColor: "none",
+                        color: "red",
+                        fontWeight: "bold",
                     }}
                     initial={{ opacity: 0 }}
                 >
@@ -170,9 +185,10 @@ export default function Fifth({ variantsVisibility, scrollY, getSteppers }) {
                     variants={variantsVisibility}
                     animate={scrollY >= 500 ? "visible" : "hidden"}
                     style={{
-                        fontSize: "18px",
-
+                        fontSize: "25px",
                         backgroundColor: "none",
+                        color: "red",
+                        fontWeight: "bold",
                     }}
                     initial={{ opacity: 0 }}
                 >
@@ -188,8 +204,10 @@ export default function Fifth({ variantsVisibility, scrollY, getSteppers }) {
                     variants={variantsVisibility}
                     animate={scrollY >= 550 ? "visible" : "hidden"}
                     style={{
-                        fontSize: "18px",
+                        fontSize: "25px",
                         backgroundColor: "none",
+                        color: "red",
+                        fontWeight: "bold",
                     }}
                     initial={{ opacity: 0 }}
                 >

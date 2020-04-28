@@ -22,7 +22,7 @@ export default function Ninth({ getSteppers }) {
             >
                 <Frame
                     style={{
-                        backgroundColor: "yellow",
+                        backgroundColor: "none",
 
                         fontSize: 30,
                         width: "100%",
@@ -51,8 +51,8 @@ export default function Ninth({ getSteppers }) {
                 </Frame>
                 <Frame
                     style={{
-                        backgroundColor: "none",
-
+                        backgroundColor: "#8c52ff",
+                        color: "#ff5757",
                         fontSize: 100,
                         width: "100%",
                         height: "100%",
@@ -84,8 +84,8 @@ export default function Ninth({ getSteppers }) {
                 </Frame>
                 <Frame
                     style={{
-                        backgroundColor: "none",
-
+                        backgroundColor: "#ff5757",
+                        color: "#8c52ff",
                         fontSize: 100,
                         width: "100%",
                         height: "100%",
