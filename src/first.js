@@ -3,10 +3,10 @@ import { Frame } from "framer";
 import "./first.css";
 
 export default function First({ variantsVisibility, scrollY, getSteppers }) {
-    useEffect(() => {
-        window.scrollTo(0, 0);
-        getSteppers(false);
-    }, []);
+    // useEffect(() => {
+    //     window.scrollTo(0, 0);
+    //     getSteppers(false);
+    // }, []);
 
     variantsVisibility.fakZoom = {
         scale: 5,

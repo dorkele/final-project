@@ -76,7 +76,12 @@ export default function App() {
     }
 
     if (step === 0) {
-        page = <Home getStep={(step) => getStep(step)} />;
+        page = (
+            <Home
+                getStep={(step) => getStep(step)}
+                variantsVisibility={variantsVisibility}
+            />
+        );
     } else if (step === 1) {
         page = (
             <React.Fragment>
