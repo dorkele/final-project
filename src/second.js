@@ -3,14 +3,15 @@ import { Frame } from "framer";
 import "./second.css";
 
 export default function Second({ variantsVisibility, scrollY, getSteppers }) {
-    useEffect(() => {
-        window.scrollTo(0, 0);
-        getSteppers(false);
-    }, []);
+    // useEffect(() => {
+    //     getSteppers(false);
+    // }, []);
+
     if (scrollY > 320) {
         console.log("getSteppers: ", getSteppers);
         getSteppers(true);
     }
+
     return (
         <React.Fragment>
             <div className="textbox">

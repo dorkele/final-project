@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import Stepper from "./stepper";
-import Home from "./home";
+import Home from "./Pages/home";
 import First from "./first";
 import FirstImageLayer from "./first-image-layer";
 import Second from "./second";
@@ -20,10 +20,9 @@ import TenthHahahaLayer from "./tenth-hahaha-layer";
 
 export default function App() {
     const [steppers, setSteppers] = useState(false);
+    let [step, setStep] = useState(0);
 
     const change = (e) => {
-        console.log("E: ", e);
-
         e.preventDefault();
         if (steppers === true) {
             setSteppers(false);
@@ -35,13 +34,9 @@ export default function App() {
     let page;
     const [scrollY, setScrollY] = useState(window.scrollY);
     const [scrollX, setScrollX] = useState(window.scrollX);
-    let [step, setStep] = useState(0);
 
     useEffect(() => {
         const handleScroll = () => {
-            console.log(scrollY);
-            console.log(scrollX);
-
             setScrollY(window.scrollY);
             setScrollX(window.scrollX);
         };
@@ -49,6 +44,7 @@ export default function App() {
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
     }, [scrollY, scrollX, step]);
+
     const variantsVisibility = {
         hidden: {
             opacity: 0,
@@ -59,10 +55,11 @@ export default function App() {
     };
 
     function getStep(step) {
-        setStep(step);
         setSteppers(false);
-        console.log("step in app: ", step);
+        setStep(step);
+        console.log("steppers in app: ", steppers);
     }
+
     function getSteppers(boolean) {
         if (boolean === true) {
             setSteppers(true);
@@ -195,7 +192,6 @@ export default function App() {
     return (
         <React.Fragment>
             <button className="menu-toggle-btn" onClick={change}>
-                {/* <div className="button-text">{buttonText}</div> */}
                 <img
                     className="logo-red"
                     src="/images/logo_red.png"

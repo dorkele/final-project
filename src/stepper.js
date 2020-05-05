@@ -2,31 +2,25 @@ import React, { useState, useEffect } from "react";
 import "./stepper.css";
 import { Frame } from "framer";
 
-export default function Stepper(props) {
+export default function Stepper({ getStep, steppers }) {
     function sendStep(step) {
-        console.log("step: ", step);
-        console.log("props: ", props);
-
-        props.getStep(step);
+        getStep(step);
+        window.scrollTo(0, 0);
     }
 
     const variants = {
         slideIn: {
             y: -100,
-            //visibility: "visible",
         },
         slideOut: {
             y: 100,
-            //visibility: "hidden",
         },
     };
-    console.log("props.steppers u stepper: ", props.steppers);
 
     return (
-        //{`red green blue ${this.state.active === "first"? 'active': ''}`}
         <Frame
             variants={variants}
-            animate={props.steppers ? "slideIn" : "slideOut"}
+            animate={steppers ? "slideIn" : "slideOut"}
             transition={{ duration: 1 }}
             className="stepper-container"
             width={"100%"}

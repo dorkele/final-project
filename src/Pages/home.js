@@ -1,6 +1,6 @@
 import React from "react";
-import FoldedPaper from "./home-foldedpaper";
-import styles from "./home.module.css";
+import FoldedPaper from "./home/home-foldedpaper";
+import styles from "./home/home.module.css";
 
 export default function Home(props) {
     let randomXArray = [];
