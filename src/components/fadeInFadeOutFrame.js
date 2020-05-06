@@ -13,6 +13,8 @@ export default function FadeInFadeOutFrame(props) {
             className={props.scrollY >= props.tresholdOut ? "hidden" : "black"}
             style={props.style}
             width={props.width}
+            left={props.left}
+            top={props.top}
         >
             {props.text}
         </Frame>
