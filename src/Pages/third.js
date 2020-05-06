@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import { Frame } from "framer";
-import HoverContainer from "./third-hover-layer";
-import "./third.css";
+import HoverContainer from "./third/hoverContainer";
+import "./third/third.css";
 
-export default function Third({ variantsVisibility, scrollY, getSteppers }) {
+export default function Third({ scrollY, getSteppers }) {
     const [visible, setVisible] = useState(0);
     if (scrollY > 10) {
-        console.log("getSteppers: ", getSteppers);
         getSteppers(true);
     }
     return (

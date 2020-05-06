@@ -6,7 +6,6 @@ export default function Sixth({ scrollX, getSteppers, scrollY }) {
     //const { scrollX } = useViewportScroll();
 
     useEffect(() => {
-        window.scrollTo(0, 0);
         getSteppers(false);
     }, []);
     if (scrollX > 2130) {

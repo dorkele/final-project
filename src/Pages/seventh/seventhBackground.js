@@ -1,7 +1,7 @@
 import React from "react";
 import { Frame } from "framer";
 
-export default function SeventhImageLayer() {
+export default function SeventhBackground() {
     return (
         <React.Fragment>
             <Frame

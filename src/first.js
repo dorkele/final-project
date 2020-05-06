@@ -4,7 +4,7 @@ import "./first.css";
 
 export default function First({ variantsVisibility, scrollY, getSteppers }) {
     // useEffect(() => {
-    //     window.scrollTo(0, 0);
+
     //     getSteppers(false);
     // }, []);
 

@@ -6,13 +6,23 @@ body {
     width: 100%;
 }
 
+.stepper-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #ff5757;
+    position: fixed;
+    height: 10%;
+    bottom: 0;
+    opacity: 1;
+    z-index: 100;
+}
+
 .buttons {
-    height: 100px;
-    width: 100px;
+    height: 100%;
+    width: 6%;
     background-size: 100px 100px;
-    /* background-color: #ff5757; */
     border: none;
-    /* position: fixed; */
 }
 
 .buttons:hover {
@@ -21,21 +31,6 @@ body {
 
 .buttons:focus {
     border: 2px solid #8c52ff;
-}
-
-.stepper-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: #ff5757;
-    /* border: #8c52ff solid 1px; */
-    position: fixed;
-    bottom: 0;
-
-    height: 100px;
-    opacity: 1;
-
-    z-index: 100;
 }
 
 .home-btn {
@@ -76,15 +71,3 @@ body {
 .ten-btn {
     background-image: url("/images/zora.png");
 }
-
-/* .slide-in {
-    transition-property: transform;
-    transform: translateY(-100%);
-    transition-duration: 2s;
-}
-
-.slide-out {
-    transition-property: transform;
-    transform: translateY(100%);
-    transition-duration: 2s;
-} */

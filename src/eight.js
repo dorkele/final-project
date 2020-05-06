@@ -4,7 +4,6 @@ import "./eight.css";
 
 export default function Eight({ variantsVisibility, scrollY, getSteppers }) {
     useEffect(() => {
-        window.scrollTo(0, 0);
         getSteppers(false);
     }, []);
     if (scrollY > 570) {

@@ -1,17 +1,16 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import Stepper from "./stepper";
+import Stepper from "./components/stepper";
 import Home from "./Pages/home";
 import First from "./first";
 import FirstImageLayer from "./first-image-layer";
-import Second from "./second";
-import Third from "./third";
-import Fourth from "./fourth";
-import Fifth from "./fifth";
+import Second from "./Pages/second";
+import Third from "./Pages/third";
+import Fourth from "./Pages/fourth";
+import Fifth from "./Pages/fifth";
 import Sixth from "./sixth";
 import SixthImageLayer from "./sixth-image-layer";
-import Seventh from "./seventh";
-import SeventhImageLayer from "./seventh-image-layer";
+import Seventh from "./Pages/seventh";
 import Eight from "./eight";
 import EightImageLayer from "./eight-image-layer";
 import Ninth from "./ninth";
@@ -104,7 +103,6 @@ export default function App() {
     } else if (step === 3) {
         page = (
             <Third
-                variantsVisibility={variantsVisibility}
                 scrollY={scrollY}
                 getSteppers={(boolean) => getSteppers(boolean)}
             />
@@ -119,13 +117,11 @@ export default function App() {
         );
     } else if (step === 5) {
         page = (
-            <React.Fragment>
-                <Fifth
-                    variantsVisibility={variantsVisibility}
-                    scrollY={scrollY}
-                    getSteppers={(boolean) => getSteppers(boolean)}
-                />
-            </React.Fragment>
+            <Fifth
+                variantsVisibility={variantsVisibility}
+                scrollY={scrollY}
+                getSteppers={(boolean) => getSteppers(boolean)}
+            />
         );
     } else if (step === 6) {
         page = (
@@ -149,7 +145,6 @@ export default function App() {
                     scrollY={scrollY}
                     getSteppers={(boolean) => getSteppers(boolean)}
                 />
-                <SeventhImageLayer scrollY={scrollY} />
             </React.Fragment>
         );
     } else if (step === 8) {

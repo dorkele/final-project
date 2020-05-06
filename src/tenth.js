@@ -4,7 +4,6 @@ import "./tenth.css";
 
 export default function Tenth({ variantsVisibility, scrollY, getSteppers }) {
     useEffect(() => {
-        window.scrollTo(0, 0);
         getSteppers(false);
     }, []);
     if (scrollY > 152) {
@@ -38,42 +37,6 @@ export default function Tenth({ variantsVisibility, scrollY, getSteppers }) {
                     naposljetku. „Jesu li muze oduvijek bile ovako mudra
                     stvorenja?“, smijale smo se do zauvijek.
                 </Frame>
-
-                {/* <Frame
-                    style={{
-                        backgroundColor: "none",
-                        position: "fixed",
-                        width: "50%",
-                        fontSize: 30,
-                        color: "white",
-                        fontWeight: "bold",
-                    }}
-                    top={200}
-                    variants={variantsVisibility}
-                    initial={"hidden"}
-                    animate={scrollY >= 100 ? "visible" : "hidden"}
-                >
-                    „To što u glavi znaš kako ide neka pjesma ne znači
-                    da ćeš je na glas znati otpjevati.“, zaključila je
-                    naposljetku. 
-                </Frame>
-                <Frame
-                    style={{
-                        backgroundColor: "none",
-                        position: "fixed",
-                        width: "50%",
-                        fontSize: 30,
-                        color: "white",
-                        fontWeight: "bold",
-                    }}
-                    top={300}
-                    variants={variantsVisibility}
-                    initial={"hidden"}
-                    animate={scrollY >= 150 ? "visible" : "hidden"}
-                >
-                    „Jesu li muze oduvijek bile ovako mudra stvorenja?“, smijale
-                    smo se do zauvijek.
-                </Frame> */}
             </div>
         </React.Fragment>
     );

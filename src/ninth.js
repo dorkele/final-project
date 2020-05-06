@@ -3,7 +3,6 @@ import { Frame, Page } from "framer";
 
 export default function Ninth({ getSteppers }) {
     useEffect(() => {
-        window.scrollTo(0, 0);
         getSteppers(false);
     }, []);
 
