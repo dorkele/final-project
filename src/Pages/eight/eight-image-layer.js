@@ -1,121 +1,100 @@
 import React from "react";
 import { Frame } from "framer";
 import "./eight.css";
+import OpacityFadeOut from "../../components/opacityFadeOut";
+import OpacityFadeInFadeOut from "../../components/opacityFadeInFadeOut";
+import OpacityFadeIn from "../../components/opacityFadeIn";
 
-export default function EightImageLayer({ scrollY }) {
-    const variantsOpacity = {
-        initial: {
-            opacity: 0.3,
-        },
-        active: {
-            opacity: 1,
-        },
-    };
+export default function EightImageLayer({ scrollY, variantsOpacity }) {
+    const style = { zIndex: -1, position: "fixed" };
     return (
         <React.Fragment>
-            <Frame
-                background={"none"}
-                position={"fixed"}
-                variants={variantsOpacity}
+            <OpacityFadeOut
+                variantsOpacity={variantsOpacity}
                 top={100}
-                style={{ zIndex: -1 }}
-                width={"30%"}
-                initial={"active"}
-                animate={scrollY >= 60 ? "initial" : "active"}
-                className={scrollY >= 100 ? "hidden" : "black"}
-            >
-                <img src="/images/anger.jpg" alt="anger-quote" width="100%" />
-            </Frame>
-            <Frame
-                background={"none"}
-                position={"fixed"}
-                variants={variantsOpacity}
-                initial={"initial"}
-                animate={scrollY >= 60 ? "active" : "initial"}
-                className={scrollY >= 100 ? "hidden" : "black"}
+                style={style}
+                width={"10%"}
+                src="/images/anger.jpg"
+                alt="anger-quote"
+                scrollY={scrollY}
+                treshold={60}
+            />
+            <OpacityFadeInFadeOut
+                variantsOpacity={variantsOpacity}
+                scrollY={scrollY}
+                treshold={60}
+                tresholdOut={100}
+                style={style}
                 top={110}
                 left={500}
-                style={{ zIndex: -1 }}
-            >
-                <img src="/images/body.jpg" alt="body-quote" />
-            </Frame>
-            <Frame
-                background={"none"}
-                position={"fixed"}
-                variants={variantsOpacity}
-                initial={"initial"}
-                left={700}
-                animate={scrollY >= 100 ? "active" : "initial"}
-                className={scrollY >= 150 ? "hidden" : "black"}
+                src="/images/body.jpg"
+                alt="body-quote"
+            />
+            <OpacityFadeInFadeOut
+                variantsOpacity={variantsOpacity}
+                scrollY={scrollY}
+                treshold={100}
+                tresholdOut={150}
+                style={style}
+                top={350}
+                left={300}
+                src="/images/personality.jpg"
+                alt="personality-quote"
+            />
+            <OpacityFadeInFadeOut
+                variantsOpacity={variantsOpacity}
+                scrollY={scrollY}
+                treshold={150}
+                tresholdOut={200}
+                style={style}
                 top={400}
-                style={{ zIndex: -1 }}
-            >
-                <img src="/images/personality.jpg" alt="personality-quote" />
-            </Frame>
-            <Frame
-                background={"none"}
-                position={"fixed"}
-                variants={variantsOpacity}
-                initial={"initial"}
                 left={50}
-                animate={scrollY >= 150 ? "active" : "initial"}
-                className={scrollY >= 200 ? "hidden" : "black"}
-                top={400}
-                style={{ zIndex: -1 }}
-            >
-                <img src="/images/pink-meme.jpg" alt="pink-meme" />
-            </Frame>
-            <Frame
-                background={"none"}
-                position={"fixed"}
-                variants={variantsOpacity}
-                initial={"initial"}
-                left={100}
-                animate={scrollY >= 200 ? "active" : "initial"}
-                className={scrollY >= 250 ? "hidden" : "black"}
+                src="/images/pink-meme.jpg"
+                alt="pink-meme"
+            />
+            <OpacityFadeInFadeOut
+                variantsOpacity={variantsOpacity}
+                scrollY={scrollY}
+                treshold={200}
+                tresholdOut={250}
+                style={style}
                 top={100}
-                style={{ zIndex: -1 }}
-            >
-                <img src="/images/rebel.jpg" alt="rebel-quote" />
-            </Frame>
-            <Frame
-                background={"none"}
-                position={"fixed"}
-                variants={variantsOpacity}
-                initial={"initial"}
-                left={700}
-                animate={scrollY >= 300 ? "active" : "initial"}
-                className={scrollY >= 350 ? "hidden" : "black"}
+                left={100}
+                src="/images/rebel.jpg"
+                alt="rebel-quote"
+            />
+            <OpacityFadeInFadeOut
+                variantsOpacity={variantsOpacity}
+                scrollY={scrollY}
+                treshold={300}
+                tresholdOut={350}
+                style={style}
                 top={500}
-                style={{ zIndex: -1 }}
-            >
-                <img src="/images/scream.jpg" alt="scream-quote" />
-            </Frame>
-            <Frame
-                background={"none"}
-                position={"fixed"}
-                variants={variantsOpacity}
-                initial={"initial"}
                 left={700}
-                animate={scrollY >= 400 ? "active" : "initial"}
-                className={scrollY >= 450 ? "hidden" : "black"}
+                src="/images/scream.jpg"
+                alt="scream-quote"
+            />
+            <OpacityFadeInFadeOut
+                variantsOpacity={variantsOpacity}
+                scrollY={scrollY}
+                treshold={400}
+                tresholdOut={450}
+                style={style}
                 top={50}
-                style={{ zIndex: -1 }}
-            >
-                <img src="/images/suffering.jpg" alt="suffering-quote" />
-            </Frame>
-            <Frame
-                background={"none"}
-                position={"fixed"}
-                variants={variantsOpacity}
-                initial={"initial"}
-                left={950}
-                animate={scrollY >= 500 ? "active" : "initial"}
+                left={700}
+                src="/images/suffering.jpg"
+                alt="suffering-quote"
+            />
+            <OpacityFadeIn
+                variantsOpacity={variantsOpacity}
+                scrollY={scrollY}
+                treshold={500}
+                style={style}
                 top={250}
-                style={{ zIndex: -1 }}
-            >
-                <img src="/images/tired.jpg" alt="tired-quote" />
-            </Frame>
+                left={950}
+                src="/images/tired.jpg"
+                alt="tired-quote"
+            />
         </React.Fragment>
     );
 }

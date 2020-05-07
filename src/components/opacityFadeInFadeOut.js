@@ -1,19 +1,19 @@
 import React from "react";
 import { Frame } from "framer";
 
-export default function FadeInFadeOutFrame(props) {
+export default function OpacityFadeInFadeOut(props) {
     return (
         <Frame
             center={props.center}
             position={"fixed"}
             backgroundColor={"none"}
-            variants={props.variantsVisibility}
-            initial={{ opacity: 0 }}
+            variants={props.variantsOpacity}
+            initial={"initial"}
             animate={
                 props.scrollY >= props.treshold &&
                 props.scrollY < props.tresholdOut
-                    ? "visible"
-                    : "hidden"
+                    ? "active"
+                    : "initial"
             }
             style={props.style}
             width={props.width}
@@ -21,6 +21,7 @@ export default function FadeInFadeOutFrame(props) {
             top={props.top}
         >
             {props.text}
+            {props.src && <img src={props.src} alt={props.alt} />}
         </Frame>
     );
 }

@@ -1,11 +1,16 @@
 import React, { useEffect } from "react";
-import { Frame } from "framer";
 import "./eight/eight.css";
 import FadeOutFrame from "../components/fadeOutFrame";
 import FadeInFadeOutFrame from "../components/fadeInFadeOutFrame";
 import FadeInFrame from "../components/fadeInFrame";
+import EightImageLayer from "./eight/eight-image-layer";
 
-export default function Eight({ variantsVisibility, scrollY, getSteppers }) {
+export default function Eight({
+    variantsVisibility,
+    scrollY,
+    getSteppers,
+    variantsOpacity,
+}) {
     useEffect(() => {
         getSteppers(false);
     }, []);
@@ -25,6 +30,10 @@ export default function Eight({ variantsVisibility, scrollY, getSteppers }) {
     return (
         <React.Fragment>
             <div className="text-wrapping-container">
+                <EightImageLayer
+                    variantsOpacity={variantsOpacity}
+                    scrollY={scrollY}
+                />
                 <FadeOutFrame
                     style={style}
                     width={700}

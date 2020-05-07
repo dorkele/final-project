@@ -12,7 +12,6 @@ import Sixth from "./sixth";
 import SixthImageLayer from "./sixth-image-layer";
 import Seventh from "./Pages/seventh";
 import Eight from "./Pages/eight";
-import EightImageLayer from "./Pages/eight/eight-image-layer";
 import Ninth from "./ninth";
 import Tenth from "./tenth";
 import TenthHahahaLayer from "./tenth-hahaha-layer";
@@ -49,6 +48,14 @@ export default function App() {
             opacity: 0,
         },
         visible: {
+            opacity: 1,
+        },
+    };
+    const variantsOpacity = {
+        initial: {
+            opacity: 0.3,
+        },
+        active: {
             opacity: 1,
         },
     };
@@ -149,17 +156,12 @@ export default function App() {
         );
     } else if (step === 8) {
         page = (
-            <React.Fragment>
-                <Eight
-                    variantsVisibility={variantsVisibility}
-                    scrollY={scrollY}
-                    getSteppers={(boolean) => getSteppers(boolean)}
-                />
-                <EightImageLayer
-                    variantsVisibility={variantsVisibility}
-                    scrollY={scrollY}
-                />
-            </React.Fragment>
+            <Eight
+                variantsVisibility={variantsVisibility}
+                variantsOpacity={variantsOpacity}
+                scrollY={scrollY}
+                getSteppers={(boolean) => getSteppers(boolean)}
+            />
         );
     } else if (step === 9) {
         page = (

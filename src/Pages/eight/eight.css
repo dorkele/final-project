@@ -2,13 +2,3 @@
     width: 100%;
     height: 1300px;
 }
-
-.hidden {
-    opacity: 0;
-    visibility: hidden;
-}
-
-.black {
-    color: black;
-    font-size: 30px;
-}

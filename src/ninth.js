@@ -6,6 +6,13 @@ export default function Ninth({ getSteppers }) {
         getSteppers(false);
     }, []);
 
+    const styleColorless = {
+        backgroundColor: "none",
+        fontSize: 30,
+        width: "100%",
+        height: "100%",
+    };
+
     return (
         <React.Fragment>
             <Page
@@ -13,22 +20,12 @@ export default function Ninth({ getSteppers }) {
                 size="100%"
                 defaultEffect={"coverflow"}
                 onChangePage={(current, previous) => {
-                    console.log(current, previous);
                     if (current === 3) {
                         getSteppers(true);
                     }
                 }}
             >
-                <Frame
-                    style={{
-                        backgroundColor: "none",
-
-                        fontSize: 30,
-                        width: "100%",
-                        height: "100%",
-                    }}
-                    top={100}
-                >
+                <Frame style={styleColorless} top={100}>
                     <Frame center width={"50%"} background={"none"}>
                         Ali monolog pijane žene koja mi je sve u rodu (koji
                         slijedi, ali mi prethodi) bio je spreman: „Ići ćemo
@@ -60,16 +57,7 @@ export default function Ninth({ getSteppers }) {
                 >
                     Kako ona to zna, molim te?
                 </Frame>
-                <Frame
-                    style={{
-                        backgroundColor: "none",
-
-                        fontSize: 30,
-                        width: "100%",
-                        height: "100%",
-                    }}
-                    center
-                >
+                <Frame style={styleColorless} center>
                     <Frame center width={"50%"} background={"none"}>
                         Mogu je čuti da priča, ali riječi nam ne znače ništa
                         slično. Kaže vidjeti, a misli: voljeti. Kaže sjećaš li
