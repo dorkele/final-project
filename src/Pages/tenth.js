@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { Frame } from "framer";
-import "./tenth.css";
+import "./tenth/tenth.css";
+import TenthImageLayer from "./tenth/tenthImageLayer";
 
 export default function Tenth({ variantsVisibility, scrollY, getSteppers }) {
     useEffect(() => {
@@ -14,6 +15,7 @@ export default function Tenth({ variantsVisibility, scrollY, getSteppers }) {
     return (
         <React.Fragment>
             <div className="wrapping-box">
+                <TenthImageLayer />
                 <Frame
                     style={{
                         backgroundColor: "none",

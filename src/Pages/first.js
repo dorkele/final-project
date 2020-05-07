@@ -1,67 +1,35 @@
 import React, { useEffect } from "react";
 import { Frame } from "framer";
-import "./first.css";
+import "./first/first.css";
+import FirstWindow from "./first/firstFirst";
+import SecondWindow from "./first/firstSecond";
 
-export default function First({ variantsVisibility, scrollY, getSteppers }) {
-    // useEffect(() => {
-
-    //     getSteppers(false);
-    // }, []);
-
-    variantsVisibility.fakZoom = {
-        scale: 5,
-        color: "red",
-        duration: 3,
-    };
+export default function First({
+    variantsVisibility,
+    scrollY,
+    getSteppers,
+    redZoom,
+}) {
+    useEffect(() => {
+        getSteppers(false);
+    }, []);
 
     if (scrollY > 4040) {
-        console.log("getSteppers: ", getSteppers);
         getSteppers(true);
     }
     return (
         <React.Fragment>
-            <div
-                className="wrapping-container"
-                background="radial-gradient(B59194 0%, rgb(255, 255, 255) 87%)"
-            >
-                <Frame
-                    className="first-words "
-                    backgroundColor={"none"}
-                    width={"25%"}
-                    center
-                    variants={variantsVisibility}
-                    animate={scrollY >= 300 ? "hidden" : "visible"}
-                    style={{ zIndex: 1 }}
-                >
-                    Očnjaci, podočnjaci, kapci.
-                </Frame>
-                <Frame
-                    top={200}
-                    variants={variantsVisibility}
-                    animate={scrollY >= 40 ? "visible" : "hidden"}
-                    className="text"
-                    backgroundColor={"none"}
-                >
-                    Očnjaci,
-                </Frame>
-                <Frame
-                    top={300}
-                    variants={variantsVisibility}
-                    animate={scrollY >= 70 ? "visible" : "hidden"}
-                    className="text"
-                    backgroundColor={"none"}
-                >
-                    podočnjaci,
-                </Frame>
-                <Frame
-                    top={400}
-                    variants={variantsVisibility}
-                    animate={scrollY >= 100 ? "visible" : "hidden"}
-                    className="text"
-                    backgroundColor={"none"}
-                >
-                    kapci.
-                </Frame>
+            <div className="wrapping-container">
+                <FirstWindow
+                    scrollY={scrollY}
+                    variantsVisibility={variantsVisibility}
+                />
+                <SecondWindow
+                    scrollY={scrollY}
+                    variantsVisibility={variantsVisibility}
+                    redZoom={redZoom}
+                />
+
                 <Frame
                     top={450}
                     variants={variantsVisibility}

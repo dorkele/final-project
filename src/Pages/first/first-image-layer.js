@@ -4,49 +4,7 @@ import "./first-image-layer.css";
 
 export default function FirstImageLayer({ variantsVisibility, scrollY }) {
     return (
-        <React.Fragment>
-            <Frame
-                style={{
-                    backgroundColor: "none",
-                    display: "flex",
-                    flexDirection: "row",
-                    height: 300,
-                }}
-                top={0}
-            >
-                <Frame
-                    backgroundColor={"none"}
-                    variants={variantsVisibility}
-                    animate={scrollY >= 100 ? "hidden" : "visible"}
-                >
-                    <img src="/images/ocnjak1.png" alt="dogtooth" />
-                </Frame>
-                <Frame
-                    left={400}
-                    backgroundColor={"none"}
-                    variants={variantsVisibility}
-                    animate={scrollY >= 70 ? "hidden" : "visible"}
-                >
-                    <img src="/images/ocnjak2.png" alt="dogtooth" />
-                </Frame>
-
-                <Frame
-                    left={750}
-                    backgroundColor={"none"}
-                    variants={variantsVisibility}
-                    animate={scrollY >= 40 ? "hidden" : "visible"}
-                >
-                    <img src="/images/ocnjak4.png" alt="dogtooth" />
-                </Frame>
-                <Frame
-                    left={1100}
-                    backgroundColor={"none"}
-                    variants={variantsVisibility}
-                    animate={scrollY >= 140 ? "hidden" : "visible"}
-                >
-                    <img src="/images/ocnjak5.png" alt="dogtooth" />
-                </Frame>
-            </Frame>
+        <div width="100%">
             <Frame
                 backgroundColor={"none"}
                 top={1300}
@@ -114,6 +72,6 @@ export default function FirstImageLayer({ variantsVisibility, scrollY }) {
                     alt="stones"
                 />
             </Frame>
-        </React.Fragment>
+        </div>
     );
 }

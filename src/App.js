@@ -2,8 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import Stepper from "./components/stepper";
 import Home from "./Pages/home";
-import First from "./first";
-import FirstImageLayer from "./first-image-layer";
+import First from "./Pages/first";
 import Second from "./Pages/second";
 import Third from "./Pages/third";
 import Fourth from "./Pages/fourth";
@@ -12,9 +11,8 @@ import Sixth from "./sixth";
 import SixthImageLayer from "./sixth-image-layer";
 import Seventh from "./Pages/seventh";
 import Eight from "./Pages/eight";
-import Ninth from "./ninth";
-import Tenth from "./tenth";
-import TenthHahahaLayer from "./tenth-hahaha-layer";
+import Ninth from "./Pages/ninth";
+import Tenth from "./Pages/tenth";
 
 export default function App() {
     const [steppers, setSteppers] = useState(false);
@@ -59,6 +57,11 @@ export default function App() {
             opacity: 1,
         },
     };
+    const redZoom = {
+        scale: 5,
+        color: "red",
+        duration: 3,
+    };
 
     function getStep(step) {
         setSteppers(false);
@@ -83,21 +86,16 @@ export default function App() {
             <Home
                 getStep={(step) => getStep(step)}
                 variantsVisibility={variantsVisibility}
+                redZoom={redZoom}
             />
         );
     } else if (step === 1) {
         page = (
-            <React.Fragment>
-                <First
-                    variantsVisibility={variantsVisibility}
-                    scrollY={scrollY}
-                    getSteppers={(boolean) => getSteppers(boolean)}
-                />
-                <FirstImageLayer
-                    variantsVisibility={variantsVisibility}
-                    scrollY={scrollY}
-                />
-            </React.Fragment>
+            <First
+                variantsVisibility={variantsVisibility}
+                scrollY={scrollY}
+                getSteppers={(boolean) => getSteppers(boolean)}
+            />
         );
     } else if (step === 2) {
         page = (
@@ -173,17 +171,11 @@ export default function App() {
         );
     } else if (step === 10) {
         page = (
-            <React.Fragment>
-                <Tenth
-                    variantsVisibility={variantsVisibility}
-                    scrollY={scrollY}
-                    getSteppers={(boolean) => getSteppers(boolean)}
-                />
-                <TenthHahahaLayer
-                    variantsVisibility={variantsVisibility}
-                    scrollY={scrollY}
-                />
-            </React.Fragment>
+            <Tenth
+                variantsVisibility={variantsVisibility}
+                scrollY={scrollY}
+                getSteppers={(boolean) => getSteppers(boolean)}
+            />
         );
     }
     return (

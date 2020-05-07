@@ -1,7 +1,7 @@
 import React from "react";
 import { Frame } from "framer";
 
-export default function TenthHahahaLayer() {
+export default function TenthImageLayer() {
     return (
         <React.Fragment>
             <Frame
@@ -10,6 +10,7 @@ export default function TenthHahahaLayer() {
                     position: "fixed",
                     display: "flex",
                     justifyContent: "center",
+                    zIndex: 10,
                 }}
                 center
                 size={"100%"}

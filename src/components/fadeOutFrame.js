@@ -12,8 +12,10 @@ export default function FadeOutFrame(props) {
             animate={props.scrollY >= props.treshold ? "hidden" : "visible"}
             center={props.center}
             top={props.top}
+            left={props.left}
         >
             {props.text}
+            {props.src && <img src={props.src} alt={props.alt} />}
         </Frame>
     );
 }
