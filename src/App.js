@@ -48,6 +48,11 @@ export default function App() {
         visible: {
             opacity: 1,
         },
+        redZoom: {
+            scale: 5,
+            color: "red",
+            duration: 3,
+        },
     };
     const variantsOpacity = {
         initial: {
@@ -56,11 +61,6 @@ export default function App() {
         active: {
             opacity: 1,
         },
-    };
-    const redZoom = {
-        scale: 5,
-        color: "red",
-        duration: 3,
     };
 
     function getStep(step) {
@@ -86,7 +86,6 @@ export default function App() {
             <Home
                 getStep={(step) => getStep(step)}
                 variantsVisibility={variantsVisibility}
-                redZoom={redZoom}
             />
         );
     } else if (step === 1) {

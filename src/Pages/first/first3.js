@@ -1,0 +1,83 @@
+import React from "react";
+import FadeInFrame from "../../components/fadeInFrame";
+
+export default function ThirdWindow({ variantsVisibility, scrollY }) {
+    const style = { zIndex: 1, fontSize: 40, textAlign: "center" };
+    const bigStyle = { zIndex: 1, fontSize: 100, textAlign: "center" };
+
+    return (
+        <React.Fragment>
+            <FadeInFrame
+                variantsVisibility={variantsVisibility}
+                scrollY={scrollY}
+                style={style}
+                treshold={600}
+                top={1000}
+                center="y"
+                width={"25%"}
+                text="Sjediš negdje u dnu razreda, a ja duboko u sebi čujem
+                preskakanje tvoje vilice, škripanje tvog kapka, rimu škrgutanja
+                očnjaka i podočnjaka."
+            />
+            <FadeInFrame
+                variantsVisibility={variantsVisibility}
+                scrollY={scrollY}
+                style={style}
+                treshold={700}
+                top={1200}
+                text="Očnjaci, podočnjaci, kapci."
+            />
+            <FadeInFrame
+                variantsVisibility={variantsVisibility}
+                scrollY={scrollY}
+                style={bigStyle}
+                treshold={1000}
+                top={1150}
+                text="Očnjaci,"
+            />
+            <FadeInFrame
+                variantsVisibility={variantsVisibility}
+                scrollY={scrollY}
+                style={bigStyle}
+                treshold={1050}
+                top={1200}
+                text="podočnjaci,"
+            />
+            <FadeInFrame
+                variantsVisibility={variantsVisibility}
+                scrollY={scrollY}
+                style={bigStyle}
+                treshold={1100}
+                top={1250}
+                text="kapci,"
+            />
+            <FadeInFrame
+                variantsVisibility={variantsVisibility}
+                scrollY={scrollY}
+                style={{
+                    zIndex: 1,
+                    fontSize: 40,
+                    textAlign: "center",
+                    color: "white",
+                }}
+                treshold={1150}
+                top={1600}
+                left={600}
+                width={"25%"}
+                text="tvoji ne govore tko su bili tvoji preci ni u kojim su nijemim
+                filmovima glumili. Sve što mi imaju za reći su neugodne
+                frekvencije."
+            />
+            <FadeInFrame
+                variantsVisibility={variantsVisibility}
+                scrollY={scrollY}
+                treshold={1150}
+                //center="x"
+                top={1300}
+                left={470}
+                src="/images/ocnjak-cat.png"
+                alt="cat-fang"
+            />
+        </React.Fragment>
+    );
+}

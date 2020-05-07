@@ -4,11 +4,12 @@ import { Frame } from "framer";
 export default function FadeInFrame(props) {
     return (
         <Frame
-            background={"none"}
+            background={props.background || "none"}
             variants={props.variantsVisibility}
             initial={"hidden"}
             animate={props.scrollY >= props.treshold ? "visible" : "hidden"}
-            width={500}
+            width={props.width || 500}
+            height={props.height}
             style={props.style}
             top={props.top}
             center={props.center}
