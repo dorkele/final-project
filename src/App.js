@@ -7,8 +7,7 @@ import Second from "./Pages/second";
 import Third from "./Pages/third";
 import Fourth from "./Pages/fourth";
 import Fifth from "./Pages/fifth";
-import Sixth from "./sixth";
-import SixthImageLayer from "./sixth-image-layer";
+import Sixth from "./Pages/sixth";
 import Seventh from "./Pages/seventh";
 import Eight from "./Pages/eight";
 import Ninth from "./Pages/ninth";
@@ -129,17 +128,12 @@ export default function App() {
         );
     } else if (step === 6) {
         page = (
-            <React.Fragment>
-                <Sixth
-                    variantsVisibility={variantsVisibility}
-                    scrollX={scrollX}
-                    getSteppers={(boolean) => getSteppers(boolean)}
-                />
-                <SixthImageLayer
-                    variantsVisibility={variantsVisibility}
-                    scrollY={scrollX}
-                />
-            </React.Fragment>
+            <Sixth
+                variantsVisibility={variantsVisibility}
+                scrollX={scrollX}
+                scrollY={scrollY}
+                getSteppers={(boolean) => getSteppers(boolean)}
+            />
         );
     } else if (step === 7) {
         page = (
