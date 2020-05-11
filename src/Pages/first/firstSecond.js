@@ -3,13 +3,13 @@ import FadeInFrame from "../../components/fadeInFrame";
 import RedZoomIn from "../../components/redZoomIn";
 
 export default function SecondWindow({ scrollY, variantsVisibility }) {
-    const arrLeft = [1000, 250, 100, 711, 340, 632];
-    const arrTop = [670, 680, 690, 640, 660, 510];
+    const arrLeft = ["80%", "25%", "10%", "71%", "34%", "63%"];
+    const arrTop = ["91%", "93%", "75%", "95%", "97%", "86%"];
 
     return (
         <React.Fragment>
             <FadeInFrame
-                top={650}
+                top={"90%"}
                 variantsVisibility={variantsVisibility}
                 scrollY={scrollY}
                 treshold={180}
@@ -19,7 +19,7 @@ export default function SecondWindow({ scrollY, variantsVisibility }) {
                 ranjivi, sanjivi,"
             />
             <RedZoomIn
-                top={670}
+                top={"93%"}
                 fontSize={80}
                 variantsVisibility={variantsVisibility}
                 treshold={400}
@@ -37,6 +37,7 @@ export default function SecondWindow({ scrollY, variantsVisibility }) {
                         fontSize={20}
                         variantsVisibility={variantsVisibility}
                         scrollY={scrollY}
+                        width={50}
                         text="fak"
                     />
                 );

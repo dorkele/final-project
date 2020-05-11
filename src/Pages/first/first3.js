@@ -12,7 +12,7 @@ export default function ThirdWindow({ variantsVisibility, scrollY }) {
                 scrollY={scrollY}
                 style={style}
                 treshold={600}
-                top={1000}
+                top={"150%"}
                 center="y"
                 width={"25%"}
                 text="Sjediš negdje u dnu razreda, a ja duboko u sebi čujem
@@ -24,7 +24,7 @@ export default function ThirdWindow({ variantsVisibility, scrollY }) {
                 scrollY={scrollY}
                 style={style}
                 treshold={700}
-                top={1200}
+                top={"190%"}
                 text="Očnjaci, podočnjaci, kapci."
             />
             <FadeInFrame
@@ -32,7 +32,7 @@ export default function ThirdWindow({ variantsVisibility, scrollY }) {
                 scrollY={scrollY}
                 style={bigStyle}
                 treshold={1000}
-                top={1150}
+                top={"205%"}
                 text="Očnjaci,"
             />
             <FadeInFrame
@@ -40,7 +40,7 @@ export default function ThirdWindow({ variantsVisibility, scrollY }) {
                 scrollY={scrollY}
                 style={bigStyle}
                 treshold={1050}
-                top={1200}
+                top={"210%"}
                 text="podočnjaci,"
             />
             <FadeInFrame
@@ -48,7 +48,7 @@ export default function ThirdWindow({ variantsVisibility, scrollY }) {
                 scrollY={scrollY}
                 style={bigStyle}
                 treshold={1100}
-                top={1250}
+                top={"215%"}
                 text="kapci,"
             />
             <FadeInFrame
@@ -61,8 +61,7 @@ export default function ThirdWindow({ variantsVisibility, scrollY }) {
                     color: "white",
                 }}
                 treshold={1150}
-                top={1600}
-                left={600}
+                top={"260%"}
                 width={"25%"}
                 text="tvoji ne govore tko su bili tvoji preci ni u kojim su nijemim
                 filmovima glumili. Sve što mi imaju za reći su neugodne
@@ -72,11 +71,12 @@ export default function ThirdWindow({ variantsVisibility, scrollY }) {
                 variantsVisibility={variantsVisibility}
                 scrollY={scrollY}
                 treshold={1150}
-                //center="x"
-                top={1300}
-                left={470}
+                top={"230%"}
                 src="/images/ocnjak-cat.png"
                 alt="cat-fang"
+                width={"100%"}
+                height={"100%"}
+                style={{ display: "flex", justifyContent: "center" }}
             />
         </React.Fragment>
     );

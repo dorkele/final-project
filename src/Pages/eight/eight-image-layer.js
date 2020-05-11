@@ -1,5 +1,4 @@
 import React from "react";
-import { Frame } from "framer";
 import "./eight.css";
 import OpacityFadeOut from "../../components/opacityFadeOut";
 import OpacityFadeInFadeOut from "../../components/opacityFadeInFadeOut";
@@ -11,7 +10,7 @@ export default function EightImageLayer({ scrollY, variantsOpacity }) {
         <React.Fragment>
             <OpacityFadeOut
                 variantsOpacity={variantsOpacity}
-                top={100}
+                top={"20%"}
                 style={style}
                 width={"10%"}
                 src="/images/anger.jpg"
@@ -25,8 +24,8 @@ export default function EightImageLayer({ scrollY, variantsOpacity }) {
                 treshold={60}
                 tresholdOut={100}
                 style={style}
-                top={110}
-                left={500}
+                top={"17%"}
+                left={"45%"}
                 src="/images/body.jpg"
                 alt="body-quote"
             />
@@ -36,8 +35,8 @@ export default function EightImageLayer({ scrollY, variantsOpacity }) {
                 treshold={100}
                 tresholdOut={150}
                 style={style}
-                top={350}
-                left={300}
+                top={"35%"}
+                left={"25%"}
                 src="/images/personality.jpg"
                 alt="personality-quote"
             />
@@ -47,8 +46,8 @@ export default function EightImageLayer({ scrollY, variantsOpacity }) {
                 treshold={150}
                 tresholdOut={200}
                 style={style}
-                top={400}
-                left={50}
+                top={"60%"}
+                left={"10%"}
                 src="/images/pink-meme.jpg"
                 alt="pink-meme"
             />
@@ -58,8 +57,8 @@ export default function EightImageLayer({ scrollY, variantsOpacity }) {
                 treshold={200}
                 tresholdOut={250}
                 style={style}
-                top={100}
-                left={100}
+                top={"10%"}
+                left={"5%"}
                 src="/images/rebel.jpg"
                 alt="rebel-quote"
             />
@@ -69,8 +68,8 @@ export default function EightImageLayer({ scrollY, variantsOpacity }) {
                 treshold={300}
                 tresholdOut={350}
                 style={style}
-                top={500}
-                left={700}
+                top={"50%"}
+                left={"50%"}
                 src="/images/scream.jpg"
                 alt="scream-quote"
             />
@@ -80,8 +79,8 @@ export default function EightImageLayer({ scrollY, variantsOpacity }) {
                 treshold={400}
                 tresholdOut={450}
                 style={style}
-                top={50}
-                left={700}
+                top={"7%"}
+                left={"56%"}
                 src="/images/suffering.jpg"
                 alt="suffering-quote"
             />
@@ -90,8 +89,8 @@ export default function EightImageLayer({ scrollY, variantsOpacity }) {
                 scrollY={scrollY}
                 treshold={500}
                 style={style}
-                top={250}
-                left={950}
+                top={"30%"}
+                left={"65%"}
                 src="/images/tired.jpg"
                 alt="tired-quote"
             />

@@ -36,12 +36,12 @@ export default function Eight({
                 />
                 <FadeOutFrame
                     style={style}
-                    width={700}
+                    width={"53%"}
                     scrollY={scrollY}
                     treshold={60}
                     variantsVisibility={variantsVisibility}
-                    center="x"
-                    top={200}
+                    left={"47%"}
+                    top={"6%"}
                     text="Godinama, godinama poslije, ne sjećate se više nikoga. Ni
                     glupe kolibe, ni glupog djeteta i njegova oca. Godinama
                     poslije razvili ste bolest koja ne pamti pijane muze koje od
@@ -64,8 +64,8 @@ export default function Eight({
                     visokog plemstva. (Izmišljotina.)"
                 />
                 <FadeInFadeOutFrame
-                    top={300}
-                    left={687}
+                    top={"40%"}
+                    left={"47%"}
                     variantsVisibility={variantsVisibility}
                     style={style}
                     scrollY={scrollY}
@@ -75,8 +75,8 @@ export default function Eight({
                     izračunali. Znate brojati samo na prste, a nemate ih toliko."
                 />
                 <FadeInFadeOutFrame
-                    top={500}
-                    left={100}
+                    top={"70%"}
+                    left={"10%"}
                     variantsVisibility={variantsVisibility}
                     style={style}
                     scrollY={scrollY}
@@ -85,14 +85,14 @@ export default function Eight({
                     text="Bit će spektakularno, spekulirate."
                 />
                 <FadeInFadeOutFrame
-                    top={340}
-                    left={800}
+                    top={"25%"}
+                    left={"60%"}
                     variantsVisibility={variantsVisibility}
                     style={style}
                     scrollY={scrollY}
                     treshold={150}
                     tresholdOut={200}
-                    width={500}
+                    width={"40%"}
                     text="Jednom mi je rekao da je umoran od svega što posjeduje. Da
                     mu se često bljuje pa mu je neugodno pred dečkima. „Jako si
                     vizualan“, rekla sam mu, što je značilo, što je moglo
@@ -104,8 +104,8 @@ export default function Eight({
                     animalije. "
                 />
                 <FadeInFadeOutFrame
-                    top={91}
-                    left={720}
+                    top={"22%"}
+                    left={"45%"}
                     variantsVisibility={variantsVisibility}
                     style={style}
                     scrollY={scrollY}
@@ -117,8 +117,8 @@ export default function Eight({
                     su umrli jer te više ne trebaju.“"
                 />
                 <FadeInFadeOutFrame
-                    top={270}
-                    left={590}
+                    top={"20%"}
+                    left={"37%"}
                     variantsVisibility={variantsVisibility}
                     style={style}
                     scrollY={scrollY}
@@ -129,8 +129,8 @@ export default function Eight({
                     od zvijezda."
                 />
                 <FadeInFadeOutFrame
-                    top={267}
-                    left={540}
+                    top={"25%"}
+                    left={"53%"}
                     variantsVisibility={variantsVisibility}
                     style={style}
                     scrollY={scrollY}
@@ -141,7 +141,7 @@ export default function Eight({
                 />
                 <FadeInFrame
                     center="x"
-                    top={100}
+                    top={"10%"}
                     variantsVisibility={variantsVisibility}
                     style={style}
                     scrollY={scrollY}

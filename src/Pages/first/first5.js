@@ -6,10 +6,10 @@ export default function FifthWindow({ variantsVisibility, scrollY }) {
         <FadeInFrame
             variantsVisibility={variantsVisibility}
             scrollY={scrollY}
-            top={4100}
+            top={"550%"}
             background="url('/images/skin.jpg')"
             treshold={3550}
-            style={{ fontSize: 40, textAlign: "center" }}
+            style={{ fontSize: 60, textAlign: "center" }}
             width={"100%"}
             height={"100%"}
             text="Bila sam tamo, zamotana u slojeve i slojeve svoje kože."

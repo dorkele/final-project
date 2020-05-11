@@ -15,7 +15,11 @@ export default function TenthImageLayer() {
                 center
                 size={"100%"}
             >
-                <img src="/images/doki-i-ale_FRONT.png" alt="girls" />
+                <img
+                    src="/images/doki-i-ale_FRONT.png"
+                    alt="girls"
+                    className="img"
+                />
             </Frame>
             <Frame
                 background={"none"}
@@ -28,12 +32,17 @@ export default function TenthImageLayer() {
                 center
                 size={"100%"}
             >
-                <img src="/images/doki-i-ale_BACK.png" alt="girls" />
+                <img
+                    src="/images/doki-i-ale_BACK.png"
+                    alt="girls"
+                    className="img"
+                />
                 <Frame
-                    background={"#ff5757"}
                     center
                     style={{ zIndex: -2 }}
-                    size={"48%"}
+                    width={"34%"}
+                    height={"100%"}
+                    backgroundColor={"#ff5757"}
                 />
             </Frame>
         </React.Fragment>

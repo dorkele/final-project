@@ -19,7 +19,7 @@ export default function FirstWindow({ variantsVisibility, scrollY }) {
                     variantsVisibility={variantsVisibility}
                     scrollY={scrollY}
                     treshold={70}
-                    left={400}
+                    left={"27%"}
                     src="/images/ocnjak2.png"
                     alt="dogtooth"
                 />
@@ -27,7 +27,7 @@ export default function FirstWindow({ variantsVisibility, scrollY }) {
                     variantsVisibility={variantsVisibility}
                     scrollY={scrollY}
                     treshold={40}
-                    left={750}
+                    left={"50%"}
                     src="/images/ocnjak4.png"
                     alt="dogtooth"
                 />
@@ -35,7 +35,7 @@ export default function FirstWindow({ variantsVisibility, scrollY }) {
                     variantsVisibility={variantsVisibility}
                     scrollY={scrollY}
                     treshold={140}
-                    left={1100}
+                    left={"72%"}
                     src="/images/ocnjak5.png"
                     alt="dogtooth"
                 />
@@ -49,7 +49,7 @@ export default function FirstWindow({ variantsVisibility, scrollY }) {
                 text="Očnjaci, podočnjaci, kapci."
             />
             <FadeInFrame
-                top={200}
+                top={"30%"}
                 variantsVisibility={variantsVisibility}
                 scrollY={scrollY}
                 treshold={40}
@@ -57,7 +57,7 @@ export default function FirstWindow({ variantsVisibility, scrollY }) {
                 text="Očnjaci,"
             />
             <FadeInFrame
-                top={300}
+                top={"40%"}
                 variantsVisibility={variantsVisibility}
                 scrollY={scrollY}
                 treshold={70}
@@ -65,7 +65,7 @@ export default function FirstWindow({ variantsVisibility, scrollY }) {
                 text="podočnjaci,"
             />
             <FadeInFrame
-                top={400}
+                top={"50%"}
                 variantsVisibility={variantsVisibility}
                 scrollY={scrollY}
                 treshold={100}

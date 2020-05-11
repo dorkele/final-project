@@ -10,7 +10,7 @@ export default function FourthWindow({ variantsVisibility, scrollY }) {
                 scrollY={scrollY}
                 treshold={1600}
                 style={style}
-                top={2100}
+                top={"330%"}
                 width={"25%"}
                 text="Koliko smo se puta u mojoj glavi, šta? Seksali jebali vodili
                 ljubav, te spike. Ti si se malo okrenuo prema meni pa sam
@@ -20,8 +20,8 @@ export default function FourthWindow({ variantsVisibility, scrollY }) {
                 variantsVisibility={variantsVisibility}
                 scrollY={scrollY}
                 treshold={1900}
-                top={2300}
-                center="x"
+                top={"350%"}
+                left={0}
                 src="/images/avril-anakin.png"
                 alt="avril-anakin-sad"
             />
@@ -30,7 +30,7 @@ export default function FourthWindow({ variantsVisibility, scrollY }) {
                 scrollY={scrollY}
                 treshold={2200}
                 style={style}
-                top={2600}
+                top={"390%"}
                 width={"50%"}
                 text="I tako, u skoro ljetno jutro, dok djevojčice pupaju (tiho, tiho,
                 no ne i pretiho), oni ulaze u učionice i javljaju kako
@@ -44,7 +44,7 @@ export default function FourthWindow({ variantsVisibility, scrollY }) {
                 scrollY={scrollY}
                 treshold={2600}
                 style={style}
-                top={3100}
+                top={"450%"}
                 width={"50%"}
                 text="Bojiš se, znojiš se, a možda bi baš bilo dobro u ovom trenutku
                 kihnuti. Ali ne možeš toliko dugo oči držati zatvorene. Ej znaš
@@ -56,8 +56,8 @@ export default function FourthWindow({ variantsVisibility, scrollY }) {
                 variantsVisibility={variantsVisibility}
                 scrollY={scrollY}
                 treshold={3100}
-                top={3300}
-                left={1000}
+                top={"480%"}
+                left={"60%"}
                 src="/images/stones.png"
                 alt="stones"
             />
@@ -66,7 +66,7 @@ export default function FourthWindow({ variantsVisibility, scrollY }) {
                 scrollY={scrollY}
                 treshold={3100}
                 style={style}
-                top={3600}
+                top={"510%"}
                 width={"25%"}
                 text="Prvo što sam učinila kada sam shvatila da nam nema spasa. Bila
                 sam u toj zjapljujuće praznoj učionici. Nisam otišla doma

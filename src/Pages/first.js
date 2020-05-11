@@ -11,9 +11,11 @@ export default function First({ variantsVisibility, scrollY, getSteppers }) {
         getSteppers(false);
     }, []);
 
-    if (scrollY > 4040) {
+    if (scrollY > 3870) {
         getSteppers(true);
     }
+    console.log(scrollY);
+
     return (
         <React.Fragment>
             <div className="wrapping-container">

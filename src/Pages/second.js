@@ -12,6 +12,12 @@ export default function Second({ variantsVisibility, scrollY, getSteppers }) {
         getSteppers(true);
     }
 
+    const style = {
+        fontSize: "25px",
+        color: "#ff5757",
+        textAlign: "center",
+    };
+
     return (
         <React.Fragment>
             <div className="textbox">
@@ -24,11 +30,8 @@ export default function Second({ variantsVisibility, scrollY, getSteppers }) {
                     doma kod mene, a možda i znaš, a zašto onda ne dolaziš doma?
                     Osobo. Ali onda se javila sekretarica: „Muze su pijane,
                     nakon tona ostavite poruku.“"
-                    style={{
-                        fontSize: "25px",
-                        color: "#ff5757",
-                    }}
-                    top={400}
+                    style={style}
+                    top={"30%"}
                     treshold={40}
                     scrollY={scrollY}
                     variantsVisibility={variantsVisibility}
@@ -40,11 +43,8 @@ export default function Second({ variantsVisibility, scrollY, getSteppers }) {
                     apokalipsa je u modi. Ovo je zasigurno ravno s modnih pista.
                     Izgestikulirala sam im da me ne slijede. Znala sam da ću
                     preživjeti. Oni neće."
-                    style={{
-                        fontSize: "25px",
-                        color: "#ff5757",
-                    }}
-                    top={600}
+                    style={style}
+                    top={"60%"}
                     treshold={80}
                     scrollY={scrollY}
                     variantsVisibility={variantsVisibility}
@@ -52,12 +52,9 @@ export default function Second({ variantsVisibility, scrollY, getSteppers }) {
                 <FadeInFrame
                     text="Mučili su me prastari leptirići u trbuhu. Idem leć na pod.
                     Jebe mi se za ožiljke i za dan,"
-                    style={{
-                        fontSize: "25px",
-                        color: "#ff5757",
-                    }}
-                    top={800}
-                    treshold={275}
+                    style={style}
+                    top={"90%"}
+                    treshold={150}
                     scrollY={scrollY}
                     variantsVisibility={variantsVisibility}
                 />

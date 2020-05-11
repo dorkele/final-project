@@ -15,6 +15,7 @@ export default function Home(props) {
     function sendStep(step) {
         props.getStep(step);
     }
+
     return (
         <div className={styles.container}>
             <div className={styles.title}>Žudnja Za Smakom</div>

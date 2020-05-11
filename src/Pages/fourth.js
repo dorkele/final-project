@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { Frame } from "framer";
 import "./fourth/fourth.css";
 import VideoFixedCenter from "./fourth/videoCenter";
 import FadeOutFrame from "../components/fadeOutFrame";
@@ -13,12 +12,20 @@ export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
     if (scrollY > 970) {
         getSteppers(true);
     }
+
+    const style = {
+        fontSize: 30,
+        fontWeight: "bold",
+        color: "white",
+        textAlign: "center",
+    };
+
     return (
         <React.Fragment>
             <div className="wrapper-container">
                 <VideoFixedCenter src={"/images/video.mp4"} />
                 <FadeOutFrame
-                    text=" Sjećate li se trenutka kada se Zemlja sručila u bezdan?
+                    text="Sjećate li se trenutka kada se Zemlja sručila u bezdan?
                     Smrad kaosa poput smrada leševa lelujao je ulicama ne
                     očekujući da ga netko osjeti. I onda smo mi postali mali
                     mravići koji hodaju po crti tik iznad tvojih trepavica
@@ -27,8 +34,8 @@ export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
                     krokodilske suze. Pa se tako danima moglo čuti samo
                     zapomaganje, bez naznake lijepe melodije. A ja sam bila
                     mlada."
-                    width={500}
-                    style={{ fontSize: 30, fontWeight: "bold", color: "white" }}
+                    width={"40%"}
+                    style={style}
                     variantsVisibility={variantsVisibility}
                     scrollY={scrollY}
                     treshold={80}
@@ -41,7 +48,7 @@ export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
                     variantsVisibility={variantsVisibility}
                     treshold={80}
                     tresholdOut={120}
-                    style={{ fontWeight: "bold", color: "white" }}
+                    style={style}
                     scrollY={scrollY}
                 />
                 <FadeInFadeOutFrame
@@ -50,7 +57,7 @@ export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
                     variantsVisibility={variantsVisibility}
                     treshold={120}
                     tresholdOut={160}
-                    style={{ fontWeight: "bold", color: "white" }}
+                    style={style}
                     scrollY={scrollY}
                 />
                 <FadeInFadeOutFrame
@@ -59,7 +66,7 @@ export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
                     variantsVisibility={variantsVisibility}
                     treshold={160}
                     tresholdOut={200}
-                    style={{ fontWeight: "bold", color: "white" }}
+                    style={style}
                     scrollY={scrollY}
                 />
                 <FadeInFadeOutFrame
@@ -68,7 +75,7 @@ export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
                     variantsVisibility={variantsVisibility}
                     treshold={200}
                     tresholdOut={240}
-                    style={{ fontWeight: "bold", color: "white" }}
+                    style={style}
                     scrollY={scrollY}
                 />
                 <FadeInFadeOutFrame
@@ -77,7 +84,7 @@ export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
                     variantsVisibility={variantsVisibility}
                     treshold={240}
                     tresholdOut={280}
-                    style={{ fontWeight: "bold", color: "white" }}
+                    style={style}
                     scrollY={scrollY}
                 />
                 <FadeInFadeOutFrame
@@ -86,7 +93,7 @@ export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
                     variantsVisibility={variantsVisibility}
                     treshold={280}
                     tresholdOut={320}
-                    style={{ fontWeight: "bold", color: "white" }}
+                    style={style}
                     scrollY={scrollY}
                 />
                 <FadeInFadeOutFrame
@@ -95,7 +102,7 @@ export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
                     variantsVisibility={variantsVisibility}
                     treshold={320}
                     tresholdOut={360}
-                    style={{ fontWeight: "bold", color: "white" }}
+                    style={style}
                     scrollY={scrollY}
                 />
                 <FadeInFadeOutFrame
@@ -104,7 +111,7 @@ export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
                     variantsVisibility={variantsVisibility}
                     treshold={400}
                     tresholdOut={440}
-                    style={{ fontWeight: "bold", color: "white" }}
+                    style={style}
                     scrollY={scrollY}
                 />
                 <FadeInFadeOutFrame
@@ -113,7 +120,7 @@ export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
                     variantsVisibility={variantsVisibility}
                     treshold={440}
                     tresholdOut={480}
-                    style={{ fontWeight: "bold", color: "white" }}
+                    style={style}
                     scrollY={scrollY}
                 />
                 <FadeInFadeOutFrame
@@ -123,7 +130,7 @@ export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
                     variantsVisibility={variantsVisibility}
                     treshold={520}
                     tresholdOut={560}
-                    style={{ fontWeight: "bold", color: "white" }}
+                    style={style}
                     scrollY={scrollY}
                 />
                 <FadeInFadeOutFrame
@@ -132,7 +139,7 @@ export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
                     variantsVisibility={variantsVisibility}
                     treshold={560}
                     tresholdOut={600}
-                    style={{ fontWeight: "bold", color: "white" }}
+                    style={style}
                     scrollY={scrollY}
                 />
                 <FadeInFadeOutFrame
@@ -141,7 +148,7 @@ export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
                     variantsVisibility={variantsVisibility}
                     treshold={600}
                     tresholdOut={640}
-                    style={{ fontWeight: "bold", color: "white" }}
+                    style={style}
                     scrollY={scrollY}
                 />
                 <FadeInFadeOutFrame
@@ -152,7 +159,7 @@ export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
                     variantsVisibility={variantsVisibility}
                     treshold={640}
                     tresholdOut={680}
-                    style={{ fontWeight: "bold", color: "white" }}
+                    style={style}
                     scrollY={scrollY}
                 />
                 <FadeInFadeOutFrame
@@ -162,7 +169,7 @@ export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
                     variantsVisibility={variantsVisibility}
                     treshold={680}
                     tresholdOut={720}
-                    style={{ fontWeight: "bold", color: "white" }}
+                    style={style}
                     scrollY={scrollY}
                 />
                 <FadeInFadeOutFrame
@@ -173,7 +180,7 @@ export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
                     variantsVisibility={variantsVisibility}
                     treshold={720}
                     tresholdOut={740}
-                    style={{ fontWeight: "bold", color: "white" }}
+                    style={style}
                     scrollY={scrollY}
                 />
                 <FadeInFadeOutFrame
@@ -183,7 +190,7 @@ export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
                     variantsVisibility={variantsVisibility}
                     treshold={740}
                     tresholdOut={780}
-                    style={{ fontWeight: "bold", color: "white" }}
+                    style={style}
                     scrollY={scrollY}
                 />
                 <FadeInFadeOutFrame
@@ -195,9 +202,9 @@ export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
                     variantsVisibility={variantsVisibility}
                     treshold={770}
                     tresholdOut={820}
-                    style={{ fontWeight: "bold", color: "white" }}
+                    style={style}
                     scrollY={scrollY}
-                    width={500}
+                    width={"40%"}
                 />
                 <FadeInFadeOutFrame
                     text="Stara susjeda nam je donijela juhe. Puno je pričala, ali
@@ -213,9 +220,9 @@ export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
                     variantsVisibility={variantsVisibility}
                     treshold={820}
                     tresholdOut={860}
-                    style={{ fontWeight: "bold", color: "white" }}
+                    style={style}
                     scrollY={scrollY}
-                    width={500}
+                    width={"40%"}
                 />
                 <FadeInFadeOutFrame
                     text="Djeca su krenula relativno rano. Mislim, ranije nego što to
@@ -227,9 +234,9 @@ export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
                     center="y"
                     variantsVisibility={variantsVisibility}
                     treshold={900}
-                    style={{ fontWeight: "bold", color: "white" }}
+                    style={style}
                     scrollY={scrollY}
-                    width={500}
+                    width={"40%"}
                 />
             </div>
         </React.Fragment>

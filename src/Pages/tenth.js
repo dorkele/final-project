@@ -27,7 +27,7 @@ export default function Tenth({ variantsVisibility, scrollY, getSteppers }) {
                         color: "white",
                         fontWeight: "bold",
                     }}
-                    top={225}
+                    top={"30%"}
                     initial={{ left: 1900 }}
                     animate={{ x: -3000 }}
                     transition={{ duration: 30 }}

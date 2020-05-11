@@ -18,6 +18,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-x: hidden;
 }
 
 .subtext {
@@ -27,9 +28,4 @@ body {
 
 .text-align-center {
     text-align: center;
-}
-
-.background-gradient {
-    background: radial-gradient(B59194 0%, rgb(255, 255, 255) 87%);
-    /* color: 401f3e; */
 }

@@ -1,4 +1,5 @@
 .title {
+    margin-top: 5%;
     font-size: 200px;
     width: 100%;
     text-align: center;
@@ -25,7 +26,7 @@
     font-size: 120px;
     text-align: center;
     color: #ff5757;
-    margin-top: 20px;
+    margin-top: 5%;
     background-color: none;
     background: none;
     border: none;

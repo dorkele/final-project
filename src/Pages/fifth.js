@@ -28,7 +28,7 @@ export default function Fifth({ variantsVisibility, scrollY, getSteppers }) {
                 />
                 <FadeInFrame
                     variantsVisibility={variantsVisibility}
-                    top={250}
+                    top={"30%"}
                     style={style}
                     scrollY={scrollY}
                     treshold={50}
@@ -36,7 +36,7 @@ export default function Fifth({ variantsVisibility, scrollY, getSteppers }) {
                 />
                 <FadeInFrame
                     variantsVisibility={variantsVisibility}
-                    top={350}
+                    top={"35%"}
                     style={style}
                     scrollY={scrollY}
                     treshold={100}
@@ -46,7 +46,7 @@ export default function Fifth({ variantsVisibility, scrollY, getSteppers }) {
                 />
                 <FadeInFrame
                     variantsVisibility={variantsVisibility}
-                    top={450}
+                    top={"45%"}
                     style={style}
                     scrollY={scrollY}
                     treshold={150}
@@ -56,7 +56,7 @@ export default function Fifth({ variantsVisibility, scrollY, getSteppers }) {
                 />
                 <FadeInFrame
                     variantsVisibility={variantsVisibility}
-                    top={550}
+                    top={"55%"}
                     style={style}
                     scrollY={scrollY}
                     treshold={200}
@@ -66,7 +66,7 @@ export default function Fifth({ variantsVisibility, scrollY, getSteppers }) {
                 />
                 <FadeInFrame
                     variantsVisibility={variantsVisibility}
-                    top={650}
+                    top={"65%"}
                     style={style}
                     scrollY={scrollY}
                     treshold={250}
@@ -76,7 +76,7 @@ export default function Fifth({ variantsVisibility, scrollY, getSteppers }) {
                 />
                 <FadeInFrame
                     variantsVisibility={variantsVisibility}
-                    top={750}
+                    top={"80%"}
                     style={style}
                     scrollY={scrollY}
                     treshold={300}
@@ -85,7 +85,7 @@ export default function Fifth({ variantsVisibility, scrollY, getSteppers }) {
                 />
                 <FadeInFrame
                     variantsVisibility={variantsVisibility}
-                    top={850}
+                    top={"90%"}
                     style={style}
                     scrollY={scrollY}
                     treshold={350}
@@ -96,7 +96,7 @@ export default function Fifth({ variantsVisibility, scrollY, getSteppers }) {
                 />
                 <FadeInFrame
                     variantsVisibility={variantsVisibility}
-                    top={950}
+                    top={"105%"}
                     style={style}
                     scrollY={scrollY}
                     treshold={400}
@@ -104,7 +104,7 @@ export default function Fifth({ variantsVisibility, scrollY, getSteppers }) {
                 />
                 <FadeInFrame
                     variantsVisibility={variantsVisibility}
-                    top={1050}
+                    top={"110%"}
                     style={style}
                     scrollY={scrollY}
                     treshold={450}
@@ -115,7 +115,7 @@ export default function Fifth({ variantsVisibility, scrollY, getSteppers }) {
                 />
                 <FadeInFrame
                     variantsVisibility={variantsVisibility}
-                    top={1150}
+                    top={"125%"}
                     style={style}
                     scrollY={scrollY}
                     treshold={500}
@@ -126,7 +126,7 @@ export default function Fifth({ variantsVisibility, scrollY, getSteppers }) {
                 />
                 <FadeInFrame
                     variantsVisibility={variantsVisibility}
-                    top={1250}
+                    top={"140%"}
                     style={style}
                     scrollY={scrollY}
                     treshold={550}

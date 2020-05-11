@@ -13,18 +13,19 @@ export default function Seventh({ variantsVisibility, scrollY, getSteppers }) {
     }
 
     const styleBig = { fontSize: 60, textAlign: "center" };
+    const styleSmall = { fontSize: 30, textAlign: "center" };
 
     return (
         <React.Fragment>
             <SeventhBackground scrollY={scrollY} />
             <div className="container">
                 <FadeInFrame
-                    style={{ fontSize: 30 }}
+                    style={styleSmall}
                     center="x"
                     variantsVisibility={variantsVisibility}
                     scrollY={scrollY}
                     treshold={40}
-                    top={500}
+                    top={"40%"}
                     text="Napisala sam pjesmu. Neki dan. Napisala sam ju i šaptom
                     otpjevala prije spavanja onim pahuljicama od maslačaka kada
                     se pretvore u paučinu. Pjesma je išla ovako nekako:"
@@ -35,7 +36,7 @@ export default function Seventh({ variantsVisibility, scrollY, getSteppers }) {
                     variantsVisibility={variantsVisibility}
                     scrollY={scrollY}
                     treshold={100}
-                    top={700}
+                    top={"70%"}
                     text="Prostrano"
                 />
                 <FadeInFrame
@@ -44,7 +45,7 @@ export default function Seventh({ variantsVisibility, scrollY, getSteppers }) {
                     variantsVisibility={variantsVisibility}
                     scrollY={scrollY}
                     treshold={400}
-                    top={1000}
+                    top={"100%"}
                     text="Prostiranje"
                 />
                 <FadeInFrame
@@ -53,16 +54,16 @@ export default function Seventh({ variantsVisibility, scrollY, getSteppers }) {
                     variantsVisibility={variantsVisibility}
                     scrollY={scrollY}
                     treshold={700}
-                    top={1300}
+                    top={"150%"}
                     text="Prostranstvima"
                 />
                 <FadeInFrame
-                    style={{ fontSize: 30 }}
+                    style={styleSmall}
                     center="x"
                     variantsVisibility={variantsVisibility}
                     scrollY={scrollY}
-                    treshold={950}
-                    top={1500}
+                    treshold={900}
+                    top={"190%"}
                     text="Mogla sam otpjevati samo posljednja tri slova, ali to nije
                     bilo samo. A kada bi me njezin brat upitao što mi to znači,
                     ja bih ga poljubila. Prostrano. Njezin brat mi priča priče o
