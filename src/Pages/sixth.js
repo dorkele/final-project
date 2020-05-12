@@ -100,7 +100,7 @@ export default function Sixth({ scrollX, getSteppers, scrollY }) {
                         fontSize: 23,
                     }}
                     bottom={"15%"}
-                    width={"270%"}
+                    width={"230%"}
                     height={25}
                     initial={{ left: 0 }}
                     animate={{ left: -scrollY }}

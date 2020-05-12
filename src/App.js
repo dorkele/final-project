@@ -26,6 +26,19 @@ export default function App() {
         }
     };
 
+    function getStep(step) {
+        setSteppers(false);
+        setStep(step);
+    }
+
+    function getSteppers(boolean) {
+        if (boolean === true) {
+            setSteppers(true);
+        } else {
+            setSteppers(false);
+        }
+    }
+
     let page;
     const [scrollY, setScrollY] = useState(window.scrollY);
     const [scrollX, setScrollX] = useState(window.scrollX);
@@ -61,20 +74,6 @@ export default function App() {
             opacity: 1,
         },
     };
-
-    function getStep(step) {
-        setSteppers(false);
-        setStep(step);
-        console.log("steppers in app: ", steppers);
-    }
-
-    function getSteppers(boolean) {
-        if (boolean === true) {
-            setSteppers(true);
-        } else {
-            setSteppers(false);
-        }
-    }
 
     function fullScreen() {
         document.documentElement.webkitRequestFullscreen();

@@ -8,12 +8,12 @@ import FifthWindow from "./first/first5";
 
 export default function First({ variantsVisibility, scrollY, getSteppers }) {
     useEffect(() => {
-        getSteppers(false);
-    }, []);
+        //getSteppers(false);
+        if (scrollY > 3870) {
+            getSteppers(true);
+        }
+    }, [scrollY, getSteppers]);
 
-    if (scrollY > 3870) {
-        getSteppers(true);
-    }
     console.log(scrollY);
 
     return (
