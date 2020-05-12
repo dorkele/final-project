@@ -8,6 +8,8 @@ export default function Second({ variantsVisibility, scrollY, getSteppers }) {
         getSteppers(false);
     }, []);
 
+    console.log(scrollY, window.scrollY);
+
     if (scrollY > 320) {
         getSteppers(true);
     }

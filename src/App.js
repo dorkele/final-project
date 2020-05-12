@@ -187,9 +187,8 @@ export default function App() {
                 />
             </button>
 
-            <Stepper getStep={(step) => getStep(step)} steppers={steppers} />
-
             {page}
+            <Stepper getStep={(step) => getStep(step)} steppers={steppers} />
         </React.Fragment>
     );
 }
