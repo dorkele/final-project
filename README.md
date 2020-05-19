@@ -1,1 +1,1 @@
-![test](./public/images/anger.jpg "proba")
+![test](/public/images/anger.jpg "proba")
