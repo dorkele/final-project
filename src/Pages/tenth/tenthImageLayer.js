@@ -6,7 +6,7 @@ export default function TenthImageLayer() {
     return (
         <React.Fragment>
             <Frame
-                background={"none"}
+                background={"url(/images/narance.png)"}
                 style={{
                     position: "fixed",
                     display: "flex",

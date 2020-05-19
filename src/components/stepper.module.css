@@ -6,23 +6,17 @@ body {
     width: 100%;
 }
 
-.stepper-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: #ff5757;
-    position: fixed;
-    height: 10%;
-    bottom: 0;
-    opacity: 1;
+.container {
     z-index: 100;
 }
 
 .buttons {
-    height: 100px;
-    width: 100px;
-    background-size: 100px 100px;
+    height: 100%;
+    width: 6.5%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     border: none;
+    background-color: #ff5757;
 }
 
 .buttons:hover {
@@ -33,41 +27,41 @@ body {
     border: 2px solid #8c52ff;
 }
 
-.home-btn {
+.home {
     background-image: url("/images/home.png");
 }
 
-.one-btn {
+.one {
     background-image: url("/images/oko.png");
 }
 
-.two-btn {
+.two {
     background-image: url("/images/leptir.png");
 }
 
-.three-btn {
+.three {
     background-image: url("/images/mjesec.png");
 }
-.four-btn {
+.four {
     background-image: url("/images/casa.png");
 }
-.five-btn {
+.five {
     background-image: url("/images/crv.png");
 }
-.six-btn {
+.six {
     background-image: url("/images/grob.png");
 }
-.seven-btn {
+.seven {
     background-image: url("/images/maslacak.png");
 }
 
-.eight-btn {
+.eight {
     background-image: url("/images/naranca.png");
 }
 
-.nine-btn {
+.nine {
     background-image: url("/images/tree.png");
 }
-.ten-btn {
+.ten {
     background-image: url("/images/zora.png");
 }

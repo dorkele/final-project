@@ -1,5 +1,5 @@
 import React from "react";
-import "./stepper.css";
+import styles from "./stepper.module.css";
 import { Frame } from "framer";
 
 export default function Stepper({ getStep, steppers }) {
@@ -10,10 +10,10 @@ export default function Stepper({ getStep, steppers }) {
 
     const variants = {
         slideIn: {
-            y: -100,
+            y: "-100%",
         },
         slideOut: {
-            y: 100,
+            y: "100%",
         },
     };
 
@@ -22,70 +22,61 @@ export default function Stepper({ getStep, steppers }) {
             variants={variants}
             animate={steppers ? "slideIn" : "slideOut"}
             transition={{ duration: 1 }}
-            className="stepper-container"
+            className={styles.container}
             width={"100%"}
-            height={100}
+            height={"14%"}
             backgroundColor={"#ff5757"}
             style={{
-                bottom: -100,
                 position: "fixed",
                 display: "flex",
                 justifyContent: "center",
+                bottom: "-14%",
             }}
         >
             <button
-                className="home-btn buttons"
+                className={`${styles.home} ${styles.buttons}`}
                 onClick={() => sendStep(0)}
             ></button>
             <button
-                className="one-btn buttons"
+                className={`${styles.one} ${styles.buttons}`}
                 onClick={() => sendStep(1)}
             ></button>
             <button
-                className="two-btn buttons"
+                className={`${styles.two} ${styles.buttons}`}
                 onClick={() => sendStep(2)}
             ></button>
             <button
-                className="three-btn buttons"
+                className={`${styles.three} ${styles.buttons}`}
                 onClick={() => sendStep(3)}
             ></button>
             <button
-                className="four-btn buttons"
+                className={`${styles.four} ${styles.buttons}`}
                 onClick={() => sendStep(4)}
             ></button>
             <button
-                className="five-btn buttons"
+                className={`${styles.five} ${styles.buttons}`}
                 onClick={() => sendStep(5)}
             ></button>
             <button
-                className="six-btn buttons"
+                className={`${styles.six} ${styles.buttons}`}
                 onClick={() => sendStep(6)}
             ></button>
             <button
-                className="seven-btn buttons"
+                className={`${styles.seven} ${styles.buttons}`}
                 onClick={() => sendStep(7)}
             ></button>
             <button
-                className="eight-btn buttons"
+                className={`${styles.eight} ${styles.buttons}`}
                 onClick={() => sendStep(8)}
             ></button>
             <button
-                className="nine-btn buttons"
+                className={`${styles.nine} ${styles.buttons}`}
                 onClick={() => sendStep(9)}
             ></button>
             <button
-                className="ten-btn buttons"
+                className={`${styles.ten} ${styles.buttons}`}
                 onClick={() => sendStep(10)}
             ></button>
-            {/* {step > 0 && (
-                    <button onClick={() => sendStep(step - 1)}>Previous</button>
-                )}
-                
-                
-
-                {step < 10 && (
-                    <button onClick={() => sendStep(step + 1)}>Next</button>
-                )}*/}
         </Frame>
     );
 }
