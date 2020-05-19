@@ -1,13 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Frame } from "framer";
 import "./sixth/sixth.css";
 import SixthImageLayer from "./sixth/sixth-image-layer";
 
 export default function Sixth({ scrollX, getSteppers, scrollY }) {
-    useEffect(() => {
-        getSteppers(false);
-    }, []);
-
     if (scrollY > 2130) {
         getSteppers(true);
     }

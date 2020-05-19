@@ -1,13 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./seventh/seventh.css";
 import FadeInFrame from "../components/fadeInFrame";
 import SeventhBackground from "./seventh/seventhBackground";
 
 export default function Seventh({ variantsVisibility, scrollY, getSteppers }) {
-    useEffect(() => {
-        getSteppers(false);
-    }, []);
-
     if (scrollY > 1270) {
         getSteppers(true);
     }

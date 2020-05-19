@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./first/first.css";
 import FirstWindow from "./first/firstFirst";
 import SecondWindow from "./first/firstSecond";
@@ -7,10 +7,6 @@ import FourthWindow from "./first/first4";
 import FifthWindow from "./first/first5";
 
 export default function First({ variantsVisibility, scrollY, getSteppers }) {
-    useEffect(() => {
-        getSteppers(false);
-    }, []);
-
     if (scrollY > 3970) {
         getSteppers(true);
     }

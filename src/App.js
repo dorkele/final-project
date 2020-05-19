@@ -41,17 +41,23 @@ export default function App() {
 
     let page;
     const [scrollY, setScrollY] = useState(window.scrollY);
-    const [scrollX, setScrollX] = useState(window.scrollX);
 
     useEffect(() => {
         const handleScroll = () => {
-            setScrollY(window.scrollY);
-            setScrollX(window.scrollX);
+            const yPos = window.scrollY;
+            const isScrollingUp = yPos < scrollY;
+            if (isScrollingUp === true) {
+                setSteppers(false);
+            }
+            setScrollY(yPos);
         };
-
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
-    }, [scrollY, scrollX, step]);
+    }, [scrollY]);
+
+    useEffect(() => {
+        getSteppers(false);
+    }, [step]);
 
     const variantsVisibility = {
         hidden: {
@@ -129,7 +135,6 @@ export default function App() {
         page = (
             <Sixth
                 variantsVisibility={variantsVisibility}
-                scrollX={scrollX}
                 scrollY={scrollY}
                 getSteppers={(boolean) => getSteppers(boolean)}
             />

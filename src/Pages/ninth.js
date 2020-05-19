@@ -1,11 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Frame, Page } from "framer";
 
 export default function Ninth({ getSteppers }) {
-    useEffect(() => {
-        getSteppers(false);
-    }, []);
-
     const styleColorless = {
         backgroundColor: "none",
         fontSize: 30,
@@ -22,6 +18,8 @@ export default function Ninth({ getSteppers }) {
                 onChangePage={(current, previous) => {
                     if (current === 3) {
                         getSteppers(true);
+                    } else {
+                        getSteppers(false);
                     }
                 }}
             >

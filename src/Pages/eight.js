@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./eight/eight.css";
 import FadeOutFrame from "../components/fadeOutFrame";
 import FadeInFadeOutFrame from "../components/fadeInFadeOutFrame";
@@ -11,10 +11,6 @@ export default function Eight({
     getSteppers,
     variantsOpacity,
 }) {
-    useEffect(() => {
-        getSteppers(false);
-    }, []);
-
     if (scrollY > 570) {
         console.log("getSteppers: ", getSteppers);
         getSteppers(true);

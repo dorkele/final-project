@@ -1,13 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./fifth/fifth.css";
 import FifthImageLayer from "./fifth/fifth-image-layer";
 import FadeInFrame from "../components/fadeInFrame";
 
 export default function Fifth({ variantsVisibility, scrollY, getSteppers }) {
-    useEffect(() => {
-        getSteppers(false);
-    }, []);
-
     if (scrollY > 770) {
         getSteppers(true);
     }

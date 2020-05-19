@@ -1,16 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./second/second.css";
 import FadeInFrame from "../components/fadeInFrame";
 import BlinkingText from "../components/blinkingText";
 
 export default function Second({ variantsVisibility, scrollY, getSteppers }) {
-    useEffect(() => {
-        getSteppers(false);
-    }, []);
-
-    console.log(scrollY, window.scrollY);
-
-    if (scrollY > 320) {
+    if (scrollY > 170) {
         getSteppers(true);
     }
 

@@ -1,14 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./fourth/fourth.css";
 import VideoFixedCenter from "./fourth/videoCenter";
 import FadeOutFrame from "../components/fadeOutFrame";
 import FadeInFadeOutFrame from "../components/fadeInFadeOutFrame";
 
 export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
-    useEffect(() => {
-        getSteppers(false);
-    }, []);
-
     if (scrollY > 970) {
         getSteppers(true);
     }

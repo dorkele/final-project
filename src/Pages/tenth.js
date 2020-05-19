@@ -1,12 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Frame } from "framer";
 import "./tenth/tenth.css";
 import TenthImageLayer from "./tenth/tenthImageLayer";
 
 export default function Tenth({ variantsVisibility, scrollY, getSteppers }) {
-    useEffect(() => {
-        getSteppers(false);
-    }, []);
     if (scrollY > 152) {
         console.log("getSteppers: ", getSteppers);
         getSteppers(true);
