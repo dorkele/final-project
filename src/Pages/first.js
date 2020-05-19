@@ -11,8 +11,6 @@ export default function First({ variantsVisibility, scrollY, getSteppers }) {
         getSteppers(true);
     }
 
-    console.log(scrollY);
-
     return (
         <React.Fragment>
             <div className="wrapping-container">
