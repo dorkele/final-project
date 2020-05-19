@@ -1,5 +1,5 @@
 import React from "react";
-import "./eight/eight.css";
+import styles from "./eight/eight.module.css";
 import FadeOutFrame from "../components/fadeOutFrame";
 import FadeInFadeOutFrame from "../components/fadeInFadeOutFrame";
 import FadeInFrame from "../components/fadeInFrame";
@@ -12,7 +12,6 @@ export default function Eight({
     variantsOpacity,
 }) {
     if (scrollY > 570) {
-        console.log("getSteppers: ", getSteppers);
         getSteppers(true);
     }
 
@@ -25,7 +24,7 @@ export default function Eight({
 
     return (
         <React.Fragment>
-            <div className="text-wrapping-container">
+            <div className={styles.container}>
                 <EightImageLayer
                     variantsOpacity={variantsOpacity}
                     scrollY={scrollY}

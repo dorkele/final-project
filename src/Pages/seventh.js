@@ -1,5 +1,5 @@
 import React from "react";
-import "./seventh/seventh.css";
+import styles from "./seventh/seventh.module.css";
 import FadeInFrame from "../components/fadeInFrame";
 import SeventhBackground from "./seventh/seventhBackground";
 
@@ -14,7 +14,7 @@ export default function Seventh({ variantsVisibility, scrollY, getSteppers }) {
     return (
         <React.Fragment>
             <SeventhBackground scrollY={scrollY} />
-            <div className="container">
+            <div className={styles.container}>
                 <FadeInFrame
                     style={styleSmall}
                     center="x"

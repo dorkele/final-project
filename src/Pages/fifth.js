@@ -1,5 +1,5 @@
 import React from "react";
-import "./fifth/fifth.css";
+import styles from "./fifth/fifth.module.css";
 import FifthImageLayer from "./fifth/fifth-image-layer";
 import FadeInFrame from "../components/fadeInFrame";
 
@@ -17,7 +17,7 @@ export default function Fifth({ variantsVisibility, scrollY, getSteppers }) {
 
     return (
         <React.Fragment>
-            <div className="container-wrap">
+            <div className={styles.container_wrap}>
                 <FifthImageLayer
                     variantsVisibility={variantsVisibility}
                     scrollY={scrollY}

@@ -1,5 +1,5 @@
 import React from "react";
-import "./fourth/fourth.css";
+import styles from "./fourth/fourth.module.css";
 import VideoFixedCenter from "./fourth/videoCenter";
 import FadeOutFrame from "../components/fadeOutFrame";
 import FadeInFadeOutFrame from "../components/fadeInFadeOutFrame";
@@ -18,7 +18,7 @@ export default function Fourth({ variantsVisibility, scrollY, getSteppers }) {
 
     return (
         <React.Fragment>
-            <div className="wrapper-container">
+            <div className={styles.wrapper_container}>
                 <VideoFixedCenter src={"/images/video.mp4"} />
                 <FadeOutFrame
                     text="Sjećate li se trenutka kada se Zemlja sručila u bezdan?

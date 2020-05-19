@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Frame } from "framer";
 import HoverContainer from "./third/hoverContainer";
-import "./third/third.css";
+import styles from "./third/third.module.css";
 
 export default function Third({ scrollY, getSteppers }) {
     const [visible, setVisible] = useState(0);
@@ -10,7 +10,7 @@ export default function Third({ scrollY, getSteppers }) {
     }
     return (
         <React.Fragment>
-            <div className="scroll-container">
+            <div className={styles.scroll_container}>
                 <Frame
                     size={"70%"}
                     center

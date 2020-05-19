@@ -1,5 +1,4 @@
 import React from "react";
-import "./eight.css";
 import OpacityFadeOut from "../../components/opacityFadeOut";
 import OpacityFadeInFadeOut from "../../components/opacityFadeInFadeOut";
 import OpacityFadeIn from "../../components/opacityFadeIn";

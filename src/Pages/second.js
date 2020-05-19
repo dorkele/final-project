@@ -1,5 +1,5 @@
 import React from "react";
-import "./second/second.css";
+import styles from "./second/second.module.css";
 import FadeInFrame from "../components/fadeInFrame";
 import BlinkingText from "../components/blinkingText";
 
@@ -16,7 +16,7 @@ export default function Second({ variantsVisibility, scrollY, getSteppers }) {
 
     return (
         <React.Fragment>
-            <div className="textbox">
+            <div className={styles.textbox}>
                 <FadeInFrame
                     text="Prva osoba koju sam nazvala bila je ta jedna osoba bez koje
                     nisam ni htjela postojati. Naravno da nije doma, ili je

@@ -1,6 +1,5 @@
 import React from "react";
 import { Frame } from "framer";
-import "./sixth/sixth.css";
 import SixthImageLayer from "./sixth/sixth-image-layer";
 
 export default function Sixth({ scrollX, getSteppers, scrollY }) {

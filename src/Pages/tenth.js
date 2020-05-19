@@ -1,17 +1,16 @@
 import React from "react";
 import { Frame } from "framer";
-import "./tenth/tenth.css";
+import styles from "./tenth/tenth.module.css";
 import TenthImageLayer from "./tenth/tenthImageLayer";
 
 export default function Tenth({ variantsVisibility, scrollY, getSteppers }) {
     if (scrollY > 152) {
-        console.log("getSteppers: ", getSteppers);
         getSteppers(true);
     }
 
     return (
         <React.Fragment>
-            <div className="wrapping-box">
+            <div className={styles.container}>
                 <TenthImageLayer />
                 <Frame
                     style={{

@@ -1,5 +1,6 @@
 import React from "react";
 import { Frame } from "framer";
+import styles from "./tenth.module.css";
 
 export default function TenthImageLayer() {
     return (
@@ -18,7 +19,7 @@ export default function TenthImageLayer() {
                 <img
                     src="/images/doki-i-ale_FRONT.png"
                     alt="girls"
-                    className="img"
+                    className={styles.img}
                 />
             </Frame>
             <Frame
@@ -35,7 +36,7 @@ export default function TenthImageLayer() {
                 <img
                     src="/images/doki-i-ale_BACK.png"
                     alt="girls"
-                    className="img"
+                    className={styles.img}
                 />
                 <Frame
                     center

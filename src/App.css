@@ -1,6 +1,11 @@
 *:focus {
     outline: none;
 }
+
+* {
+    font-family: "Amatic SC", cursive;
+    background-color: none;
+}
 body {
     height: 100%;
     width: 100%;
@@ -39,7 +44,3 @@ body {
     height: 80px;
     width: 80px;
 }
-
-/* .button-text {
-    font-size: 20px;
-} */

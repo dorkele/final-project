@@ -1,5 +1,5 @@
 import React from "react";
-import "./first/first.css";
+import styles from "./first/first.module.css";
 import FirstWindow from "./first/firstFirst";
 import SecondWindow from "./first/firstSecond";
 import ThirdWindow from "./first/first3";
@@ -13,7 +13,7 @@ export default function First({ variantsVisibility, scrollY, getSteppers }) {
 
     return (
         <React.Fragment>
-            <div className="wrapping-container">
+            <div className={styles.wrapping_container}>
                 <FirstWindow
                     scrollY={scrollY}
                     variantsVisibility={variantsVisibility}
