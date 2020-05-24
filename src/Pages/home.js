@@ -25,7 +25,7 @@ export default function Home(props) {
             <div className={styles.sub}>
                 Navigate through the hypertext of their chaotic minds by
                 clicking, scrolling and hovering...and see where the story takes
-                you...Bear in mind: there is no one or rigt way to read.
+                you...Bear in mind: there is no one or right way to read.
             </div>
             <button className={styles.start} onClick={() => sendStep(1)}>
                 START
