@@ -15,6 +15,7 @@ The users are invited to explore the story with no one or right way to read.
 ![third](./public/scrollytelling/img8.PNG)
 
 They can jump through parts of the story with steppers that slide in if they click on the icon in the left corner or upon reaching the end of the page.
+
 ![fourth](./public/scrollytelling/img9.PNG)
 
 ![fifth](./public/scrollytelling/img10.PNG)
