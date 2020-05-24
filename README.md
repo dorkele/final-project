@@ -5,7 +5,9 @@ Interactive storytelling triggered by user's scrolling, clicking and hovering.
 ## Description
 
 With this project I wanted to learn in which way can code give extra layers of meaning to the text.
+
 ![home](./public/images/scrollytelling/img1.png)
+
 ![first](/images/scrollytelling/img6.png)
 
 The users are invited to explore the story with no one or right way to read.
