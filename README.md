@@ -6,8 +6,9 @@ Interactive storytelling triggered by user's scrolling, clicking and hovering.
 
 With this project I wanted to learn in which way can code give extra layers of meaning to the text.
 
-![home](public/scrollytelling/img1.png)
-![first](/images/scrollytelling/img6.png)
+![home](./public/scrollytelling/img1.PNG)
+
+![first](./public/scrollytelling/img6.png)
 
 The users are invited to explore the story with no one or right way to read.
 ![second](/images/scrollytelling/img7.png)
@@ -22,9 +23,9 @@ On various occasions story leads them outside of itself descovering the potentia
 ![seventh](/images/scrollytelling/img12.png)
 
 With different animations every part of the story creates different atmospheres and text finds itself in different roles.
-![home](/images/scrollytelling/img13.png)
-![first](/images/scrollytelling/img14.png)
-![home](/images/scrollytelling/img15.png)
+![eight](/images/scrollytelling/img13.png)
+![ninth](/images/scrollytelling/img14.png)
+![tenth](/images/scrollytelling/img15.png)
 
 ## Stack
 
