@@ -8,24 +8,24 @@ With this project I wanted to learn in which way can code give extra layers of m
 
 ![home](./public/scrollytelling/img1.PNG)
 
-![first](./public/scrollytelling/img6.png)
+![first](./public/scrollytelling/img6.PNG)
 
 The users are invited to explore the story with no one or right way to read.
-![second](/images/scrollytelling/img7.png)
-![third](/images/scrollytelling/img8.png)
+![second](./public/scrollytelling/img7.PNG)
+![third](./public/scrollytelling/img8.PNG)
 
 They can jump through parts of the story with steppers that slide in if they click on the icon in the left corner or upon reaching the end of the page.
-![fourth](/images/scrollytelling/img9.png)
-![fifth](/images/scrollytelling/img10.png)
+![fourth](./public/scrollytelling/img9.PNG)
+![fifth](./public/scrollytelling/img10.PNG)
 
 On various occasions story leads them outside of itself descovering the potential of hypertext.
-![sixth](/images/scrollytelling/img11.png)
-![seventh](/images/scrollytelling/img12.png)
+![sixth](./public/scrollytelling/img11.PNG)
+![seventh](./public/scrollytelling/img12.PNG)
 
 With different animations every part of the story creates different atmospheres and text finds itself in different roles.
-![eight](/images/scrollytelling/img13.png)
-![ninth](/images/scrollytelling/img14.png)
-![tenth](/images/scrollytelling/img15.png)
+![eight](./public/scrollytelling/img13.PNG)
+![ninth](./public/scrollytelling/img14.PNG)
+![tenth](./public/scrollytelling/img15.PNG)
 
 ## Stack
 
