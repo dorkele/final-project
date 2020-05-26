@@ -25,7 +25,7 @@ export default function EightImageLayer({ scrollY, variantsOpacity }) {
                 style={style}
                 top={"17%"}
                 left={"45%"}
-                src="/images/body.jpg"
+                src="/images/body.JPG"
                 alt="body-quote"
             />
             <OpacityFadeInFadeOut
@@ -36,7 +36,7 @@ export default function EightImageLayer({ scrollY, variantsOpacity }) {
                 style={style}
                 top={"35%"}
                 left={"25%"}
-                src="/images/personality.jpg"
+                src="/images/personality.JPG"
                 alt="personality-quote"
             />
             <OpacityFadeInFadeOut
@@ -47,7 +47,7 @@ export default function EightImageLayer({ scrollY, variantsOpacity }) {
                 style={style}
                 top={"60%"}
                 left={"10%"}
-                src="/images/pink-meme.jpg"
+                src="/images/pink-meme.JPG"
                 alt="pink-meme"
             />
             <OpacityFadeInFadeOut
@@ -58,7 +58,7 @@ export default function EightImageLayer({ scrollY, variantsOpacity }) {
                 style={style}
                 top={"10%"}
                 left={"5%"}
-                src="/images/rebel.jpg"
+                src="/images/rebel.JPG"
                 alt="rebel-quote"
             />
             <OpacityFadeInFadeOut
@@ -69,7 +69,7 @@ export default function EightImageLayer({ scrollY, variantsOpacity }) {
                 style={style}
                 top={"50%"}
                 left={"50%"}
-                src="/images/scream.jpg"
+                src="/images/scream.JPG"
                 alt="scream-quote"
             />
             <OpacityFadeInFadeOut
@@ -80,7 +80,7 @@ export default function EightImageLayer({ scrollY, variantsOpacity }) {
                 style={style}
                 top={"7%"}
                 left={"56%"}
-                src="/images/suffering.jpg"
+                src="/images/suffering.JPG"
                 alt="suffering-quote"
             />
             <OpacityFadeIn
@@ -90,7 +90,7 @@ export default function EightImageLayer({ scrollY, variantsOpacity }) {
                 style={style}
                 top={"30%"}
                 left={"65%"}
-                src="/images/tired.jpg"
+                src="/images/tired.JPG"
                 alt="tired-quote"
             />
         </React.Fragment>
