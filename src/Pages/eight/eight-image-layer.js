@@ -12,7 +12,7 @@ export default function EightImageLayer({ scrollY, variantsOpacity }) {
                 top={"20%"}
                 style={style}
                 width={"10%"}
-                src="/images/anger.jpg"
+                src="/images/anger.JPG"
                 alt="anger-quote"
                 scrollY={scrollY}
                 treshold={60}
