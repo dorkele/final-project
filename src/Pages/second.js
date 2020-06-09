@@ -11,7 +11,7 @@ export default function Second({ variantsVisibility, scrollY, getSteppers }) {
     const style = {
         fontSize: "25px",
         color: "#ff5757",
-        textAlign: "center",
+        // textAlign: "center",
     };
 
     return (
@@ -31,6 +31,7 @@ export default function Second({ variantsVisibility, scrollY, getSteppers }) {
                     treshold={40}
                     scrollY={scrollY}
                     variantsVisibility={variantsVisibility}
+                    center="x"
                 />
                 <FadeInFrame
                     text="Nisam stigla ništa reći, policija je došla po mene i moje
@@ -44,6 +45,7 @@ export default function Second({ variantsVisibility, scrollY, getSteppers }) {
                     treshold={80}
                     scrollY={scrollY}
                     variantsVisibility={variantsVisibility}
+                    center="x"
                 />
                 <FadeInFrame
                     text="Mučili su me prastari leptirići u trbuhu. Idem leć na pod.
@@ -53,6 +55,7 @@ export default function Second({ variantsVisibility, scrollY, getSteppers }) {
                     treshold={150}
                     scrollY={scrollY}
                     variantsVisibility={variantsVisibility}
+                    center="x"
                 />
                 <BlinkingText
                     text="želim biti što i ti."

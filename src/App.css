@@ -6,6 +6,7 @@
     font-family: "Amatic SC", cursive;
     background-color: none;
 }
+html,
 body {
     height: 100%;
     width: 100%;
@@ -34,10 +35,6 @@ body {
     width: 80px;
     border: none;
     z-index: 100;
-}
-
-.full-screen-btn:focus {
-    border: 1px white solid;
 }
 
 .logo-fullscreen {

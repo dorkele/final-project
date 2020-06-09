@@ -4,7 +4,7 @@ import { Frame } from "framer";
 export default function FadeInFadeOutFrame(props) {
     return (
         <Frame
-            center={props.center}
+            center={!props.center ? false : true}
             position={"fixed"}
             backgroundColor={"none"}
             variants={props.variantsVisibility}

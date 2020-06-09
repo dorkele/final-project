@@ -24,11 +24,12 @@ export default function Fifth({ variantsVisibility, scrollY, getSteppers }) {
                 />
                 <FadeInFrame
                     variantsVisibility={variantsVisibility}
-                    top={"30%"}
+                    top={"25%"}
                     style={style}
                     scrollY={scrollY}
                     treshold={50}
                     text="Ali sve je tiho."
+                    center="x"
                 />
                 <FadeInFrame
                     variantsVisibility={variantsVisibility}
@@ -39,6 +40,7 @@ export default function Fifth({ variantsVisibility, scrollY, getSteppers }) {
                     text="Pa sam legla u krevet gdje su nekada svi oni spavali. I
                     nekoliko dana ostala tamo budeći se među knjigama i
                     leševima."
+                    center="x"
                 />
                 <FadeInFrame
                     variantsVisibility={variantsVisibility}
@@ -49,6 +51,7 @@ export default function Fifth({ variantsVisibility, scrollY, getSteppers }) {
                     text="Crvi koje pronađeš u džepu i nemaš ih gdje odložiti. Uvijek
                     dogmižu natrag. Baš kao i sjećanja na lijepe dečke po
                     čekaonicama."
+                    center="x"
                 />
                 <FadeInFrame
                     variantsVisibility={variantsVisibility}
@@ -59,16 +62,18 @@ export default function Fifth({ variantsVisibility, scrollY, getSteppers }) {
                     text="Posljednja pjesma koju sam čula bila je „Drunk girls know
                     that love is an astronaut/It comes back but it's never the
                     same.“"
+                    center="x"
                 />
                 <FadeInFrame
                     variantsVisibility={variantsVisibility}
-                    top={"65%"}
+                    top={"68%"}
                     style={style}
                     scrollY={scrollY}
                     treshold={250}
                     text="A koliko smo sada daleko od svih onih ljudi koje smo poslali
                     u svemirska bespuća, još onako odjevene. U čemu je gušt ako
                     se nemaš gdje vratiti?"
+                    center="x"
                 />
                 <FadeInFrame
                     variantsVisibility={variantsVisibility}
@@ -78,10 +83,11 @@ export default function Fifth({ variantsVisibility, scrollY, getSteppers }) {
                     treshold={300}
                     text="Preživjet će lutalice, nomadi, vagabundi. Preživjet će
                     muzejski primjerci mojih osjećaja."
+                    center="x"
                 />
                 <FadeInFrame
                     variantsVisibility={variantsVisibility}
-                    top={"90%"}
+                    top={"95%"}
                     style={style}
                     scrollY={scrollY}
                     treshold={350}
@@ -89,6 +95,7 @@ export default function Fifth({ variantsVisibility, scrollY, getSteppers }) {
                     faljenja. Boljelo me sve od prestajanja. Nije postojalo
                     vrijeme koje će zacijeliti rane. Samo vrane. Zašto sam
                     postojala kada vi niste?"
+                    center="x"
                 />
                 <FadeInFrame
                     variantsVisibility={variantsVisibility}
@@ -97,10 +104,11 @@ export default function Fifth({ variantsVisibility, scrollY, getSteppers }) {
                     scrollY={scrollY}
                     treshold={400}
                     text="Ipak: Sve se ovo izjalovilo kontroli."
+                    center="x"
                 />
                 <FadeInFrame
                     variantsVisibility={variantsVisibility}
-                    top={"110%"}
+                    top={"120%"}
                     style={style}
                     scrollY={scrollY}
                     treshold={450}
@@ -108,10 +116,11 @@ export default function Fifth({ variantsVisibility, scrollY, getSteppers }) {
                     više ovdje nego tu.) Iskopaj rupu i zakopaj leš kao u svim
                     poštenim američkim filmovima. Nemoj dramatizirati, to su
                     samo prazna tijela."
+                    center="x"
                 />
                 <FadeInFrame
                     variantsVisibility={variantsVisibility}
-                    top={"125%"}
+                    top={"135%"}
                     style={style}
                     scrollY={scrollY}
                     treshold={500}
@@ -119,14 +128,16 @@ export default function Fifth({ variantsVisibility, scrollY, getSteppers }) {
                     sam vidjela prelijepog čovjeka. Ostatak dana radila sam
                     psihodelične kolaže od obiteljskih slika, večer sam provela
                     skidajući ljepilo s ruku."
+                    center="x"
                 />
                 <FadeInFrame
                     variantsVisibility={variantsVisibility}
-                    top={"140%"}
+                    top={"150%"}
                     style={style}
                     scrollY={scrollY}
                     treshold={550}
                     text="Tu i tamo koja rana."
+                    center="x"
                 />
             </div>
         </React.Fragment>

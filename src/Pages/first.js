@@ -13,7 +13,7 @@ export default function First({ variantsVisibility, scrollY, getSteppers }) {
 
     return (
         <React.Fragment>
-            <div className={styles.wrapping_container}>
+            <div className={styles.wrapper}>
                 <FirstWindow
                     scrollY={scrollY}
                     variantsVisibility={variantsVisibility}

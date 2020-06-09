@@ -12,8 +12,8 @@ export default function FadeInFrame(props) {
             height={props.height}
             style={props.style}
             top={props.top}
-            center={props.center}
             left={props.left}
+            center={!props.center ? false : true}
         >
             {props.text}
             {props.src && <img src={props.src} alt={props.alt} />}

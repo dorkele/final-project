@@ -7,7 +7,14 @@ export default function SecondWindow({ scrollY, variantsVisibility }) {
     const arrTop = ["91%", "93%", "75%", "95%", "97%", "86%"];
 
     return (
-        <React.Fragment>
+        <div
+            style={{
+                width: "100%",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+            }}
+        >
             <FadeInFrame
                 top={"90%"}
                 variantsVisibility={variantsVisibility}
@@ -17,6 +24,7 @@ export default function SecondWindow({ scrollY, variantsVisibility }) {
                 style={{ zIndex: 1, fontSize: 40, textAlign: "center" }}
                 text="Bilo je premalo sati kada su nam rekli što se događa. Bili smo
                 ranjivi, sanjivi,"
+                center="y"
             />
             <RedZoomIn
                 top={"93%"}
@@ -42,6 +50,6 @@ export default function SecondWindow({ scrollY, variantsVisibility }) {
                     />
                 );
             })}
-        </React.Fragment>
+        </div>
     );
 }

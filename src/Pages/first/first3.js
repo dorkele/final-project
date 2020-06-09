@@ -13,7 +13,7 @@ export default function ThirdWindow({ variantsVisibility, scrollY }) {
                 style={style}
                 treshold={600}
                 top={"150%"}
-                center="y"
+                center="x"
                 width={"25%"}
                 text="Sjediš negdje u dnu razreda, a ja duboko u sebi čujem
                 preskakanje tvoje vilice, škripanje tvog kapka, rimu škrgutanja
@@ -24,38 +24,42 @@ export default function ThirdWindow({ variantsVisibility, scrollY }) {
                 scrollY={scrollY}
                 style={style}
                 treshold={700}
-                top={"190%"}
+                top={"180%"}
                 text="Očnjaci, podočnjaci, kapci."
+                center="x"
             />
             <FadeInFrame
                 variantsVisibility={variantsVisibility}
                 scrollY={scrollY}
                 style={bigStyle}
                 treshold={1000}
-                top={"205%"}
+                top={"195%"}
                 text="Očnjaci,"
+                center="x"
             />
             <FadeInFrame
                 variantsVisibility={variantsVisibility}
                 scrollY={scrollY}
                 style={bigStyle}
                 treshold={1050}
-                top={"210%"}
+                top={"200%"}
                 text="podočnjaci,"
+                center="x"
             />
             <FadeInFrame
                 variantsVisibility={variantsVisibility}
                 scrollY={scrollY}
                 style={bigStyle}
                 treshold={1100}
-                top={"215%"}
+                top={"205%"}
                 text="kapci,"
+                center="x"
             />
             <FadeInFrame
                 variantsVisibility={variantsVisibility}
                 scrollY={scrollY}
                 style={{
-                    zIndex: 1,
+                    zIndex: 2,
                     fontSize: 40,
                     textAlign: "center",
                     color: "white",
@@ -66,12 +70,13 @@ export default function ThirdWindow({ variantsVisibility, scrollY }) {
                 text="tvoji ne govore tko su bili tvoji preci ni u kojim su nijemim
                 filmovima glumili. Sve što mi imaju za reći su neugodne
                 frekvencije."
+                center="x"
             />
             <FadeInFrame
                 variantsVisibility={variantsVisibility}
                 scrollY={scrollY}
                 treshold={1150}
-                top={"230%"}
+                top={"210%"}
                 src="/images/ocnjak-cat.png"
                 alt="cat-fang"
                 width={"100%"}

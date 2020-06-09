@@ -10,7 +10,7 @@ export default function FadeOutFrame(props) {
             style={props.style}
             variants={props.variantsVisibility}
             animate={props.scrollY >= props.treshold ? "hidden" : "visible"}
-            center={props.center}
+            center={!props.center ? false : true}
             top={props.top}
             left={props.left}
         >
