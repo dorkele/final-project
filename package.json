@@ -1,5 +1,6 @@
 {
     "name": "drunk-app",
+    "homepage": "http://zudnja.herokuapp.com/",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
