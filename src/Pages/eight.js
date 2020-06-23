@@ -36,7 +36,7 @@ export default function Eight({
                     treshold={60}
                     variantsVisibility={variantsVisibility}
                     left={"47%"}
-                    top={"6%"}
+                    top={"35%"}
                     text="Godinama, godinama poslije, ne sjećate se više nikoga. Ni
                     glupe kolibe, ni glupog djeteta i njegova oca. Godinama
                     poslije razvili ste bolest koja ne pamti pijane muze koje od

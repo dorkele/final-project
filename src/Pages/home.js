@@ -6,15 +6,16 @@ export default function Home(props) {
     let randomXArray = [];
 
     for (let i = 0; i < 30; i++) {
-        randomXArray.push(Math.round(Math.random() * 500));
+        randomXArray.push(Math.round(Math.random() * 70) + "%");
     }
     let randomYArray = [];
     for (let i = 0; i < 30; i++) {
-        randomYArray.push(Math.round(Math.random() * 1250));
+        randomYArray.push(Math.round(Math.random() * 83) + "%");
     }
     function sendStep(step) {
         props.getStep(step);
     }
+    console.log(randomXArray);
 
     return (
         <div className={styles.container}>
