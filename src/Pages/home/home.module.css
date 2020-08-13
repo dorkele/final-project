@@ -1,14 +1,9 @@
-* {
-    color: red;
-}
-
-/* .title {
+.title {
     margin-top: 5%;
     font-size: 200px;
     width: 100%;
     text-align: center;
-    color: #ff5757; 
-    color: blue;
+    color: #ff5757;
 }
 
 .subtitle {
@@ -44,9 +39,11 @@
 
 @media screen and (max-width: 768px) {
     .title {
-        font-size: 20px;
+        font-size: 70px;
+        width: 100%;
+        text-align: center;
     }
     .container {
-        color: red;
+        color: royalblue;
     }
-} */
+}
