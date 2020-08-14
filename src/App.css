@@ -7,7 +7,8 @@
     background-color: none;
 }
 html,
-body {
+body,
+root {
     height: 100%;
     width: 100%;
 }
@@ -40,4 +41,21 @@ body {
 .logo-fullscreen {
     height: 80px;
     width: 80px;
+}
+
+@media screen and (max-width: 768px) {
+    html,
+    body,
+    root {
+        height: 170%;
+        width: 170%;
+    }
+    .full-screen-btn {
+        height: 0px;
+        width: 0px;
+    }
+    .logo-fullscreen {
+        height: 0px;
+        width: 0px;
+    }
 }

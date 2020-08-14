@@ -44,6 +44,9 @@
         text-align: center;
     }
     .container {
-        color: royalblue;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
