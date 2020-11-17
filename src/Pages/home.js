@@ -15,7 +15,6 @@ export default function Home(props) {
     function sendStep(step) {
         props.getStep(step);
     }
-    console.log(randomXArray);
 
     return (
         <div className={styles.container}>
@@ -28,6 +27,9 @@ export default function Home(props) {
                 clicking, scrolling and hovering...and see where the story takes
                 you...Bear in mind: there is no one or right way to read.
             </div>
+            <div onClick={() => props.getLanguage("croatian")}>Croatian</div>
+            <div onClick={() => props.getLanguage("english")}>English</div>
+
             <button className={styles.start} onClick={() => sendStep(1)}>
                 START
             </button>

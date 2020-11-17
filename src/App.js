@@ -16,6 +16,7 @@ import Tenth from "./Pages/tenth";
 export default function App() {
     const [steppers, setSteppers] = useState(false);
     let [step, setStep] = useState(0);
+    const [language, setLanguage] = useState("croatian");
 
     const change = (e) => {
         e.preventDefault();
@@ -25,6 +26,10 @@ export default function App() {
             setSteppers(true);
         }
     };
+
+    function getLanguage(language) {
+        setLanguage(language);
+    }
 
     function getStep(step) {
         setSteppers(false);
@@ -84,12 +89,13 @@ export default function App() {
     function fullScreen() {
         document.documentElement.webkitRequestFullscreen();
     }
-
     if (step === 0) {
         page = (
             <Home
                 getStep={(step) => getStep(step)}
                 variantsVisibility={variantsVisibility}
+                language={language}
+                getLanguage={(language) => getLanguage(language)}
             />
         );
     } else if (step === 1) {
@@ -98,6 +104,7 @@ export default function App() {
                 variantsVisibility={variantsVisibility}
                 scrollY={scrollY}
                 getSteppers={(boolean) => getSteppers(boolean)}
+                language={language}
             />
         );
     } else if (step === 2) {
@@ -106,6 +113,7 @@ export default function App() {
                 variantsVisibility={variantsVisibility}
                 scrollY={scrollY}
                 getSteppers={(boolean) => getSteppers(boolean)}
+                language={language}
             />
         );
     } else if (step === 3) {
@@ -113,6 +121,7 @@ export default function App() {
             <Third
                 scrollY={scrollY}
                 getSteppers={(boolean) => getSteppers(boolean)}
+                language={language}
             />
         );
     } else if (step === 4) {
@@ -121,6 +130,7 @@ export default function App() {
                 variantsVisibility={variantsVisibility}
                 scrollY={scrollY}
                 getSteppers={(boolean) => getSteppers(boolean)}
+                language={language}
             />
         );
     } else if (step === 5) {
@@ -129,6 +139,7 @@ export default function App() {
                 variantsVisibility={variantsVisibility}
                 scrollY={scrollY}
                 getSteppers={(boolean) => getSteppers(boolean)}
+                language={language}
             />
         );
     } else if (step === 6) {
@@ -137,6 +148,7 @@ export default function App() {
                 variantsVisibility={variantsVisibility}
                 scrollY={scrollY}
                 getSteppers={(boolean) => getSteppers(boolean)}
+                language={language}
             />
         );
     } else if (step === 7) {
@@ -146,6 +158,7 @@ export default function App() {
                     variantsVisibility={variantsVisibility}
                     scrollY={scrollY}
                     getSteppers={(boolean) => getSteppers(boolean)}
+                    language={language}
                 />
             </React.Fragment>
         );
@@ -156,6 +169,7 @@ export default function App() {
                 variantsOpacity={variantsOpacity}
                 scrollY={scrollY}
                 getSteppers={(boolean) => getSteppers(boolean)}
+                language={language}
             />
         );
     } else if (step === 9) {
@@ -164,6 +178,7 @@ export default function App() {
                 variantsVisibility={variantsVisibility}
                 scrollY={scrollY}
                 getSteppers={(boolean) => getSteppers(boolean)}
+                language={language}
             />
         );
     } else if (step === 10) {
@@ -172,6 +187,7 @@ export default function App() {
                 variantsVisibility={variantsVisibility}
                 scrollY={scrollY}
                 getSteppers={(boolean) => getSteppers(boolean)}
+                language={language}
             />
         );
     }
