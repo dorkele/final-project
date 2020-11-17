@@ -1,6 +1,7 @@
 import React from "react";
 import FoldedPaper from "./home/home-foldedpaper";
 import styles from "./home/home.module.css";
+import Background from "../components/Background";
 
 export default function Home(props) {
     let randomXArray = [];
@@ -16,20 +17,21 @@ export default function Home(props) {
         props.getStep(step);
     }
 
+    const titleCro = "Žudnja Za Smakom";
+    const titleEng = "Apocalypse Dreams";
+
     return (
         <div className={styles.container}>
-            <div className={styles.title}>Žudnja Za Smakom</div>
-            <div className={styles.subtitle}>
-                A story about two drunk girls romaniticizing apocalypse.
+            <Background />
+            <div className={styles.title}>
+                {props.language === "croatian" ? titleCro : titleEng}
             </div>
-            <div className={styles.sub}>
-                Navigate through the hypertext of their chaotic minds by
-                clicking, scrolling and hovering...and see where the story takes
-                you...Bear in mind: there is no one or right way to read.
+            <div className={styles.languages}>
+                <div onClick={() => props.getLanguage("croatian")}>
+                    Croatian
+                </div>
+                <div onClick={() => props.getLanguage("english")}>English</div>
             </div>
-            <div onClick={() => props.getLanguage("croatian")}>Croatian</div>
-            <div onClick={() => props.getLanguage("english")}>English</div>
-
             <button className={styles.start} onClick={() => sendStep(1)}>
                 START
             </button>

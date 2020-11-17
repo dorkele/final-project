@@ -3,8 +3,21 @@ import { Frame } from "framer";
 import FadeOutFrame from "../../components/fadeOutFrame";
 import FadeInFrame from "../../components/fadeInFrame";
 
-export default function FirstWindow({ variantsVisibility, scrollY }) {
+export default function FirstWindow({ variantsVisibility, scrollY, language }) {
     const style = { fontSize: 100, textAlign: "center", width: "100%" };
+
+    let text1, text2, text3, text4;
+    if (language === "croatian") {
+        text1 = "Očnjaci, podočnjaci, kapci.";
+        text2 = "Očnjaci,";
+        text3 = "podočnjaci,";
+        text4 = "kapci.";
+    } else {
+        text1 = "Dogteeth, dark circles, eyelids.";
+        text2 = "Dogteeth,";
+        text3 = "dark circles,";
+        text4 = "eyelids.";
+    }
     return (
         <React.Fragment>
             <Frame
@@ -55,7 +68,7 @@ export default function FirstWindow({ variantsVisibility, scrollY }) {
                     scrollY={scrollY}
                     treshold={150}
                     style={{ zIndex: 1, fontSize: 40, textAlign: "center" }}
-                    text="Očnjaci, podočnjaci, kapci."
+                    text={text1}
                     width={"100%"}
                 />
                 <FadeInFrame
@@ -64,7 +77,7 @@ export default function FirstWindow({ variantsVisibility, scrollY }) {
                     scrollY={scrollY}
                     treshold={40}
                     style={style}
-                    text="Očnjaci,"
+                    text={text2}
                 />
                 <FadeInFrame
                     top={"40%"}
@@ -72,7 +85,7 @@ export default function FirstWindow({ variantsVisibility, scrollY }) {
                     scrollY={scrollY}
                     treshold={70}
                     style={style}
-                    text="podočnjaci,"
+                    text={text3}
                 />
                 <FadeInFrame
                     top={"50%"}
@@ -80,7 +93,7 @@ export default function FirstWindow({ variantsVisibility, scrollY }) {
                     scrollY={scrollY}
                     treshold={100}
                     style={style}
-                    text="kapci."
+                    text={text4}
                 />
             </div>
         </React.Fragment>
