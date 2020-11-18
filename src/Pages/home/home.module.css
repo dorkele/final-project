@@ -35,9 +35,10 @@
 }
 
 @media screen and (max-width: 768px) {
-    .title {
+    .title,
+    .start {
         font-size: 70px;
-        width: 100%;
+        /* width: 100%; */
         text-align: center;
     }
     .container {
