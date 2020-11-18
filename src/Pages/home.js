@@ -1,18 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import FoldedPaper from "./home/home-foldedpaper";
 import styles from "./home/home.module.css";
 import Background from "../components/Background";
+import Instructions from "./instructions";
+import Credits from "./credits";
 
 export default function Home(props) {
-    let randomXArray = [];
+    const [instructions, setInstructions] = useState(false);
+    const [credits, setCredits] = useState(false);
 
+    let randomXArray = [];
     for (let i = 0; i < 30; i++) {
         randomXArray.push(Math.round(Math.random() * 70) + "%");
     }
+
     let randomYArray = [];
     for (let i = 0; i < 30; i++) {
         randomYArray.push(Math.round(Math.random() * 83) + "%");
     }
+
     function sendStep(step) {
         props.getStep(step);
     }
@@ -23,6 +29,10 @@ export default function Home(props) {
     return (
         <div className={styles.container}>
             <Background />
+            {instructions && <Instructions />}
+            {credits && <Credits />}
+
+            <div onClick={() => setInstructions(true)}>Instructions</div>
             <div className={styles.title}>
                 {props.language === "croatian" ? titleCro : titleEng}
             </div>
@@ -35,6 +45,7 @@ export default function Home(props) {
             <button className={styles.start} onClick={() => sendStep(1)}>
                 START
             </button>
+            <div onClick={() => setCredits(true)}>Credits</div>
 
             {randomXArray.map((val, index) => {
                 return (
