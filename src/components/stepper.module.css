@@ -28,40 +28,40 @@ body {
 }
 
 .home {
-    background-image: url("/images/home.png");
+    background-image: url("../imgs/home.png");
 }
 
 .one {
-    background-image: url("/images/oko.png");
+    background-image: url("../imgs/oko.png");
 }
 
 .two {
-    background-image: url("/images/leptir.png");
+    background-image: url("../imgs/leptir.png");
+}
+.three {
+    background-image: url("../imgs/mjesec.png");
 }
 
-.three {
-    background-image: url("/images/mjesec.png");
-}
 .four {
-    background-image: url("/images/casa.png");
+    background-image: url("../imgs/casa.png");
 }
 .five {
-    background-image: url("/images/crv.png");
+    background-image: url("../imgs/crv.png");
 }
 .six {
-    background-image: url("/images/grob.png");
+    background-image: url("../imgs/grob.png");
 }
 .seven {
-    background-image: url("/images/maslacak.png");
+    background-image: url("../imgs/maslacak.png");
 }
 
 .eight {
-    background-image: url("/images/naranca.png");
+    background-image: url("../imgs/naranca.png");
 }
 
 .nine {
-    background-image: url("/images/tree.png");
+    background-image: url("../imgs/tree.png");
 }
 .ten {
-    background-image: url("/images/zora.png");
+    background-image: url("../imgs/zora.png");
 }

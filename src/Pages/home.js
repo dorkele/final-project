@@ -11,12 +11,12 @@ export default function Home(props) {
 
     let randomXArray = [];
     for (let i = 0; i < 30; i++) {
-        randomXArray.push(Math.round(Math.random() * 70) + "%");
+        randomXArray.push(Math.round(Math.random() * 68) + "%");
     }
 
     let randomYArray = [];
     for (let i = 0; i < 30; i++) {
-        randomYArray.push(Math.round(Math.random() * 83) + "%");
+        randomYArray.push(Math.round(Math.random() * 80) + "%");
     }
 
     function sendStep(step) {
