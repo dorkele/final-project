@@ -22,7 +22,7 @@
     background-color: none;
     background: none;
     border: none;
-    width: 30vw;
+    width: 50%;
 }
 
 .languages {
@@ -32,6 +32,11 @@
     width: 40%;
     font-size: 30px;
     cursor: pointer;
+}
+
+.instructions,
+.credits {
+    font-size: 30px;
 }
 
 @media screen and (max-width: 768px) {

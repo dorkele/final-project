@@ -83,7 +83,8 @@ export default function Third({ scrollY, getSteppers, language }) {
         <React.Fragment>
             <div className={styles.scroll_container}>
                 <Frame
-                    size={"70%"}
+                    width={"100%"}
+                    height={"100%"}
                     center
                     backgroundColor="none"
                     style={{ fontSize: 40, textAlign: "center" }}
