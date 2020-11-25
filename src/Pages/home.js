@@ -28,11 +28,16 @@ export default function Home(props) {
 
     return (
         <div className={styles.container}>
-            <Background />
+            <Background isMobile={props.isMobile} />
             {instructions && <Instructions />}
             {credits && <Credits />}
 
-            <div onClick={() => setInstructions(true)}>Instructions</div>
+            <div
+                className={styles.instructions}
+                onClick={() => setInstructions(true)}
+            >
+                Instructions
+            </div>
             <div className={styles.title}>
                 {props.language === "croatian" ? titleCro : titleEng}
             </div>
@@ -45,17 +50,20 @@ export default function Home(props) {
             <button className={styles.start} onClick={() => sendStep(1)}>
                 START
             </button>
-            <div onClick={() => setCredits(true)}>Credits</div>
+            <div className={styles.credits} onClick={() => setCredits(true)}>
+                Credits
+            </div>
 
-            {randomXArray.map((val, index) => {
-                return (
-                    <FoldedPaper
-                        key={index}
-                        randomX={randomXArray[index]}
-                        randomY={randomYArray[index]}
-                    />
-                );
-            })}
+            {!props.isMobile &&
+                randomXArray.map((val, index) => {
+                    return (
+                        <FoldedPaper
+                            key={index}
+                            randomX={randomXArray[index]}
+                            randomY={randomYArray[index]}
+                        />
+                    );
+                })}
         </div>
     );
 }

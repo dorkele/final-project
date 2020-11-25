@@ -29,7 +29,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 20vw;
+    width: 40%;
     font-size: 30px;
     cursor: pointer;
 }
@@ -37,13 +37,17 @@
 @media screen and (max-width: 768px) {
     .title,
     .start {
-        font-size: 70px;
-        /* width: 100%; */
+        font-size: 100px;
         text-align: center;
     }
     .container {
         justify-content: space-around;
         height: 100%;
         width: 100%;
+    }
+    .languages,
+    .instructions,
+    .credits {
+        font-size: 50px;
     }
 }

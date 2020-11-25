@@ -12,11 +12,16 @@ import Seventh from "./Pages/seventh";
 import Eight from "./Pages/eight";
 import Ninth from "./Pages/ninth";
 import Tenth from "./Pages/tenth";
+import { useMediaQuery } from "react-responsive";
 
 export default function App() {
     const [steppers, setSteppers] = useState(false);
     let [step, setStep] = useState(0);
     const [language, setLanguage] = useState("croatian");
+
+    const isMobile = useMediaQuery({
+        query: "(max-width: 768px)",
+    });
 
     const change = (e) => {
         e.preventDefault();
@@ -96,6 +101,7 @@ export default function App() {
                 variantsVisibility={variantsVisibility}
                 language={language}
                 getLanguage={(language) => getLanguage(language)}
+                isMobile={isMobile}
             />
         );
     } else if (step === 1) {
