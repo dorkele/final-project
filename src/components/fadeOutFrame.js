@@ -4,12 +4,16 @@ import { Frame } from "framer";
 export default function FadeOutFrame(props) {
     return (
         <Frame
-            position={"fixed"}
+            // position={"fixed"}
             backgroundColor={"none"}
             width={props.width}
             style={props.style}
             variants={props.variantsVisibility}
-            animate={props.scrollY >= props.treshold ? "hidden" : "visible"}
+            animate={
+                props.scrollY >= props.treshold || !props.isMobile
+                    ? "hidden"
+                    : "visible"
+            }
             center={!props.center ? false : true}
             top={props.top}
             left={props.left}

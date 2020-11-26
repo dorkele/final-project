@@ -6,6 +6,7 @@ export default function SecondWindow({
     scrollY,
     variantsVisibility,
     language,
+    isMobile,
 }) {
     const arrLeft = ["80%", "25%", "10%", "71%", "34%", "63%"];
     const arrTop = ["91%", "93%", "75%", "95%", "97%", "86%"];
@@ -31,23 +32,26 @@ export default function SecondWindow({
             }}
         >
             <FadeInFrame
-                top={"90%"}
+                top={isMobile ? "70%" : "90%"}
                 variantsVisibility={variantsVisibility}
                 scrollY={scrollY}
                 treshold={180}
-                width={"25%"}
+                width={isMobile ? "100%" : "25%"}
                 style={{ zIndex: 1, fontSize: 40, textAlign: "center" }}
                 text={text1}
                 center="y"
+                isMobile={isMobile}
             />
             <RedZoomIn
                 top={"93%"}
-                fontSize={80}
+                fontSize={50}
                 variantsVisibility={variantsVisibility}
                 treshold={400}
                 scrollY={scrollY}
-                center="y"
+                //center="y"
                 text={text2}
+                width={isMobile ? "0" : null}
+                isMobile={isMobile}
             />
             {arrLeft.map((val, index) => {
                 return (
@@ -59,8 +63,9 @@ export default function SecondWindow({
                         fontSize={20}
                         variantsVisibility={variantsVisibility}
                         scrollY={scrollY}
-                        width={50}
+                        width={isMobile ? 0 : 50}
                         text={text3}
+                        isMobile={isMobile}
                     />
                 );
             })}

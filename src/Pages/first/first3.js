@@ -1,7 +1,12 @@
 import React from "react";
 import FadeInFrame from "../../components/fadeInFrame";
 
-export default function ThirdWindow({ variantsVisibility, scrollY, language }) {
+export default function ThirdWindow({
+    variantsVisibility,
+    scrollY,
+    language,
+    isMobile,
+}) {
     const style = { zIndex: 1, fontSize: 40, textAlign: "center" };
     const bigStyle = { zIndex: 1, fontSize: 100, textAlign: "center" };
     let text1, text2, text3, text4, text5, text6;
@@ -34,8 +39,9 @@ export default function ThirdWindow({ variantsVisibility, scrollY, language }) {
                 treshold={600}
                 top={"150%"}
                 center="x"
-                width={"25%"}
+                width={isMobile ? "100%" : "25%"}
                 text={text1}
+                isMobile={isMobile}
             />
             <FadeInFrame
                 variantsVisibility={variantsVisibility}
@@ -45,6 +51,7 @@ export default function ThirdWindow({ variantsVisibility, scrollY, language }) {
                 top={"180%"}
                 text={text2}
                 center="x"
+                isMobile={isMobile}
             />
             <FadeInFrame
                 variantsVisibility={variantsVisibility}
@@ -54,6 +61,7 @@ export default function ThirdWindow({ variantsVisibility, scrollY, language }) {
                 top={"195%"}
                 text={text3}
                 center="x"
+                isMobile={isMobile}
             />
             <FadeInFrame
                 variantsVisibility={variantsVisibility}
@@ -63,6 +71,7 @@ export default function ThirdWindow({ variantsVisibility, scrollY, language }) {
                 top={"200%"}
                 text={text4}
                 center="x"
+                isMobile={isMobile}
             />
             <FadeInFrame
                 variantsVisibility={variantsVisibility}
@@ -72,6 +81,7 @@ export default function ThirdWindow({ variantsVisibility, scrollY, language }) {
                 top={"205%"}
                 text={text5}
                 center="x"
+                isMobile={isMobile}
             />
             <FadeInFrame
                 variantsVisibility={variantsVisibility}
@@ -84,9 +94,10 @@ export default function ThirdWindow({ variantsVisibility, scrollY, language }) {
                 }}
                 treshold={1150}
                 top={"260%"}
-                width={"25%"}
+                width={isMobile ? "100%" : "25%"}
                 text={text6}
                 center="x"
+                isMobile={isMobile}
             />
             <FadeInFrame
                 variantsVisibility={variantsVisibility}
@@ -97,7 +108,12 @@ export default function ThirdWindow({ variantsVisibility, scrollY, language }) {
                 alt="cat-fang"
                 width={"100%"}
                 height={"100%"}
-                style={{ display: "flex", justifyContent: "center" }}
+                style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    overflow: "hidden",
+                }}
+                isMobile={isMobile}
             />
         </React.Fragment>
     );

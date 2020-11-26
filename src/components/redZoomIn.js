@@ -12,7 +12,7 @@ export default function RedZoomIn(props) {
             variants={props.variantsVisibility}
             initial={"hidden"}
             animate={
-                props.scrollY >= props.treshold
+                props.isMobile || props.scrollY >= props.treshold
                     ? ["visible", "redZoom"]
                     : "hidden"
             }

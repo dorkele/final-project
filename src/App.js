@@ -55,6 +55,7 @@ export default function App() {
     useEffect(() => {
         const handleScroll = () => {
             const yPos = window.scrollY;
+
             const isScrollingUp = yPos < scrollY;
             if (isScrollingUp === true) {
                 setSteppers(false);
@@ -62,6 +63,7 @@ export default function App() {
             setScrollY(yPos);
         };
         window.addEventListener("scroll", handleScroll);
+
         return () => window.removeEventListener("scroll", handleScroll);
     }, [scrollY]);
 
@@ -207,13 +209,15 @@ export default function App() {
                     alt="logo-red"
                 />
             </button>
-            <button className="full-screen-btn" onClick={fullScreen}>
-                <img
-                    className="logo-fullscreen"
-                    src="/images/open-eye.png"
-                    alt="open-eye-logo"
-                />
-            </button>
+            {isMobile ? null : (
+                <button className="full-screen-btn" onClick={fullScreen}>
+                    <img
+                        className="logo-fullscreen"
+                        src="/images/open-eye.png"
+                        alt="open-eye-logo"
+                    />
+                </button>
+            )}
 
             {page}
             <Stepper getStep={(step) => getStep(step)} steppers={steppers} />

@@ -7,7 +7,11 @@ export default function FadeInFrame(props) {
             background={props.background || "none"}
             variants={props.variantsVisibility}
             initial={"hidden"}
-            animate={props.scrollY >= props.treshold ? "visible" : "hidden"}
+            animate={
+                props.isMobile || props.scrollY >= props.treshold
+                    ? "visible"
+                    : "hidden"
+            }
             width={props.width || 500}
             height={props.height}
             style={props.style}
@@ -16,7 +20,9 @@ export default function FadeInFrame(props) {
             center={!props.center ? false : true}
         >
             {props.text}
-            {props.src && <img src={props.src} alt={props.alt} />}
+            {props.src && (
+                <img src={props.src} alt={props.alt} style={props.imgStyle} />
+            )}
         </Frame>
     );
 }

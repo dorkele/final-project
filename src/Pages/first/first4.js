@@ -5,6 +5,7 @@ export default function FourthWindow({
     variantsVisibility,
     scrollY,
     language,
+    isMobile,
 }) {
     const style = { fontSize: 40, textAlign: "center" };
     let text1, text2, text3, text4;
@@ -36,19 +37,21 @@ export default function FourthWindow({
                 treshold={1580}
                 style={style}
                 top={"330%"}
-                width={"25%"}
+                width={isMobile ? "100%" : "25%"}
                 text={text1}
                 center="x"
+                isMobile={isMobile}
             />
             <FadeInFrame
                 variantsVisibility={variantsVisibility}
                 scrollY={scrollY}
                 treshold={2200}
                 style={style}
-                top={"390%"}
-                width={"50%"}
+                top={isMobile ? "383%" : "390%"}
+                width={isMobile ? "100%" : "50%"}
                 text={text2}
                 center="x"
+                isMobile={isMobile}
             />
             <FadeInFrame
                 variantsVisibility={variantsVisibility}
@@ -56,28 +59,33 @@ export default function FourthWindow({
                 treshold={2600}
                 style={style}
                 top={"450%"}
-                width={"50%"}
+                width={isMobile ? "100%" : "50%"}
                 text={text3}
                 center="x"
+                isMobile={isMobile}
             />
             <FadeInFrame
                 variantsVisibility={variantsVisibility}
                 scrollY={scrollY}
                 treshold={3100}
                 top={"480%"}
-                left={"60%"}
+                left={isMobile ? "5%" : "60%"}
                 src="/images/stones.png"
                 alt="stones"
+                isMobile={isMobile}
+                imgStyle={isMobile ? { width: "80%" } : 0}
+                width={isMobile ? "100%" : null}
             />
             <FadeInFrame
                 variantsVisibility={variantsVisibility}
                 scrollY={scrollY}
                 treshold={3100}
                 style={style}
-                top={"510%"}
-                width={"25%"}
+                top={isMobile ? "530%" : "510%"}
+                width={isMobile ? "100%" : "25%"}
                 text={text4}
                 center="x"
+                isMobile={isMobile}
             />
         </React.Fragment>
     );
