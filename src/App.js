@@ -185,6 +185,7 @@ export default function App() {
                 scrollY={scrollY}
                 getSteppers={(boolean) => getSteppers(boolean)}
                 language={language}
+                isMobile={isMobile}
             />
         );
     } else if (step === 9) {
@@ -194,6 +195,7 @@ export default function App() {
                 scrollY={scrollY}
                 getSteppers={(boolean) => getSteppers(boolean)}
                 language={language}
+                isMobile={isMobile}
             />
         );
     } else if (step === 10) {
@@ -203,6 +205,7 @@ export default function App() {
                 scrollY={scrollY}
                 getSteppers={(boolean) => getSteppers(boolean)}
                 language={language}
+                isMobile={isMobile}
             />
         );
     }

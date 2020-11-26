@@ -8,6 +8,7 @@ export default function Tenth({
     scrollY,
     getSteppers,
     language,
+    isMobile,
 }) {
     if (scrollY > 152) {
         getSteppers(true);
@@ -26,7 +27,7 @@ export default function Tenth({
     return (
         <React.Fragment>
             <div className={styles.container}>
-                <TenthImageLayer />
+                <TenthImageLayer isMobile={isMobile} />
                 <Frame
                     style={{
                         backgroundColor: "none",

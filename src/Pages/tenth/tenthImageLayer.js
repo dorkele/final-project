@@ -2,7 +2,7 @@ import React from "react";
 import { Frame } from "framer";
 import styles from "./tenth.module.css";
 
-export default function TenthImageLayer() {
+export default function TenthImageLayer({ isMobile }) {
     return (
         <React.Fragment>
             <Frame
@@ -41,7 +41,7 @@ export default function TenthImageLayer() {
                 <Frame
                     center
                     style={{ zIndex: -2 }}
-                    width={"34%"}
+                    width={isMobile ? "100%" : "34%"}
                     height={"100%"}
                     backgroundColor={"#ff5757"}
                 />

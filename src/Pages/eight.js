@@ -11,17 +11,25 @@ export default function Eight({
     getSteppers,
     variantsOpacity,
     language,
+    isMobile,
 }) {
     if (scrollY > 570) {
         getSteppers(true);
     }
 
-    const style = {
-        backgroundColor: "none",
-        position: "fixed",
-        fontSize: 30,
-        fontWeight: "bold",
-    };
+    const style = isMobile
+        ? {
+              backgroundColor: "none",
+              position: "fixed",
+              fontSize: 20,
+              fontWeight: "bold",
+          }
+        : {
+              backgroundColor: "none",
+              position: "fixed",
+              fontSize: 30,
+              fontWeight: "bold",
+          };
 
     let text1, text2, text3, text4, text5, text6, text7, text8;
 
@@ -68,17 +76,17 @@ export default function Eight({
                 />
                 <FadeOutFrame
                     style={style}
-                    width={"53%"}
+                    width={isMobile ? "100%" : "53%"}
                     scrollY={scrollY}
                     treshold={60}
                     variantsVisibility={variantsVisibility}
-                    left={"47%"}
+                    left={isMobile ? 0 : "47%"}
                     top={"35%"}
                     text={text1}
                 />
                 <FadeInFadeOutFrame
                     top={"40%"}
-                    left={"47%"}
+                    left={isMobile ? "20%" : "47%"}
                     variantsVisibility={variantsVisibility}
                     style={style}
                     scrollY={scrollY}
@@ -98,18 +106,18 @@ export default function Eight({
                 />
                 <FadeInFadeOutFrame
                     top={"25%"}
-                    left={"60%"}
+                    left={isMobile ? "5%" : "60%"}
                     variantsVisibility={variantsVisibility}
                     style={style}
                     scrollY={scrollY}
                     treshold={150}
                     tresholdOut={200}
-                    width={"40%"}
+                    width={isMobile ? "90%" : "40%"}
                     text={text4}
                 />
                 <FadeInFadeOutFrame
-                    top={"22%"}
-                    left={"45%"}
+                    top={isMobile ? "50%" : "22%"}
+                    left={isMobile ? "20%" : "45%"}
                     variantsVisibility={variantsVisibility}
                     style={style}
                     scrollY={scrollY}
@@ -129,7 +137,7 @@ export default function Eight({
                 />
                 <FadeInFadeOutFrame
                     top={"25%"}
-                    left={"53%"}
+                    left={isMobile ? "20%" : "53%"}
                     variantsVisibility={variantsVisibility}
                     style={style}
                     scrollY={scrollY}
@@ -139,7 +147,8 @@ export default function Eight({
                 />
                 <FadeInFrame
                     center="x"
-                    top={"10%"}
+                    top={isMobile ? "20%" : "10%"}
+                    width={isMobile ? "60%" : null}
                     variantsVisibility={variantsVisibility}
                     style={style}
                     scrollY={scrollY}

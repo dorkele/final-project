@@ -1,13 +1,20 @@
 import React from "react";
 import { Frame, Page } from "framer";
 
-export default function Ninth({ getSteppers, language }) {
-    const styleColorless = {
-        backgroundColor: "none",
-        fontSize: 30,
-        width: "100%",
-        height: "100%",
-    };
+export default function Ninth({ getSteppers, language, isMobile }) {
+    const styleColorless = isMobile
+        ? {
+              backgroundColor: "none",
+              fontSize: 20,
+              width: "100%",
+              height: "100%",
+          }
+        : {
+              backgroundColor: "none",
+              fontSize: 30,
+              width: "100%",
+              height: "100%",
+          };
 
     let text1, text2, text3, text4;
 
@@ -42,7 +49,11 @@ export default function Ninth({ getSteppers, language }) {
                 }}
             >
                 <Frame style={styleColorless} top={100}>
-                    <Frame center width={"50%"} background={"none"}>
+                    <Frame
+                        center
+                        width={isMobile ? "100%" : "50%"}
+                        background={"none"}
+                    >
                         {text1}
                     </Frame>
                 </Frame>
@@ -59,7 +70,11 @@ export default function Ninth({ getSteppers, language }) {
                     {text2}
                 </Frame>
                 <Frame style={styleColorless} center>
-                    <Frame center width={"50%"} background={"none"}>
+                    <Frame
+                        center
+                        width={isMobile ? "100%" : "50%"}
+                        background={"none"}
+                    >
                         {text3}
                     </Frame>
                 </Frame>
