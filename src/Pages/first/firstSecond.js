@@ -37,7 +37,11 @@ export default function SecondWindow({
                 scrollY={scrollY}
                 treshold={180}
                 width={isMobile ? "100%" : "25%"}
-                style={{ zIndex: 1, fontSize: 30, textAlign: "center" }}
+                style={
+                    isMobile
+                        ? { zIndex: 1, fontSize: 30, textAlign: "center" }
+                        : { zIndex: 1, fontSize: 40, textAlign: "center" }
+                }
                 text={text1}
                 center="y"
                 isMobile={isMobile}

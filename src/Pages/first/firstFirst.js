@@ -81,7 +81,11 @@ export default function FirstWindow({
                     variantsVisibility={variantsVisibility}
                     scrollY={scrollY}
                     treshold={150}
-                    style={{ zIndex: 1, fontSize: 30, textAlign: "center" }}
+                    style={
+                        isMobile
+                            ? { zIndex: 1, fontSize: 30, textAlign: "center" }
+                            : { zIndex: 1, fontSize: 40, textAlign: "center" }
+                    }
                     text={text1}
                     isMobile={isMobile}
                     width={"100%"}

@@ -24,7 +24,7 @@ export default function FadeInFrame(props) {
                 <img
                     src={props.src}
                     alt={props.alt}
-                    style={{ width: "100%", height: "100%" }}
+                    style={props.isMobile ? { width: "100%" } : null}
                 />
             )}
         </Frame>

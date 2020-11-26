@@ -8,16 +8,18 @@ export default function Second({
     scrollY,
     getSteppers,
     language,
+    isMobile,
 }) {
     if (scrollY > 170) {
         getSteppers(true);
     }
 
-    const style = {
-        fontSize: "25px",
-        color: "#ff5757",
-        // textAlign: "center",
-    };
+    const style = isMobile
+        ? { fontSize: "20px", color: "#ff5757" }
+        : {
+              fontSize: "25px",
+              color: "#ff5757",
+          };
 
     let text1, text2, text3, text4;
     if (language === "croatian") {
@@ -49,6 +51,8 @@ export default function Second({
                     scrollY={scrollY}
                     variantsVisibility={variantsVisibility}
                     center="x"
+                    isMobile={isMobile}
+                    width={isMobile ? "100%" : null}
                 />
                 <FadeInFrame
                     text={text2}
@@ -58,6 +62,8 @@ export default function Second({
                     scrollY={scrollY}
                     variantsVisibility={variantsVisibility}
                     center="x"
+                    isMobile={isMobile}
+                    width={isMobile ? "100%" : null}
                 />
                 <FadeInFrame
                     text={text3}
@@ -67,17 +73,29 @@ export default function Second({
                     scrollY={scrollY}
                     variantsVisibility={variantsVisibility}
                     center="x"
+                    isMobile={isMobile}
+                    width={isMobile ? "100%" : null}
                 />
                 <BlinkingText
                     text={text4}
                     variantsVisibility={variantsVisibility}
-                    width={700}
-                    style={{
-                        fontSize: "200px",
-                        opacity: 0,
-                        position: "fixed",
-                        zIndex: -1,
-                    }}
+                    width={isMobile ? "100%" : 700}
+                    style={
+                        isMobile
+                            ? {
+                                  fontSize: "100px",
+                                  opacity: 0,
+                                  position: "fixed",
+                                  zIndex: -1,
+                              }
+                            : {
+                                  fontSize: "200px",
+                                  opacity: 0,
+                                  position: "fixed",
+                                  zIndex: -1,
+                              }
+                    }
+                    isMobile={isMobile}
                 />
             </div>
         </React.Fragment>

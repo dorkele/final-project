@@ -123,6 +123,7 @@ export default function App() {
                 scrollY={scrollY}
                 getSteppers={(boolean) => getSteppers(boolean)}
                 language={language}
+                isMobile={isMobile}
             />
         );
     } else if (step === 3) {

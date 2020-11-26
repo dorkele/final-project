@@ -7,7 +7,9 @@ export default function FourthWindow({
     language,
     isMobile,
 }) {
-    const style = { fontSize: 30, textAlign: "center" };
+    const style = isMobile
+        ? { fontSize: 30, textAlign: "center" }
+        : { fontSize: 40, textAlign: "center" };
     let text1, text2, text3, text4;
     if (language === "croatian") {
         text1 =
@@ -74,7 +76,7 @@ export default function FourthWindow({
                 alt="stones"
                 isMobile={isMobile}
                 imgStyle={isMobile ? { width: "80%" } : 0}
-                width={isMobile ? "100%" : null}
+                width={isMobile ? "90%" : 500}
             />
             <FadeInFrame
                 variantsVisibility={variantsVisibility}

@@ -7,7 +7,10 @@ export default function ThirdWindow({
     language,
     isMobile,
 }) {
-    const style = { zIndex: 1, fontSize: 30, textAlign: "center" };
+    const style = isMobile
+        ? { zIndex: 1, fontSize: 30, textAlign: "center" }
+        : { zIndex: 1, fontSize: 40, textAlign: "center" };
+
     const bigStyle = { zIndex: 1, fontSize: 100, textAlign: "center" };
     let text1, text2, text3, text4, text5, text6;
     if (language === "croatian") {
@@ -90,15 +93,24 @@ export default function ThirdWindow({
             <FadeInFrame
                 variantsVisibility={variantsVisibility}
                 scrollY={scrollY}
-                style={{
-                    zIndex: 2,
-                    fontSize: 30,
-                    textAlign: "center",
-                    color: "white",
-                }}
+                style={
+                    isMobile
+                        ? {
+                              zIndex: 2,
+                              fontSize: 30,
+                              textAlign: "center",
+                              color: "white",
+                          }
+                        : {
+                              zIndex: 2,
+                              fontSize: 40,
+                              textAlign: "center",
+                              color: "white",
+                          }
+                }
                 treshold={1150}
                 top={"260%"}
-                width={isMobile ? "100%" : "25%"}
+                width={isMobile ? "90%" : "25%"}
                 text={text6}
                 center="x"
                 isMobile={isMobile}
