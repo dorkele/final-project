@@ -15,7 +15,13 @@ export default function FadeOutFrame(props) {
             left={props.left}
         >
             {props.text}
-            {props.src && <img src={props.src} alt={props.alt} />}
+            {props.src && (
+                <img
+                    src={props.src}
+                    alt={props.alt}
+                    style={props.isMobile ? { width: "100%" } : null}
+                />
+            )}
         </Frame>
     );
 }

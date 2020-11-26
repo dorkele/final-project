@@ -3,7 +3,12 @@ import { Frame } from "framer";
 import FadeOutFrame from "../../components/fadeOutFrame";
 import FadeInFrame from "../../components/fadeInFrame";
 
-export default function FirstWindow({ variantsVisibility, scrollY, language }) {
+export default function FirstWindow({
+    variantsVisibility,
+    scrollY,
+    language,
+    isMobile,
+}) {
     const style = { fontSize: 100, textAlign: "center", width: "100%" };
 
     let text1, text2, text3, text4;
@@ -35,6 +40,8 @@ export default function FirstWindow({ variantsVisibility, scrollY, language }) {
                     left={"0%"}
                     src="/images/ocnjak1.png"
                     alt="dogtooth"
+                    isMobile={isMobile}
+                    width={"20%"}
                 />
                 <FadeOutFrame
                     variantsVisibility={variantsVisibility}
@@ -43,6 +50,8 @@ export default function FirstWindow({ variantsVisibility, scrollY, language }) {
                     left={"27%"}
                     src="/images/ocnjak2.png"
                     alt="dogtooth"
+                    isMobile={isMobile}
+                    width={"20%"}
                 />
                 <FadeOutFrame
                     variantsVisibility={variantsVisibility}
@@ -51,6 +60,8 @@ export default function FirstWindow({ variantsVisibility, scrollY, language }) {
                     left={"50%"}
                     src="/images/ocnjak4.png"
                     alt="dogtooth"
+                    isMobile={isMobile}
+                    width={"20%"}
                 />
                 <FadeOutFrame
                     variantsVisibility={variantsVisibility}
@@ -59,6 +70,8 @@ export default function FirstWindow({ variantsVisibility, scrollY, language }) {
                     left={"72%"}
                     src="/images/ocnjak5.png"
                     alt="dogtooth"
+                    isMobile={isMobile}
+                    width={"20%"}
                 />
             </Frame>
             <div style={{ textAlign: "center" }}>

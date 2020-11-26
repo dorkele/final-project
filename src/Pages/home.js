@@ -31,12 +31,19 @@ export default function Home(props) {
             <Background isMobile={props.isMobile} />
             {instructions && <Instructions />}
             {credits && <Credits />}
-
-            <div
-                className={styles.instructions}
-                onClick={() => setInstructions(true)}
-            >
-                Instructions
+            <div className={styles.modules}>
+                <div
+                    className={styles.instructions}
+                    onClick={() => setInstructions(true)}
+                >
+                    Instructions
+                </div>
+                <div
+                    className={styles.credits}
+                    onClick={() => setCredits(true)}
+                >
+                    Credits
+                </div>
             </div>
             <div className={styles.title}>
                 {props.language === "croatian" ? titleCro : titleEng}
@@ -50,9 +57,6 @@ export default function Home(props) {
             <button className={styles.start} onClick={() => sendStep(1)}>
                 START
             </button>
-            <div className={styles.credits} onClick={() => setCredits(true)}>
-                Credits
-            </div>
 
             {!props.isMobile &&
                 randomXArray.map((val, index) => {

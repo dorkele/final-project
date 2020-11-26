@@ -11,6 +11,7 @@ export default function First({
     scrollY,
     getSteppers,
     language,
+    isMobile,
 }) {
     if (scrollY > 3970) {
         getSteppers(true);
@@ -23,26 +24,31 @@ export default function First({
                     scrollY={scrollY}
                     variantsVisibility={variantsVisibility}
                     language={language}
+                    isMobile={isMobile}
                 />
                 <SecondWindow
                     scrollY={scrollY}
                     variantsVisibility={variantsVisibility}
                     language={language}
+                    isMobile={isMobile}
                 />
                 <ThirdWindow
                     scrollY={scrollY}
                     variantsVisibility={variantsVisibility}
                     language={language}
+                    isMobile={isMobile}
                 />
                 <FourthWindow
                     scrollY={scrollY}
                     variantsVisibility={variantsVisibility}
                     language={language}
+                    isMobile={isMobile}
                 />
                 <FifthWindow
                     scrollY={scrollY}
                     variantsVisibility={variantsVisibility}
                     language={language}
+                    isMobile={isMobile}
                 />
             </div>
         </React.Fragment>
