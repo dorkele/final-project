@@ -21,7 +21,11 @@ export default function FadeInFrame(props) {
         >
             {props.text}
             {props.src && (
-                <img src={props.src} alt={props.alt} style={props.imgStyle} />
+                <img
+                    src={props.src}
+                    alt={props.alt}
+                    style={{ width: "100%", height: "100%" }}
+                />
             )}
         </Frame>
     );

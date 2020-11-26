@@ -7,7 +7,7 @@ export default function FourthWindow({
     language,
     isMobile,
 }) {
-    const style = { fontSize: 40, textAlign: "center" };
+    const style = { fontSize: 30, textAlign: "center" };
     let text1, text2, text3, text4;
     if (language === "croatian") {
         text1 =

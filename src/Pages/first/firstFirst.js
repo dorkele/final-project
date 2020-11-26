@@ -9,7 +9,7 @@ export default function FirstWindow({
     isMobile,
 }) {
     const style = { fontSize: 100, textAlign: "center", width: "100%" };
-    const styleMobile = { fontSize: 80, textAlign: "center", width: "100%" };
+    const styleMobile = { fontSize: 70, textAlign: "center", width: "100%" };
 
     let text1, text2, text3, text4;
     if (language === "croatian") {
@@ -80,14 +80,14 @@ export default function FirstWindow({
                     center="y"
                     variantsVisibility={variantsVisibility}
                     scrollY={scrollY}
-                    treshold={isMobile ? 10 : 150}
-                    style={{ zIndex: 1, fontSize: 40, textAlign: "center" }}
+                    treshold={150}
+                    style={{ zIndex: 1, fontSize: 30, textAlign: "center" }}
                     text={text1}
                     isMobile={isMobile}
                     width={"100%"}
                 />
                 <FadeInFrame
-                    top={isMobile ? "10%" : "30%"}
+                    top={isMobile ? "8%" : "30%"}
                     variantsVisibility={variantsVisibility}
                     scrollY={scrollY}
                     treshold={40}
@@ -96,7 +96,7 @@ export default function FirstWindow({
                     isMobile={isMobile}
                 />
                 <FadeInFrame
-                    top={isMobile ? "20%" : "40%"}
+                    top={isMobile ? "18%" : "40%"}
                     variantsVisibility={variantsVisibility}
                     scrollY={scrollY}
                     treshold={70}
@@ -105,7 +105,7 @@ export default function FirstWindow({
                     isMobile={isMobile}
                 />
                 <FadeInFrame
-                    top={isMobile ? "30%" : "50%"}
+                    top={isMobile ? "28%" : "50%"}
                     variantsVisibility={variantsVisibility}
                     scrollY={scrollY}
                     treshold={100}

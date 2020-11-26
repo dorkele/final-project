@@ -13,7 +13,6 @@ export default function FifthWindow({
     } else {
         text = "I was there, covered in layers upon layers of my own skin.";
     }
-    console.log(isMobile);
     return (
         <FadeInFrame
             variantsVisibility={variantsVisibility}

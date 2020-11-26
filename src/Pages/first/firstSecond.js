@@ -37,7 +37,7 @@ export default function SecondWindow({
                 scrollY={scrollY}
                 treshold={180}
                 width={isMobile ? "100%" : "25%"}
-                style={{ zIndex: 1, fontSize: 40, textAlign: "center" }}
+                style={{ zIndex: 1, fontSize: 30, textAlign: "center" }}
                 text={text1}
                 center="y"
                 isMobile={isMobile}
@@ -48,7 +48,7 @@ export default function SecondWindow({
                 variantsVisibility={variantsVisibility}
                 treshold={400}
                 scrollY={scrollY}
-                //center="y"
+                center="y"
                 text={text2}
                 width={isMobile ? "0" : null}
                 isMobile={isMobile}
