@@ -10,8 +10,8 @@ export default function Background({ isMobile }) {
                     backgroundRepeat: "repeat",
                     opacity: 0.7,
                 }}
-                // size={isMobile ? "170%" : "100%"}
                 size={"100%"}
+                position="fixed"
                 x={0}
                 y={-20}
                 animate={{ x: -25, y: 0 }}

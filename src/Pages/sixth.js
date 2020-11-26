@@ -2,7 +2,7 @@ import React from "react";
 import { Frame } from "framer";
 import SixthImageLayer from "./sixth/sixth-image-layer";
 
-export default function Sixth({ scrollX, getSteppers, scrollY, language }) {
+export default function Sixth({ getSteppers, scrollY, language, isMobile }) {
     if (scrollY > 2130) {
         getSteppers(true);
     }
@@ -41,7 +41,11 @@ export default function Sixth({ scrollX, getSteppers, scrollY, language }) {
 
     return (
         <React.Fragment>
-            <Frame width={"100%"} height={"400%"} background={"none"}>
+            <Frame
+                width={"100%"}
+                height={isMobile ? "580%" : "400%"}
+                background={"none"}
+            >
                 <Frame background={"none"} x={-scrollY} position={"fixed"}>
                     <SixthImageLayer />
                     <Frame

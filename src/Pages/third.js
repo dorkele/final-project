@@ -3,7 +3,7 @@ import { Frame } from "framer";
 import HoverContainer from "./third/hoverContainer";
 import styles from "./third/third.module.css";
 
-export default function Third({ scrollY, getSteppers, language }) {
+export default function Third({ scrollY, getSteppers, language, isMobile }) {
     const [visible, setVisible] = useState(0);
     if (scrollY > 10) {
         getSteppers(true);
@@ -83,11 +83,15 @@ export default function Third({ scrollY, getSteppers, language }) {
         <React.Fragment>
             <div className={styles.scroll_container}>
                 <Frame
-                    width={"100%"}
-                    height={"100%"}
+                    width={"80%"}
+                    height={"70%"}
                     center
                     backgroundColor="none"
-                    style={{ fontSize: 40, textAlign: "center" }}
+                    style={
+                        isMobile
+                            ? { fontSize: 20, textAlign: "center" }
+                            : { fontSize: 40, textAlign: "center" }
+                    }
                 >
                     {text1}
                     <a

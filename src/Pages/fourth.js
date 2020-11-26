@@ -9,17 +9,25 @@ export default function Fourth({
     scrollY,
     getSteppers,
     language,
+    isMobile,
 }) {
     if (scrollY > 970) {
         getSteppers(true);
     }
 
-    const style = {
-        fontSize: 30,
-        fontWeight: "bold",
-        color: "white",
-        textAlign: "center",
-    };
+    const style = isMobile
+        ? {
+              fontSize: 20,
+              fontWeight: "bold",
+              color: "white",
+              textAlign: "center",
+          }
+        : {
+              fontSize: 30,
+              fontWeight: "bold",
+              color: "white",
+              textAlign: "center",
+          };
     let text1,
         text2,
         text3,
@@ -111,7 +119,7 @@ export default function Fourth({
                 <VideoFixedCenter src={"/images/video.mp4"} />
                 <FadeOutFrame
                     text={text1}
-                    width={"40%"}
+                    width={isMobile ? "100%" : "40%"}
                     style={style}
                     variantsVisibility={variantsVisibility}
                     scrollY={scrollY}
@@ -270,7 +278,7 @@ export default function Fourth({
                     tresholdOut={820}
                     style={style}
                     scrollY={scrollY}
-                    width={"40%"}
+                    width={isMobile ? "80%" : "40%"}
                 />
                 <FadeInFadeOutFrame
                     text={text19}
@@ -280,16 +288,17 @@ export default function Fourth({
                     tresholdOut={860}
                     style={style}
                     scrollY={scrollY}
-                    width={"40%"}
+                    width={isMobile ? "100%" : "40%"}
                 />
                 <FadeInFadeOutFrame
                     text={text20}
                     center="y"
                     variantsVisibility={variantsVisibility}
                     treshold={900}
+                    tresholdOut={950}
                     style={style}
                     scrollY={scrollY}
-                    width={"40%"}
+                    width={isMobile ? "90%" : "40%"}
                 />
             </div>
         </React.Fragment>

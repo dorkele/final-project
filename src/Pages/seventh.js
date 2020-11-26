@@ -8,6 +8,7 @@ export default function Seventh({
     scrollY,
     getSteppers,
     language,
+    isMobile,
 }) {
     if (scrollY > 1270) {
         getSteppers(true);
@@ -38,8 +39,8 @@ export default function Seventh({
 
     return (
         <React.Fragment>
-            <Background />
             <div className={styles.container}>
+                <Background />
                 <FadeInFrame
                     style={styleSmall}
                     center="x"
@@ -48,6 +49,8 @@ export default function Seventh({
                     treshold={40}
                     top={"40%"}
                     text={text1}
+                    isMobile={isMobile}
+                    width={isMobile ? "100%" : null}
                 />
                 <FadeInFrame
                     style={styleBig}
@@ -57,6 +60,8 @@ export default function Seventh({
                     treshold={100}
                     top={"70%"}
                     text={text2}
+                    isMobile={isMobile}
+                    width={isMobile ? "100%" : null}
                 />
                 <FadeInFrame
                     style={styleBig}
@@ -66,6 +71,8 @@ export default function Seventh({
                     treshold={400}
                     top={"100%"}
                     text={text3}
+                    isMobile={isMobile}
+                    width={isMobile ? "100%" : null}
                 />
                 <FadeInFrame
                     style={styleBig}
@@ -75,6 +82,8 @@ export default function Seventh({
                     treshold={700}
                     top={"150%"}
                     text={text4}
+                    isMobile={isMobile}
+                    width={isMobile ? "100%" : null}
                 />
                 <FadeInFrame
                     style={styleSmall}
@@ -82,8 +91,10 @@ export default function Seventh({
                     variantsVisibility={variantsVisibility}
                     scrollY={scrollY}
                     treshold={900}
-                    top={"190%"}
+                    top={"220%"}
                     text={text5}
+                    isMobile={isMobile}
+                    width={isMobile ? "100%" : null}
                 />
             </div>
         </React.Fragment>

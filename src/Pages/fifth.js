@@ -8,17 +8,20 @@ export default function Fifth({
     scrollY,
     getSteppers,
     language,
+    isMobile,
 }) {
     if (scrollY > 770) {
         getSteppers(true);
     }
 
-    const style = {
-        fontSize: "25px",
-        color: "red",
-        fontWeight: "bold",
-        textAlign: "center",
-    };
+    const style = isMobile
+        ? { fontWeight: "normal", fontSize: "19px", color: "red" }
+        : {
+              fontSize: "25px",
+              color: "red",
+              fontWeight: "bold",
+              textAlign: "center",
+          };
 
     let text1,
         text2,
@@ -80,6 +83,7 @@ export default function Fifth({
                 <FifthImageLayer
                     variantsVisibility={variantsVisibility}
                     scrollY={scrollY}
+                    isMobile={isMobile}
                 />
                 <FadeInFrame
                     variantsVisibility={variantsVisibility}
@@ -89,6 +93,8 @@ export default function Fifth({
                     treshold={50}
                     text={text1}
                     center="x"
+                    width={isMobile ? "100%" : null}
+                    isMobile={isMobile}
                 />
                 <FadeInFrame
                     variantsVisibility={variantsVisibility}
@@ -98,6 +104,8 @@ export default function Fifth({
                     treshold={100}
                     text={text2}
                     center="x"
+                    width={isMobile ? "100%" : null}
+                    isMobile={isMobile}
                 />
                 <FadeInFrame
                     variantsVisibility={variantsVisibility}
@@ -107,6 +115,8 @@ export default function Fifth({
                     treshold={150}
                     text={text3}
                     center="x"
+                    width={isMobile ? "100%" : null}
+                    isMobile={isMobile}
                 />
                 <FadeInFrame
                     variantsVisibility={variantsVisibility}
@@ -116,6 +126,8 @@ export default function Fifth({
                     treshold={200}
                     text={text4}
                     center="x"
+                    width={isMobile ? "100%" : null}
+                    isMobile={isMobile}
                 />
                 <FadeInFrame
                     variantsVisibility={variantsVisibility}
@@ -125,6 +137,8 @@ export default function Fifth({
                     treshold={250}
                     text={text5}
                     center="x"
+                    width={isMobile ? "100%" : null}
+                    isMobile={isMobile}
                 />
                 <FadeInFrame
                     variantsVisibility={variantsVisibility}
@@ -134,6 +148,8 @@ export default function Fifth({
                     treshold={300}
                     text={text6}
                     center="x"
+                    width={isMobile ? "100%" : null}
+                    isMobile={isMobile}
                 />
                 <FadeInFrame
                     variantsVisibility={variantsVisibility}
@@ -143,6 +159,8 @@ export default function Fifth({
                     treshold={350}
                     text={text7}
                     center="x"
+                    width={isMobile ? "100%" : null}
+                    isMobile={isMobile}
                 />
                 <FadeInFrame
                     variantsVisibility={variantsVisibility}
@@ -152,6 +170,8 @@ export default function Fifth({
                     treshold={400}
                     text={text8}
                     center="x"
+                    width={isMobile ? "100%" : null}
+                    isMobile={isMobile}
                 />
                 <FadeInFrame
                     variantsVisibility={variantsVisibility}
@@ -161,6 +181,8 @@ export default function Fifth({
                     treshold={450}
                     text={text9}
                     center="x"
+                    width={isMobile ? "100%" : null}
+                    isMobile={isMobile}
                 />
                 <FadeInFrame
                     variantsVisibility={variantsVisibility}
@@ -170,6 +192,8 @@ export default function Fifth({
                     treshold={500}
                     text={text10}
                     center="x"
+                    width={isMobile ? "100%" : null}
+                    isMobile={isMobile}
                 />
                 <FadeInFrame
                     variantsVisibility={variantsVisibility}
@@ -179,6 +203,8 @@ export default function Fifth({
                     treshold={550}
                     text={text11}
                     center="x"
+                    width={isMobile ? "100%" : null}
+                    isMobile={isMobile}
                 />
             </div>
         </React.Fragment>

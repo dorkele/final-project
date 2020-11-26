@@ -132,6 +132,7 @@ export default function App() {
                 scrollY={scrollY}
                 getSteppers={(boolean) => getSteppers(boolean)}
                 language={language}
+                isMobile={isMobile}
             />
         );
     } else if (step === 4) {
@@ -141,6 +142,7 @@ export default function App() {
                 scrollY={scrollY}
                 getSteppers={(boolean) => getSteppers(boolean)}
                 language={language}
+                isMobile={isMobile}
             />
         );
     } else if (step === 5) {
@@ -150,6 +152,7 @@ export default function App() {
                 scrollY={scrollY}
                 getSteppers={(boolean) => getSteppers(boolean)}
                 language={language}
+                isMobile={isMobile}
             />
         );
     } else if (step === 6) {
@@ -159,6 +162,7 @@ export default function App() {
                 scrollY={scrollY}
                 getSteppers={(boolean) => getSteppers(boolean)}
                 language={language}
+                isMobile={isMobile}
             />
         );
     } else if (step === 7) {
@@ -169,6 +173,7 @@ export default function App() {
                     scrollY={scrollY}
                     getSteppers={(boolean) => getSteppers(boolean)}
                     language={language}
+                    isMobile={isMobile}
                 />
             </React.Fragment>
         );
