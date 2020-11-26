@@ -42,7 +42,7 @@
 @media screen and (max-width: 768px) {
     .title,
     .start {
-        font-size: 100px;
+        font-size: 70px;
         text-align: center;
     }
     .container {
@@ -53,6 +53,6 @@
     .languages,
     .instructions,
     .credits {
-        font-size: 50px;
+        font-size: 30px;
     }
 }
