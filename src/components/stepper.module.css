@@ -57,3 +57,10 @@
 .ten {
     background-image: url("../imgs/zora.png");
 }
+
+@media screen and (max-width: 768px) {
+    .buttons {
+        height: 6.5%;
+        width: 100%;
+    }
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import FadeInFrame from "../../components/fadeInFrame";
+import { croFirst5text, engFirst5text } from "../../text";
 
 export default function FifthWindow({
     variantsVisibility,
@@ -7,12 +8,6 @@ export default function FifthWindow({
     language,
     isMobile,
 }) {
-    let text;
-    if (language === "croatian") {
-        text = "Bila sam tamo, zamotana u slojeve i slojeve svoje kože.";
-    } else {
-        text = "I was there, covered in layers upon layers of my own skin.";
-    }
     return (
         <FadeInFrame
             variantsVisibility={variantsVisibility}
@@ -23,7 +18,7 @@ export default function FifthWindow({
             style={{ fontSize: 60, textAlign: "center" }}
             width={"100%"}
             height={"100%"}
-            text={text}
+            text={language === "croatian" ? croFirst5text : engFirst5text}
             isMobile={isMobile}
         />
     );

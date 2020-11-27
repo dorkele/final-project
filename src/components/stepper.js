@@ -8,14 +8,23 @@ export default function Stepper({ getStep, steppers, isMobile }) {
         window.scrollTo(0, 0);
     }
 
-    const variants = {
-        slideIn: {
-            y: "-100%",
-        },
-        slideOut: {
-            y: "100%",
-        },
-    };
+    const variants = isMobile
+        ? {
+              slideIn: {
+                  x: "-100%",
+              },
+              slideOut: {
+                  x: "100%",
+              },
+          }
+        : {
+              slideIn: {
+                  y: "-100%",
+              },
+              slideOut: {
+                  y: "100%",
+              },
+          };
 
     return (
         <Frame
@@ -23,16 +32,19 @@ export default function Stepper({ getStep, steppers, isMobile }) {
             animate={steppers ? "slideIn" : "slideOut"}
             transition={{ duration: 1 }}
             className={styles.container}
-            width={"100%"}
-            height={isMobile ? "4%" : "14%"}
+            width={isMobile ? "14%" : "100%"}
+            height={isMobile ? "100%" : "14%"}
             backgroundColor={"#ff5757"}
             style={
                 isMobile
                     ? {
                           position: "fixed",
                           display: "flex",
+                          flexDirection: "column",
                           justifyContent: "center",
-                          bottom: "-4%",
+                          right: "-14%",
+                          bottom: "0%",
+                          top: "0%",
                       }
                     : {
                           position: "fixed",

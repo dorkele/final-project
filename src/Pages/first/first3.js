@@ -1,5 +1,19 @@
 import React from "react";
 import FadeInFrame from "../../components/fadeInFrame";
+import {
+    croFirst3text1,
+    engFirst3text1,
+    croFirst3text2,
+    engFirst3text2,
+    croFirst3text3,
+    engFirst3text3,
+    croFirst3text4,
+    engFirst3text4,
+    croFirst3text5,
+    engFirst3text5,
+    croFirst3text6,
+    engFirst3text6,
+} from "../../text";
 
 export default function ThirdWindow({
     variantsVisibility,
@@ -12,26 +26,6 @@ export default function ThirdWindow({
         : { zIndex: 1, fontSize: 40, textAlign: "center" };
 
     const bigStyle = { zIndex: 1, fontSize: 100, textAlign: "center" };
-    let text1, text2, text3, text4, text5, text6;
-    if (language === "croatian") {
-        text1 =
-            "Sjediš negdje u dnu razreda, a ja duboko u sebi čujem preskakanje tvoje vilice, škripanje tvog kapka, rimu škrgutanja očnjaka i podočnjaka.";
-        text2 = "Očnjaci, podočnjaci, kapci.";
-        text3 = "Očnjaci,";
-        text4 = "podočnjaci,";
-        text5 = "kapci,";
-        text6 =
-            "tvoji ne govore tko su bili tvoji preci ni u kojim su nijemim filmovima glumili. Sve što mi imaju za reći su neugodne frekvencije.";
-    } else {
-        text1 =
-            "You are sitting somewhere in the back of the classroom and, deep inside myself, I can hear the crunching of your jaw, creaking of your eyelids, the grinding rhyme of your dogteeth.";
-        text2 = "Dogteeth, dark circles, eyelids.";
-        text3 = "Dogteeth,";
-        text4 = "dark circles,";
-        text5 = "eyelids";
-        text6 =
-            "of yours do not tell me anything about your ancestors or which silent movies they played their roles in. Everything they have to tell me are unpleasent frequences.";
-    }
 
     return (
         <React.Fragment>
@@ -43,7 +37,7 @@ export default function ThirdWindow({
                 top={"150%"}
                 center="x"
                 width={isMobile ? "100%" : "25%"}
-                text={text1}
+                text={language === "croatian" ? croFirst3text1 : engFirst3text1}
                 isMobile={isMobile}
             />
             <FadeInFrame
@@ -52,7 +46,7 @@ export default function ThirdWindow({
                 style={style}
                 treshold={700}
                 top={"180%"}
-                text={text2}
+                text={language === "croatian" ? croFirst3text2 : engFirst3text2}
                 center="x"
                 isMobile={isMobile}
                 width={isMobile ? "100%" : 500}
@@ -63,7 +57,7 @@ export default function ThirdWindow({
                 style={bigStyle}
                 treshold={1000}
                 top={"195%"}
-                text={text3}
+                text={language === "croatian" ? croFirst3text3 : engFirst3text3}
                 center="x"
                 isMobile={isMobile}
                 width={isMobile ? "100%" : 500}
@@ -74,7 +68,7 @@ export default function ThirdWindow({
                 style={bigStyle}
                 treshold={1050}
                 top={"200%"}
-                text={text4}
+                text={language === "croatian" ? croFirst3text4 : engFirst3text4}
                 center="x"
                 isMobile={isMobile}
                 width={isMobile ? "100%" : 500}
@@ -85,7 +79,7 @@ export default function ThirdWindow({
                 style={bigStyle}
                 treshold={1100}
                 top={"205%"}
-                text={text5}
+                text={language === "croatian" ? croFirst3text5 : engFirst3text5}
                 center="x"
                 isMobile={isMobile}
                 width={isMobile ? "100%" : 500}
@@ -111,7 +105,7 @@ export default function ThirdWindow({
                 treshold={1150}
                 top={"260%"}
                 width={isMobile ? "90%" : "25%"}
-                text={text6}
+                text={language === "croatian" ? croFirst3text6 : engFirst3text6}
                 center="x"
                 isMobile={isMobile}
             />

@@ -3,6 +3,7 @@ import FoldedPaper from "./home/home-foldedpaper";
 import styles from "./home/home.module.css";
 import Background from "../components/Background";
 import Instructions from "./instructions";
+import { titleCro, titleEng } from "../text";
 
 export default function Home(props) {
     const [instructions, setInstructions] = useState(false);
@@ -20,9 +21,6 @@ export default function Home(props) {
     function sendStep(step) {
         props.getStep(step);
     }
-
-    const titleCro = "Žudnja Za Smakom";
-    const titleEng = "Apocalypse Dreams";
 
     return (
         <div className={styles.container}>

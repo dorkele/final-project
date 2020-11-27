@@ -1,6 +1,16 @@
 import React from "react";
 import FadeOutFrame from "../../components/fadeOutFrame";
 import FadeInFrame from "../../components/fadeInFrame";
+import {
+    croFirst1text1,
+    engFirst1text1,
+    croFirst1text2,
+    engFirst1text2,
+    croFirst1text3,
+    engFirst1text3,
+    croFirst1text4,
+    engFirst1text4,
+} from "../../text";
 
 export default function FirstWindow({
     variantsVisibility,
@@ -10,19 +20,6 @@ export default function FirstWindow({
 }) {
     const style = { fontSize: 100, textAlign: "center", width: "100%" };
     const styleMobile = { fontSize: 70, textAlign: "center", width: "100%" };
-
-    let text1, text2, text3, text4;
-    if (language === "croatian") {
-        text1 = "Očnjaci, podočnjaci, kapci.";
-        text2 = "Očnjaci,";
-        text3 = "podočnjaci,";
-        text4 = "kapci.";
-    } else {
-        text1 = "Dogteeth, dark circles, eyelids.";
-        text2 = "Dogteeth,";
-        text3 = "dark circles,";
-        text4 = "eyelids.";
-    }
 
     return (
         <React.Fragment>
@@ -86,7 +83,11 @@ export default function FirstWindow({
                             ? { zIndex: 1, fontSize: 30, textAlign: "center" }
                             : { zIndex: 1, fontSize: 40, textAlign: "center" }
                     }
-                    text={text1}
+                    text={
+                        language === "croatian"
+                            ? croFirst1text1
+                            : engFirst1text1
+                    }
                     isMobile={isMobile}
                     width={"100%"}
                 />
@@ -96,7 +97,11 @@ export default function FirstWindow({
                     scrollY={scrollY}
                     treshold={40}
                     style={isMobile ? styleMobile : style}
-                    text={text2}
+                    text={
+                        language === "croatian"
+                            ? croFirst1text2
+                            : engFirst1text2
+                    }
                     isMobile={isMobile}
                 />
                 <FadeInFrame
@@ -105,7 +110,11 @@ export default function FirstWindow({
                     scrollY={scrollY}
                     treshold={70}
                     style={isMobile ? styleMobile : style}
-                    text={text3}
+                    text={
+                        language === "croatian"
+                            ? croFirst1text3
+                            : engFirst1text3
+                    }
                     isMobile={isMobile}
                 />
                 <FadeInFrame
@@ -114,7 +123,11 @@ export default function FirstWindow({
                     scrollY={scrollY}
                     treshold={100}
                     style={isMobile ? styleMobile : style}
-                    text={text4}
+                    text={
+                        language === "croatian"
+                            ? croFirst1text4
+                            : engFirst1text4
+                    }
                     isMobile={isMobile}
                 />
             </div>
