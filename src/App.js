@@ -229,7 +229,11 @@ export default function App() {
             )}
 
             {page}
-            <Stepper getStep={(step) => getStep(step)} steppers={steppers} />
+            <Stepper
+                getStep={(step) => getStep(step)}
+                steppers={steppers}
+                isMobile={isMobile}
+            />
         </React.Fragment>
     );
 }

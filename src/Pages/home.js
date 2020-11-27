@@ -3,11 +3,9 @@ import FoldedPaper from "./home/home-foldedpaper";
 import styles from "./home/home.module.css";
 import Background from "../components/Background";
 import Instructions from "./instructions";
-import Credits from "./credits";
 
 export default function Home(props) {
     const [instructions, setInstructions] = useState(false);
-    const [credits, setCredits] = useState(false);
 
     let randomXArray = [];
     for (let i = 0; i < 30; i++) {
@@ -29,20 +27,19 @@ export default function Home(props) {
     return (
         <div className={styles.container}>
             <Background isMobile={props.isMobile} />
-            {instructions && <Instructions />}
-            {credits && <Credits />}
+            {instructions && (
+                <Instructions
+                    language={props.language}
+                    setInstructions={() => setInstructions()}
+                />
+            )}
+
             <div className={styles.modules}>
                 <div
                     className={styles.instructions}
                     onClick={() => setInstructions(true)}
                 >
                     Instructions
-                </div>
-                <div
-                    className={styles.credits}
-                    onClick={() => setCredits(true)}
-                >
-                    Credits
                 </div>
             </div>
             <div className={styles.title}>

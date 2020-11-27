@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./stepper.module.css";
 import { Frame } from "framer";
 
-export default function Stepper({ getStep, steppers }) {
+export default function Stepper({ getStep, steppers, isMobile }) {
     function sendStep(step) {
         getStep(step);
         window.scrollTo(0, 0);
@@ -24,14 +24,23 @@ export default function Stepper({ getStep, steppers }) {
             transition={{ duration: 1 }}
             className={styles.container}
             width={"100%"}
-            height={"14%"}
+            height={isMobile ? "4%" : "14%"}
             backgroundColor={"#ff5757"}
-            style={{
-                position: "fixed",
-                display: "flex",
-                justifyContent: "center",
-                bottom: "-14%",
-            }}
+            style={
+                isMobile
+                    ? {
+                          position: "fixed",
+                          display: "flex",
+                          justifyContent: "center",
+                          bottom: "-4%",
+                      }
+                    : {
+                          position: "fixed",
+                          display: "flex",
+                          justifyContent: "center",
+                          bottom: "-14%",
+                      }
+            }
         >
             <button
                 className={`${styles.home} ${styles.buttons}`}

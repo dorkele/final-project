@@ -35,7 +35,7 @@ body,
     height: 80px;
     width: 80px;
     border: none;
-    z-index: 100;
+    z-index: 99;
 }
 
 .logo-fullscreen {

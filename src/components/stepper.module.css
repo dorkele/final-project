@@ -1,19 +1,11 @@
-* {
-    background-color: none;
-}
-body {
-    height: 100%;
-    width: 100%;
-}
-
 .container {
-    z-index: 100;
+    z-index: 99;
 }
 
 .buttons {
     height: 100%;
     width: 6.5%;
-    background-size: 100% 100%;
+    background-size: contain;
     background-repeat: no-repeat;
     border: none;
     background-color: #ff5757;
