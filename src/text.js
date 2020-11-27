@@ -181,7 +181,7 @@ export const engThirdText17 = `raid of unconscioussness `;
 export const croThirdText18 = `. Nisam mnogo govorila. Pogledali su me puni nade beznadnim svojim očima na odlasku. „I meni su `;
 export const engThirdText18 = `.I didn't say much. When I was leaving, they looked at me hopefully with their hopeless eyes. `;
 
-export const croThirdText19 = `džepovi puni mjeseca `;
+export const croThirdText19 = `džepovi puni mjeseca`;
 export const engThirdText19 = `„My pockets are also `;
 
 export const croThirdText20 = `, prijatelji, i meni.“`;

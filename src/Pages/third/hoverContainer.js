@@ -5,34 +5,34 @@ export default function HoverContainer({ visible }) {
     let src, alt;
 
     if (visible === 1) {
-        src = "/images/bread.png";
+        src = "/images/2.jpg";
         alt = "bread";
     } else if (visible === 2) {
-        src = "/images/lips2.png";
+        src = "/images/5.jpg";
         alt = "lips";
     } else if (visible === 3) {
-        src = "/images/red-sea.png";
+        src = "/images/6.jpg";
         alt = "red-sea";
     } else if (visible === 4) {
-        src = "/images/use-me.png";
+        src = "/images/7.jpg";
         alt = "use-me";
     } else if (visible === 5) {
-        src = "/images/ghosts.png";
+        src = "/images/8.jpg";
         alt = "ghosts";
     } else if (visible === 6) {
-        src = "/images/zenska-intuicija.png";
+        src = "/images/4.jpg";
         alt = "intuition";
     } else if (visible === 7) {
-        src = "/images/dragon-balls.jpg";
+        src = "/images/3.jpg";
         alt = "dragon-balls";
     } else if (visible === 8) {
-        src = "/images/nothing.png";
+        src = "/images/1.jpg";
         alt = "nothing";
     } else if (visible === 9) {
-        src = "/images/dog-duck.png";
+        src = "/images/9.jpg";
         alt = "dog-duck";
     } else if (visible === 10) {
-        src = "/images/magritte.png";
+        src = "/images/10.jpg";
         alt = "magritte";
     }
     return (

@@ -44,9 +44,11 @@ export default function Home(props) {
                 {props.language === "croatian" ? titleCro : titleEng}
             </div>
             <div className={styles.languages}>
-                <div onClick={() => props.getLanguage("croatian")}>
-                    Croatian
-                </div>
+                {!props.isMobile && (
+                    <div onClick={() => props.getLanguage("croatian")}>
+                        Croatian
+                    </div>
+                )}
                 <div onClick={() => props.getLanguage("english")}>English</div>
             </div>
             <button className={styles.start} onClick={() => sendStep(1)}>

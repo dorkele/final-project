@@ -107,7 +107,7 @@ export default function Third({ scrollY, getSteppers, language, isMobile }) {
                     <a
                         target="_blank"
                         rel="noopener noreferrer"
-                        href="https://www.interviewmagazine.com/music/grimes-lana-del-rey-brit-marling-miss-anthropocene-interview"
+                        href="https://www.nts.live/shows/literaryfriction"
                         onMouseEnter={() => setVisible(4)}
                         onMouseLeave={() => setVisible(0)}
                     >
@@ -120,7 +120,7 @@ export default function Third({ scrollY, getSteppers, language, isMobile }) {
                     <a
                         target="_blank"
                         rel="noopener noreferrer"
-                        href="https://www.youtube.com/watch?v=NTr9f4ZGcwE"
+                        href="https://hexenloveletters.tumblr.com/"
                         onMouseEnter={() => setVisible(5)}
                         onMouseLeave={() => setVisible(0)}
                     >
@@ -133,7 +133,7 @@ export default function Third({ scrollY, getSteppers, language, isMobile }) {
                     <a
                         target="_blank"
                         rel="noopener noreferrer"
-                        href="https://www.miamiletic.com/after"
+                        href="https://lithub.com/on-whiteness-and-the-racial-imaginary/"
                         onMouseEnter={() => setVisible(6)}
                         onMouseLeave={() => setVisible(0)}
                     >

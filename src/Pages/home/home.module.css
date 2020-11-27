@@ -55,8 +55,10 @@
         width: 100%;
     }
     .languages,
-    .instructions,
-    .credits {
+    .instructions {
         font-size: 30px;
+    }
+    .languages {
+        justify-content: center;
     }
 }
